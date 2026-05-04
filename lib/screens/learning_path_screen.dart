@@ -1101,7 +1101,7 @@ class _LearningPathScreenState extends State<LearningPathScreen>
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              LessonService.getEmojiForLevel(nextLevel!),
+                              LessonService.getEmojiForLevel(nextLevel),
                               style: const TextStyle(fontSize: 32),
                             ),
                             const SizedBox(width: 10),
@@ -1149,7 +1149,7 @@ class _LearningPathScreenState extends State<LearningPathScreen>
 
                     // Update current level to next level
                     if (hasNextLevel) {
-                      await UserPreferences.saveCurrentLevel(nextLevel!);
+                      await UserPreferences.saveCurrentLevel(nextLevel);
                       setState(() {
                         currentLevel = nextLevel;
                         _unlockedLevels = _mergeUnlockedLevels([

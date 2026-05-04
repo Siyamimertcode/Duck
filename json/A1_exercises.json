@@ -102,18 +102,6 @@
                 ]
             },
             {
-                "type": "translation",
-                "question": "Bu harfleri İngilizce yazın",
-                "sentence": "A, B, C, D, E",
-                "answer": "A, B, C, D, E"
-            },
-            {
-                "type": "translation",
-                "question": "Bu kelimeyi hecelere ayırın",
-                "sentence": "APPLE → A-P-P-L-E",
-                "answer": "A-P-P-L-E"
-            },
-            {
                 "type": "speaking",
                 "question": "Bu harfi sesli okuyun",
                 "word": "A",

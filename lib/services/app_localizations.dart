@@ -84,6 +84,8 @@ class S {
       'level_beginner_desc': 'Temel kelimeler ve basit cümleler',
       'level_elementary': 'Temel',
       'level_elementary_desc': 'Günlük konuşmalar ve basit diyaloglar',
+      'level_pre_intermediate': 'Orta',
+      'level_pre_intermediate_desc': 'Akıcı iletişim ve detaylı konular',
       'level_intermediate': 'Orta Seviye',
       'level_intermediate_desc': 'Akıcı iletişim ve detaylı konular',
       'level_upper_intermediate': 'Orta Üstü',
@@ -208,6 +210,11 @@ class S {
       'ex_match_progress': '{matched} / {total} eşleşme',
       'ex_match_hint': 'Sol ve sağdan birer kart seç',
       'ex_translate_hint': 'Çevirinizi yazın...',
+      'ex_translate_to_english': 'İngilizceye çevirin',
+      'ex_level_complete': '{level} seviyesi tamamlandı',
+      'ex_next_lesson_prompt': 'Bir sonraki alıştırmaya geçmek ister misin?',
+      'ex_next_lesson': 'Sonraki Alıştırma',
+      'ex_finish': 'Bitir',
       'ex_speak_hint': 'Konuşmak için mikrofona bas',
 
       // ── Placement Test ──────────────────────────────
@@ -283,6 +290,14 @@ class S {
       'vocab_start': 'Başla',
       'vocab_turkish': '🇹🇷 Türkçe',
       'vocab_next_hint': 'Sonraki kelime için dokun',
+      'listen_title': 'Dinleme Kulağını Geliştir',
+      'listen_intro_hear': 'Orta uzunlukta İngilizce cümleleri dinle',
+      'listen_intro_next': 'Ekrana dokun, yeni bir cümleye geç',
+      'listen_start': 'Dinlemeye Başla',
+      'listen_badge': '🎧 Listening',
+      'listen_again': 'Tekrar Dinle',
+      'listen_next_hint': 'Sonraki cümle için dokun',
+      'listen_load_error': 'Dinleme cümleleri yüklenemedi: {e}',
 
       // ── Settings ────────────────────────────────────
       'settings_title': 'Ayarlar',
@@ -442,6 +457,8 @@ class S {
       'level_beginner_desc': 'Basic words and simple sentences',
       'level_elementary': 'Elementary',
       'level_elementary_desc': 'Daily conversations and simple dialogues',
+      'level_pre_intermediate': 'Pre-Intermediate',
+      'level_pre_intermediate_desc': 'Fluent communication and detailed topics',
       'level_intermediate': 'Intermediate',
       'level_intermediate_desc': 'Fluent communication and detailed topics',
       'level_upper_intermediate': 'Upper Intermediate',
@@ -566,6 +583,11 @@ class S {
       'ex_match_progress': '{matched} / {total} matched',
       'ex_match_hint': 'Select one card from each side',
       'ex_translate_hint': 'Type your translation...',
+      'ex_translate_to_english': 'Translate to English',
+      'ex_level_complete': '{level} level completed',
+      'ex_next_lesson_prompt': 'Do you want to continue to the next lesson?',
+      'ex_next_lesson': 'Next',
+      'ex_finish': 'Finish',
       'ex_speak_hint': 'Press the mic to speak',
 
       // ── Placement Test ──────────────────────────────
@@ -641,6 +663,14 @@ class S {
       'vocab_start': 'Start',
       'vocab_turkish': '🇹🇷 Turkish',
       'vocab_next_hint': 'Tap for next word',
+      'listen_title': 'Improve Your Listening Ear',
+      'listen_intro_hear': 'Listen to medium-length English sentences',
+      'listen_intro_next': 'Tap the screen to hear a new sentence',
+      'listen_start': 'Start Listening',
+      'listen_badge': '🎧 Listening',
+      'listen_again': 'Listen Again',
+      'listen_next_hint': 'Tap for the next sentence',
+      'listen_load_error': 'Listening sentences could not be loaded: {e}',
 
       // ── Settings ────────────────────────────────────
       'settings_title': 'Settings',

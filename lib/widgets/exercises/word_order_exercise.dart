@@ -28,7 +28,9 @@ class _WordOrderExerciseState extends State<WordOrderExercise>
   @override
   void initState() {
     super.initState();
-    availableWords = List<String>.from(widget.exercise['components']);
+    final components =
+        widget.exercise['components'] ?? widget.exercise['correctOrder'] ?? [];
+    availableWords = List<String>.from(components);
     availableWords.shuffle();
     _animController = AnimationController(
       duration: const Duration(milliseconds: 500),
@@ -74,134 +76,137 @@ class _WordOrderExerciseState extends State<WordOrderExercise>
 
     return FadeTransition(
       opacity: _animController,
-      child: Column(
-        children: [
-          // Question
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-            decoration: BoxDecoration(
-              color: darkGreen.withValues(alpha: 0.08),
-              borderRadius: BorderRadius.circular(14),
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Text('🧩', style: TextStyle(fontSize: 22)),
-                const SizedBox(width: 8),
-                Flexible(
-                  child: Text(
-                    question,
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                      color: _c.textPrimary,
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            // Question
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+              decoration: BoxDecoration(
+                color: darkGreen.withValues(alpha: 0.08),
+                borderRadius: BorderRadius.circular(14),
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Text('🧩', style: TextStyle(fontSize: 22)),
+                  const SizedBox(width: 8),
+                  Flexible(
+                    child: Text(
+                      question,
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                        color: _c.textPrimary,
+                      ),
+                      textAlign: TextAlign.center,
                     ),
-                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 24),
+
+            // Construction area
+            AnimatedContainer(
+              duration: const Duration(milliseconds: 300),
+              constraints: const BoxConstraints(minHeight: 70),
+              width: double.infinity,
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: selectedWords.isEmpty
+                    ? _c.shimmer
+                    : darkGreen.withValues(alpha: 0.04),
+                borderRadius: BorderRadius.circular(18),
+                border: Border.all(
+                  color: selectedWords.isEmpty
+                      ? _c.divider
+                      : darkGreen.withValues(alpha: 0.3),
+                  width: 2,
+                ),
+              ),
+              child: selectedWords.isEmpty
+                  ? Center(
+                      child: Text(
+                        'Kelimeleri buraya ekle',
+                        style: TextStyle(
+                          color: _c.textSecondary,
+                          fontSize: 14,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                    )
+                  : Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: selectedWords.map((word) {
+                        return _buildChip(
+                          word: word,
+                          color: darkGreen,
+                          onTap: () => _onWordTap(word, fromSelected: true),
+                        );
+                      }).toList(),
+                    ),
+            ),
+            const SizedBox(height: 20),
+
+            // Divider with icon
+            Row(
+              children: [
+                Expanded(child: Divider(color: _c.divider)),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  child: Icon(
+                    Icons.arrow_upward_rounded,
+                    color: _c.textSecondary,
+                    size: 20,
                   ),
                 ),
+                Expanded(child: Divider(color: _c.divider)),
               ],
             ),
-          ),
-          const SizedBox(height: 24),
+            const SizedBox(height: 20),
 
-          // Construction area
-          AnimatedContainer(
-            duration: const Duration(milliseconds: 300),
-            constraints: const BoxConstraints(minHeight: 70),
-            width: double.infinity,
-            padding: const EdgeInsets.all(12),
-            decoration: BoxDecoration(
-              color: selectedWords.isEmpty
-                  ? _c.shimmer
-                  : darkGreen.withValues(alpha: 0.04),
-              borderRadius: BorderRadius.circular(18),
-              border: Border.all(
-                color: selectedWords.isEmpty
-                    ? _c.divider
-                    : darkGreen.withValues(alpha: 0.3),
-                width: 2,
-              ),
+            // Word pool
+            Wrap(
+              spacing: 8,
+              runSpacing: 10,
+              alignment: WrapAlignment.center,
+              children: availableWords.map((word) {
+                return _buildChip(
+                  word: word,
+                  color: orange,
+                  onTap: () => _onWordTap(word, fromSelected: false),
+                );
+              }).toList(),
             ),
-            child: selectedWords.isEmpty
-                ? Center(
-                    child: Text(
-                      'Kelimeleri buraya ekle',
-                      style: TextStyle(
-                        color: _c.textSecondary,
-                        fontSize: 14,
-                        fontStyle: FontStyle.italic,
-                      ),
-                    ),
-                  )
-                : Wrap(
-                    spacing: 8,
-                    runSpacing: 8,
-                    children: selectedWords.map((word) {
-                      return _buildChip(
-                        word: word,
-                        color: darkGreen,
-                        onTap: () => _onWordTap(word, fromSelected: true),
-                      );
-                    }).toList(),
+
+            const SizedBox(height: 28),
+
+            // Check button
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: availableWords.isEmpty ? _checkAnswer : null,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: orange,
+                  foregroundColor: Colors.white,
+                  disabledBackgroundColor: _c.shimmer,
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
                   ),
-          ),
-          const SizedBox(height: 20),
-
-          // Divider with icon
-          Row(
-            children: [
-              Expanded(child: Divider(color: _c.divider)),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12),
-                child: Icon(
-                  Icons.arrow_upward_rounded,
-                  color: _c.textSecondary,
-                  size: 20,
+                  elevation: 3,
                 ),
-              ),
-              Expanded(child: Divider(color: _c.divider)),
-            ],
-          ),
-          const SizedBox(height: 20),
-
-          // Word pool
-          Wrap(
-            spacing: 8,
-            runSpacing: 10,
-            alignment: WrapAlignment.center,
-            children: availableWords.map((word) {
-              return _buildChip(
-                word: word,
-                color: orange,
-                onTap: () => _onWordTap(word, fromSelected: false),
-              );
-            }).toList(),
-          ),
-
-          const Spacer(),
-
-          // Check button
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton(
-              onPressed: availableWords.isEmpty ? _checkAnswer : null,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: orange,
-                foregroundColor: Colors.white,
-                disabledBackgroundColor: _c.shimmer,
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16),
+                child: const Text(
+                  'KONTROL ET',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
-                elevation: 3,
-              ),
-              child: const Text(
-                'KONTROL ET',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

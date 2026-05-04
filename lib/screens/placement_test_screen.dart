@@ -7,6 +7,7 @@ import 'package:confetti/confetti.dart';
 import '../services/user_preferences.dart';
 import '../services/duck_theme.dart';
 import '../services/app_localizations.dart';
+import '../services/navigation_helper.dart';
 import 'home_screen.dart';
 
 class PlacementTestScreen extends StatefulWidget {
@@ -31,7 +32,7 @@ class _PlacementTestScreenState extends State<PlacementTestScreen>
   // Test state
   List<Map<String, dynamic>> _allQuestions = [];
   List<Map<String, dynamic>> _testQuestions = [];
-  Map<int, String?> _userAnswers = {};
+  final Map<int, String?> _userAnswers = {};
   int _currentIndex = 0;
   bool _isLoading = true;
   bool _showIntro = true;
@@ -123,6 +124,7 @@ class _PlacementTestScreenState extends State<PlacementTestScreen>
     } catch (e, stackTrace) {
       debugPrint('Error loading questions: $e');
       debugPrint('Stack trace: $stackTrace');
+      if (!mounted) return;
       setState(() {
         _isLoading = false;
         _loadError = S.get('pt_load_error', args: {'e': e.toString()});
@@ -161,6 +163,10 @@ class _PlacementTestScreenState extends State<PlacementTestScreen>
 
   void _startTimer() {
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
+      if (!mounted) {
+        timer.cancel();
+        return;
+      }
       if (_remainingSeconds > 0) {
         setState(() {
           _remainingSeconds--;
@@ -181,6 +187,7 @@ class _PlacementTestScreenState extends State<PlacementTestScreen>
   void _nextQuestion() {
     if (_currentIndex < _testQuestions.length - 1) {
       _cardAnimController.reverse().then((_) {
+        if (!mounted) return;
         setState(() {
           _currentIndex++;
         });
@@ -192,6 +199,7 @@ class _PlacementTestScreenState extends State<PlacementTestScreen>
   void _previousQuestion() {
     if (_currentIndex > 0) {
       _cardAnimController.reverse().then((_) {
+        if (!mounted) return;
         setState(() {
           _currentIndex--;
         });
@@ -202,12 +210,14 @@ class _PlacementTestScreenState extends State<PlacementTestScreen>
 
   void _finishTest() {
     _timer?.cancel();
+    if (!mounted) return;
     setState(() {
       _testCompleted = true;
     });
 
     // Calculate results after delay
     Future.delayed(const Duration(milliseconds: 500), () {
+      if (!mounted) return;
       setState(() {
         _showResults = true;
       });
@@ -310,36 +320,46 @@ class _PlacementTestScreenState extends State<PlacementTestScreen>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: cream,
-      body: SafeArea(
-        child: Stack(
-          children: [
-            _buildBackgroundDecorations(),
-            if (_isLoading)
-              _buildLoadingState()
-            else if (_loadError != null)
-              _buildErrorState()
-            else if (_showIntro)
-              _buildIntroScreen()
-            else if (_showResults)
-              _buildResultsScreen()
-            else
-              _buildTestScreen(),
-            // Confetti
-            Align(
-              alignment: Alignment.topCenter,
-              child: ConfettiWidget(
-                confettiController: _confettiController,
-                blastDirection: pi / 2,
-                emissionFrequency: 0.05,
-                numberOfParticles: 30,
-                gravity: 0.2,
-                shouldLoop: false,
-                colors: [correctGreen, lightGreen, orange, lightOrange],
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, result) {
+        if (didPop) return;
+        if (_showResults) {
+          _saveAndContinue();
+        } else {
+          _showExitDialog();
+        }
+      },
+      child: Scaffold(
+        backgroundColor: cream,
+        body: SafeArea(
+          child: Stack(
+            children: [
+              _buildBackgroundDecorations(),
+              if (_isLoading)
+                _buildLoadingState()
+              else if (_loadError != null)
+                _buildErrorState()
+              else if (_showIntro)
+                _buildIntroScreen()
+              else if (_showResults)
+                _buildResultsScreen()
+              else
+                _buildTestScreen(),
+              Align(
+                alignment: Alignment.topCenter,
+                child: ConfettiWidget(
+                  confettiController: _confettiController,
+                  blastDirection: pi / 2,
+                  emissionFrequency: 0.05,
+                  numberOfParticles: 30,
+                  gravity: 0.2,
+                  shouldLoop: false,
+                  colors: [correctGreen, lightGreen, orange, lightOrange],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
@@ -1344,7 +1364,7 @@ class _PlacementTestScreenState extends State<PlacementTestScreen>
           ElevatedButton(
             onPressed: () {
               Navigator.pop(ctx);
-              Navigator.pop(context);
+              NavigationHelper.safePopOrHome(context);
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: orange,

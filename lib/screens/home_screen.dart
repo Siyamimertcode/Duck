@@ -9,6 +9,7 @@ import 'games/true_false_game_screen.dart';
 import 'games/fast_word_game_screen.dart';
 import 'games/word_match_game_screen.dart';
 import 'vocabulary_screen.dart';
+import 'listening_practice_screen.dart';
 import '../services/user_preferences.dart';
 import '../services/quest_service.dart';
 import '../services/achievement_service.dart';
@@ -45,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   // Learning page state
   String? _expandedLevel; // Track which level is expanded
-  List<String> _completedLevels = [];
+  final List<String> _completedLevels = [];
   Map<String, int> _completedLessonsByLevel =
       {}; // Track completed lessons per level
   int _currentStreak = 0; // Daily streak count
@@ -2207,6 +2208,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             S.get('home_listening'),
             S.get('home_listening_desc'),
             orange,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ListeningPracticeScreen(),
+                ),
+              );
+            },
           ),
         ),
       ],

@@ -281,8 +281,22 @@ class _WordMatchGameScreenState extends State<WordMatchGameScreen>
       _gameOver = true;
     });
 
+    final percentage = ((_correctMatches / 8) * 100).round();
+
     if (_correctMatches == 8 && _wrongMatches <= 2) {
       _confettiController.play();
+    }
+
+    // Play sound effect based on performance
+    if (percentage >= 80) {
+      // Excellent performance: play success/celebration sound
+      SoundService().playComplete();
+    } else if (percentage >= 50) {
+      // Good/fair performance: play encouraging sound
+      SoundService().playLevelUp();
+    } else {
+      // Poor performance: play discouraging sound
+      SoundService().playWrong();
     }
 
     _saveGameProgress();
@@ -294,9 +308,9 @@ class _WordMatchGameScreenState extends State<WordMatchGameScreen>
 
     // Award XP based on performance
     int xpReward = 5; // Base XP
-    if (_wrongMatches == 0)
+    if (_wrongMatches == 0) {
       xpReward = 25;
-    else if (_wrongMatches <= 2)
+    } else if (_wrongMatches <= 2)
       xpReward = 15;
     else if (_wrongMatches <= 4)
       xpReward = 10;

@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:speech_to_text/speech_to_text.dart' as stt;
@@ -46,9 +48,19 @@ class SttService {
     if (!_isInitialized) {
       final ok = await initialize();
       if (!ok) {
-        onError?.call('Speech recognition not available');
+        onError?.call(
+          'Speech recognition not available. Mikrofon ve konuşma tanıma izinlerini kontrol edin.',
+        );
         return;
       }
+    }
+
+    final hasPermission = await _speech.hasPermission;
+    if (!hasPermission) {
+      onError?.call(
+        'Mikrofon izni verilmedi. Ayarlar > Duck > Mikrofon ve Konuşma Tanıma izinlerini açın.',
+      );
+      return;
     }
 
     if (_isListening) {

@@ -10,6 +10,7 @@ import 'services/notification_service.dart';
 import 'services/app_state.dart';
 import 'services/sound_service.dart';
 import 'services/duck_theme.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -107,6 +108,12 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Duck - Learn English',
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [Locale('en', ''), Locale('tr', 'TR')],
       theme: DuckTheme.light,
       darkTheme: DuckTheme.dark,
       themeMode: AppState.instance.themeMode,

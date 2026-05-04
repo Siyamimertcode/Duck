@@ -285,87 +285,67 @@ class _MatchingExerciseState extends State<MatchingExercise>
                 child: child,
               );
             },
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // Left column
-                Expanded(
-                  child: ListView.separated(
-                    padding: const EdgeInsets.symmetric(horizontal: 4),
-                    itemCount: _leftItems.length,
-                    separatorBuilder: (_, __) => const SizedBox(height: 10),
-                    itemBuilder: (context, i) {
-                      final item = _leftItems[i];
-                      final isMatched = _matchedLeftIndices.contains(
-                        item.index,
-                      );
-                      final isSelected = _selectedLeftIndex == i;
-                      final wasJustMatched = _lastMatchedLeft == i && isMatched;
+            child: ListView.separated(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              itemCount: _totalPairs,
+              separatorBuilder: (_, __) => const SizedBox(height: 10),
+              itemBuilder: (context, i) {
+                final leftItem = _leftItems[i];
+                final rightItem = _rightItems[i];
+                final isLeftMatched = _matchedLeftIndices.contains(
+                  leftItem.index,
+                );
+                final isRightMatched = _matchedRightIndices.contains(
+                  rightItem.index,
+                );
+                final isLeftSelected = _selectedLeftIndex == i;
+                final isRightSelected = _selectedRightIndex == i;
+                final wasLeftJustMatched =
+                    _lastMatchedLeft == i && isLeftMatched;
+                final wasRightJustMatched =
+                    _lastMatchedRight == i && isRightMatched;
+                final rowMatched = isLeftMatched || isRightMatched;
 
-                      return _buildCard(
-                        text: item.text,
-                        pairIndex: item.index,
-                        isMatched: isMatched,
-                        isSelected: isSelected,
-                        wasJustMatched: wasJustMatched,
+                return Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Expanded(
+                      child: _buildCard(
+                        text: leftItem.text,
+                        pairIndex: leftItem.index,
+                        isMatched: isLeftMatched,
+                        isSelected: isLeftSelected,
+                        wasJustMatched: wasLeftJustMatched,
                         onTap: () => _onLeftTap(i),
                         isLeft: true,
-                      );
-                    },
-                  ),
-                ),
-
-                // Center connector
-                SizedBox(
-                  width: 28,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: List.generate(
-                      _totalPairs,
-                      (i) => Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 16),
-                        child: Icon(
-                          _matchedLeftIndices.length > i
-                              ? Icons.link_rounded
-                              : Icons.link_off_rounded,
-                          size: 16,
-                          color: _matchedLeftIndices.length > i
-                              ? successGreen.withValues(alpha: 0.6)
-                              : _c.textSecondary.withValues(alpha: 0.3),
-                        ),
                       ),
                     ),
-                  ),
-                ),
-
-                // Right column
-                Expanded(
-                  child: ListView.separated(
-                    padding: const EdgeInsets.symmetric(horizontal: 4),
-                    itemCount: _rightItems.length,
-                    separatorBuilder: (_, __) => const SizedBox(height: 10),
-                    itemBuilder: (context, i) {
-                      final item = _rightItems[i];
-                      final isMatched = _matchedRightIndices.contains(
-                        item.index,
-                      );
-                      final isSelected = _selectedRightIndex == i;
-                      final wasJustMatched =
-                          _lastMatchedRight == i && isMatched;
-
-                      return _buildCard(
-                        text: item.text,
-                        pairIndex: item.index,
-                        isMatched: isMatched,
-                        isSelected: isSelected,
-                        wasJustMatched: wasJustMatched,
+                    SizedBox(
+                      width: 30,
+                      child: Icon(
+                        rowMatched
+                            ? Icons.link_rounded
+                            : Icons.link_off_rounded,
+                        size: 17,
+                        color: rowMatched
+                            ? successGreen.withValues(alpha: 0.65)
+                            : _c.textSecondary.withValues(alpha: 0.3),
+                      ),
+                    ),
+                    Expanded(
+                      child: _buildCard(
+                        text: rightItem.text,
+                        pairIndex: rightItem.index,
+                        isMatched: isRightMatched,
+                        isSelected: isRightSelected,
+                        wasJustMatched: wasRightJustMatched,
                         onTap: () => _onRightTap(i),
                         isLeft: false,
-                      );
-                    },
-                  ),
-                ),
-              ],
+                      ),
+                    ),
+                  ],
+                );
+              },
             ),
           ),
         ),

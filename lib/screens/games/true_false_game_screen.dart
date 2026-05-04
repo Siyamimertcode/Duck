@@ -286,9 +286,25 @@ class _TrueFalseGameScreenState extends State<TrueFalseGameScreen>
       _gameOver = true;
     });
 
+    final percentage = _totalQuestions > 0
+        ? ((_correctAnswers / _totalQuestions) * 100).round()
+        : 0;
+
     // Play confetti for good scores
     if (_score >= 100) {
       _confettiController.play();
+    }
+
+    // Play sound effect based on performance
+    if (percentage >= 80) {
+      // Excellent performance: play success/celebration sound
+      SoundService().playComplete();
+    } else if (percentage >= 50) {
+      // Good/fair performance: play encouraging sound
+      SoundService().playLevelUp();
+    } else {
+      // Poor performance: play discouraging sound
+      SoundService().playWrong();
     }
 
     // Save high score if needed
@@ -304,9 +320,9 @@ class _TrueFalseGameScreenState extends State<TrueFalseGameScreen>
         ? ((_correctAnswers / _totalQuestions) * 100).round()
         : 0;
     int xpReward = 5; // Base XP
-    if (percentage >= 80)
+    if (percentage >= 80) {
       xpReward = 25;
-    else if (percentage >= 60)
+    } else if (percentage >= 60)
       xpReward = 15;
     else if (percentage >= 40)
       xpReward = 10;

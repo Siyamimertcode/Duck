@@ -197,8 +197,22 @@ class _FastWordGameScreenState extends State<FastWordGameScreen>
       _gameOver = true;
     });
 
+    final percentage = ((_correctAnswers / _totalRounds) * 100).round();
+
     if (_correctAnswers >= _totalRounds * 0.7) {
       _confettiController.play();
+    }
+
+    // Play sound effect based on performance
+    if (percentage >= 80) {
+      // Excellent performance: play success/celebration sound
+      SoundService().playComplete();
+    } else if (percentage >= 50) {
+      // Good/fair performance: play encouraging sound
+      SoundService().playLevelUp();
+    } else {
+      // Poor performance: play discouraging sound
+      SoundService().playWrong();
     }
 
     _saveGameProgress();
@@ -211,9 +225,9 @@ class _FastWordGameScreenState extends State<FastWordGameScreen>
     // Award XP based on performance
     final percentage = (_correctAnswers / _totalRounds * 100).round();
     int xpReward = 5; // Base XP
-    if (percentage >= 90)
+    if (percentage >= 90) {
       xpReward = 25;
-    else if (percentage >= 70)
+    } else if (percentage >= 70)
       xpReward = 15;
     else if (percentage >= 50)
       xpReward = 10;

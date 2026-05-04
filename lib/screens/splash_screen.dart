@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'dart:math' as math;
 import '../services/user_preferences.dart';
-import '../services/tts_service.dart';
-import '../services/sound_service.dart';
 import '../services/duck_theme.dart';
 import '../services/app_localizations.dart';
 
@@ -528,6 +526,13 @@ class _SplashScreenState extends State<SplashScreen>
   }
 
   Widget _buildAppName() {
+    final titleShadowColor = context.isDarkMode
+        ? Colors.black.withValues(alpha: 0.35)
+        : darkGreen.withValues(alpha: 0.1);
+    final titleGradientColors = context.isDarkMode
+        ? [const Color(0xFFE8FFF4), const Color(0xFFFFC86B)]
+        : [darkGreen, const Color(0xFF2A7A65)];
+
     return Transform.translate(
       offset: Offset(0, (1 - _textSlide.value) * 40),
       child: Opacity(
@@ -543,14 +548,14 @@ class _SplashScreenState extends State<SplashScreen>
                   style: TextStyle(
                     fontSize: 56,
                     fontWeight: FontWeight.w900,
-                    color: darkGreen.withOpacity(0.1),
+                    color: titleShadowColor,
                     letterSpacing: 2,
                   ),
                 ),
                 // Main text with gradient
                 ShaderMask(
                   shaderCallback: (bounds) => LinearGradient(
-                    colors: [darkGreen, const Color(0xFF2A7A65)],
+                    colors: titleGradientColors,
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ).createShader(bounds),

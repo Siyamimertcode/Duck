@@ -5,6 +5,8 @@ import 'package:flutter/services.dart' show HapticFeedback, rootBundle;
 import 'package:confetti/confetti.dart';
 import 'package:duck/services/progress_service.dart';
 import 'package:duck/services/user_preferences.dart';
+import 'package:duck/services/lesson_service.dart';
+import 'package:duck/services/navigation_helper.dart';
 import 'package:duck/services/tts_service.dart';
 import 'package:duck/services/sound_service.dart';
 import 'package:duck/widgets/exercises/quiz_exercise.dart';
@@ -43,12 +45,16 @@ class _ExerciseScreenState extends State<ExerciseScreen>
   int _currentIndex = 0;
   bool _isLoading = true;
   String? _error;
+  late String _activeLevel;
+  late int _activeLessonInLevel;
+  late String _activeTitle;
 
   // Progress tracking
   int _correctCount = 0;
   int _wrongCount = 0;
   final List<Map<String, String>> _wrongAnswers = [];
   bool _showResults = false;
+  bool _levelCompletedOnFinish = false;
   int _currentStreak = 0;
   int _bestStreak = 0;
 
@@ -57,6 +63,12 @@ class _ExerciseScreenState extends State<ExerciseScreen>
   bool _lastAnswerCorrect = false;
   bool _showCorrectAnswer = false;
   String _correctAnswerText = '';
+  bool _isStartingNextLesson = false;
+  bool _isHidingFeedback = false;
+
+  // Measured height of the feedback bar when visible (used to avoid overlap)
+  final GlobalKey _feedbackKey = GlobalKey();
+  double _feedbackBarHeight = 0.0;
 
   late ConfettiController _confettiController;
 
@@ -80,7 +92,7 @@ class _ExerciseScreenState extends State<ExerciseScreen>
 
   /// Whether the current lesson is the alphabet unit (lesson 1 = lessonId 0).
   bool get _isAlphabetLesson =>
-      widget.lessonInLevel == 1 && widget.level == 'A1';
+      _activeLessonInLevel == 1 && _activeLevel == 'A1';
 
   // Exercise type helpers
   static String _exerciseTypeLabel(String type) {
@@ -124,6 +136,9 @@ class _ExerciseScreenState extends State<ExerciseScreen>
   @override
   void initState() {
     super.initState();
+    _activeLevel = widget.level;
+    _activeLessonInLevel = widget.lessonInLevel;
+    _activeTitle = widget.title;
     _confettiController = ConfettiController(
       duration: const Duration(seconds: 3),
     );
@@ -190,17 +205,17 @@ class _ExerciseScreenState extends State<ExerciseScreen>
       });
 
       debugPrint(
-        '📚 Loading exercises for Level: ${widget.level}, Lesson: ${widget.lessonInLevel}',
+        '📚 Loading exercises for Level: $_activeLevel, Lesson: $_activeLessonInLevel',
       );
 
       // Load and decode JSON specifically as UTF-8 to handle Turkish characters
       final jsonString = await rootBundle.loadString(
-        'json/${widget.level}_exercises.json',
+        'json/${_activeLevel}_exercises.json',
       );
       final List<dynamic> allLessons = json.decode(jsonString);
 
       // Robust matching: ID can be int or string, target is 0-based
-      final targetId = widget.lessonInLevel - 1;
+      final targetId = _activeLessonInLevel - 1;
 
       final lessonData = allLessons.firstWhere(
         (l) => (l['lessonId'] ?? l['id']).toString() == targetId.toString(),
@@ -297,6 +312,19 @@ class _ExerciseScreenState extends State<ExerciseScreen>
     });
 
     _feedbackSlideController.forward(from: 0);
+
+    // After the frame is rendered, measure the feedback bar height and update padding.
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      // small delay to allow slide-in sizing if needed
+      await Future.delayed(const Duration(milliseconds: 16));
+      if (!mounted) return;
+      final renderObject = _feedbackKey.currentContext?.findRenderObject();
+      if (renderObject is RenderBox) {
+        setState(() {
+          _feedbackBarHeight = renderObject.size.height;
+        });
+      }
+    });
   }
 
   /// User taps "Devam Et" (correct) or after seeing answer
@@ -311,6 +339,7 @@ class _ExerciseScreenState extends State<ExerciseScreen>
           setState(() {
             _currentIndex++;
             _showFeedback = false;
+            _feedbackBarHeight = 0.0;
             _showCorrectAnswer = false;
           });
           _exerciseTransitionController.forward();
@@ -323,6 +352,7 @@ class _ExerciseScreenState extends State<ExerciseScreen>
         setState(() {
           _showFeedback = false;
           _showCorrectAnswer = false;
+          _feedbackBarHeight = 0.0;
         });
         _finishLesson();
       }
@@ -331,20 +361,26 @@ class _ExerciseScreenState extends State<ExerciseScreen>
 
   /// User taps "Tekrar Dene" on wrong answer
   void _onRetry() {
-    HapticFeedback.selectionClick();
-    _feedbackSlideController.reverse().then((_) {
-      if (!mounted) return;
-      // Re-create the exercise by bumping a retry counter in the key
-      setState(() {
-        _showFeedback = false;
-        _showCorrectAnswer = false;
-        // Force widget rebuild with new key by toggling a hidden counter
-        _retryCount++;
-      });
-    });
+    _hideWrongFeedbackForRetry();
   }
 
   int _retryCount = 0;
+
+  void _hideWrongFeedbackForRetry({bool haptic = true}) {
+    if (_isHidingFeedback || !_showFeedback) return;
+    _isHidingFeedback = true;
+    if (haptic) HapticFeedback.selectionClick();
+    _feedbackSlideController.reverse().then((_) {
+      if (!mounted) return;
+      setState(() {
+        _showFeedback = false;
+        _showCorrectAnswer = false;
+        _feedbackBarHeight = 0.0;
+        _retryCount++;
+        _isHidingFeedback = false;
+      });
+    });
+  }
 
   /// User taps "Doğru Cevabı Göster"
   void _onShowCorrectAnswer() {
@@ -355,18 +391,123 @@ class _ExerciseScreenState extends State<ExerciseScreen>
     _correctAnswerFadeController.forward(from: 0);
   }
 
+  String? _nextLevel(String level) {
+    const levelOrder = ['A1', 'A2', 'B1', 'B2', 'C1'];
+    final index = levelOrder.indexOf(level);
+    if (index == -1 || index >= levelOrder.length - 1) return null;
+    return levelOrder[index + 1];
+  }
+
+  Future<void> _exitLesson({bool completed = false}) {
+    return NavigationHelper.safePopOrHome(context, result: completed);
+  }
+
+  void _showQuitDialog() {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: Row(
+          children: [
+            const Text('😢', style: TextStyle(fontSize: 28)),
+            const SizedBox(width: 10),
+            Flexible(child: Text(S.get('ex_quit_title'))),
+          ],
+        ),
+        content: Text(S.get('ex_quit_message')),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text(
+              S.get('no'),
+              style: TextStyle(color: darkGreen, fontWeight: FontWeight.bold),
+            ),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(context);
+              _exitLesson();
+            },
+            child: Text(S.get('yes'), style: TextStyle(color: orange)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _startNextLesson() async {
+    if (_isStartingNextLesson) return;
+
+    var nextLevel = _activeLevel;
+    var nextLessonInLevel = _activeLessonInLevel + 1;
+    if (nextLessonInLevel > ProgressService.lessonsPerLevel) {
+      final promotedLevel = _nextLevel(_activeLevel);
+      if (promotedLevel == null) return;
+      nextLevel = promotedLevel;
+      nextLessonInLevel = 1;
+    }
+
+    setState(() {
+      _isStartingNextLesson = true;
+    });
+
+    final allLessons = await LessonService.getAllLessons();
+    final nextTitle =
+        allLessons.firstWhere(
+              (lesson) =>
+                  lesson['level'] == nextLevel &&
+                  lesson['lessonInLevel'] == nextLessonInLevel,
+              orElse: () => {'title': 'Ders $nextLessonInLevel'},
+            )['title']
+            as String;
+
+    if (!mounted) return;
+
+    _feedbackSlideController.reset();
+    _correctAnswerFadeController.reset();
+    _progressPulseController.reset();
+    _exerciseTransitionController.value = 1.0;
+    _streakController.reset();
+    _confettiController.stop();
+
+    setState(() {
+      _activeLevel = nextLevel;
+      _activeLessonInLevel = nextLessonInLevel;
+      _activeTitle = nextTitle;
+      _exercises = [];
+      _currentIndex = 0;
+      _isLoading = true;
+      _error = null;
+      _correctCount = 0;
+      _wrongCount = 0;
+      _wrongAnswers.clear();
+      _showResults = false;
+      _levelCompletedOnFinish = false;
+      _currentStreak = 0;
+      _bestStreak = 0;
+      _showFeedback = false;
+      _lastAnswerCorrect = false;
+      _showCorrectAnswer = false;
+      _correctAnswerText = '';
+      _feedbackBarHeight = 0.0;
+      _retryCount = 0;
+      _isStartingNextLesson = false;
+      _isHidingFeedback = false;
+    });
+
+    await _loadExercises();
+  }
+
   // ── Finish Lesson ────────────────────────────────────────────────────
 
   Future<void> _finishLesson() async {
-    debugPrint(
-      '🎓 Finishing Lesson: ${widget.level} - ${widget.lessonInLevel}',
-    );
+    debugPrint('🎓 Finishing Lesson: $_activeLevel - $_activeLessonInLevel');
 
     // Persist progress through the centralized service.
     final progressService = ProgressService();
     final isLevelComplete = await progressService.completeLesson(
-      widget.level,
-      widget.lessonInLevel,
+      _activeLevel,
+      _activeLessonInLevel,
     );
 
     debugPrint('🎓 Lesson completed. Level Complete: $isLevelComplete');
@@ -381,14 +522,24 @@ class _ExerciseScreenState extends State<ExerciseScreen>
     // Show results screen
     setState(() {
       _showResults = true;
+      _levelCompletedOnFinish = isLevelComplete;
     });
 
     // Play confetti and celebration sound if good performance
     if (successRate >= 0.7) {
       _confettiController.play();
+    }
+
+    // Play sound effect based on performance
+    if (successRate >= 0.8) {
+      // Excellent performance: play success/celebration sound
       _soundService.playComplete();
-    } else {
+    } else if (successRate >= 0.5) {
+      // Good/fair performance: play encouraging sound
       _soundService.playLevelUp();
+    } else {
+      // Poor performance: play discouraging sound
+      _soundService.playWrong();
     }
   }
 
@@ -398,6 +549,9 @@ class _ExerciseScreenState extends State<ExerciseScreen>
     final total = _correctCount + _wrongCount;
     final successRate = total > 0 ? _correctCount / total : 0.0;
     final percentage = (successRate * 100).round();
+    final hasNextLesson =
+        _activeLessonInLevel < ProgressService.lessonsPerLevel ||
+        _nextLevel(_activeLevel) != null;
 
     Color rateColor;
     String rateEmoji;
@@ -478,7 +632,9 @@ class _ExerciseScreenState extends State<ExerciseScreen>
               ),
               const SizedBox(height: 4),
               Text(
-                S.get('ex_lesson_complete'),
+                _levelCompletedOnFinish
+                    ? S.get('ex_level_complete', args: {'level': _activeLevel})
+                    : S.get('ex_lesson_complete'),
                 style: TextStyle(
                   fontSize: 16,
                   color: darkGreen.withValues(alpha: 0.5),
@@ -496,7 +652,7 @@ class _ExerciseScreenState extends State<ExerciseScreen>
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Text(
-                  '${widget.level} · "${widget.title}"',
+                  '$_activeLevel · "$_activeTitle"',
                   style: TextStyle(
                     fontSize: 13,
                     color: darkGreen.withValues(alpha: 0.6),
@@ -837,41 +993,130 @@ class _ExerciseScreenState extends State<ExerciseScreen>
                 const SizedBox(height: 24),
               ],
 
-              // Action buttons
-              SizedBox(
-                width: double.infinity,
-                height: 56,
-                child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pop(true);
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: orange,
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18),
-                    ),
-                    elevation: 4,
-                    shadowColor: orange.withValues(alpha: 0.4),
+              if (hasNextLesson) ...[
+                Text(
+                  S.get('ex_next_lesson_prompt'),
+                  style: TextStyle(
+                    fontSize: 15,
+                    color: darkGreen.withValues(alpha: 0.7),
+                    fontWeight: FontWeight.w700,
                   ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Icon(Icons.arrow_forward_rounded, size: 22),
-                      const SizedBox(width: 8),
-                      Text(
-                        S.get('ex_continue'),
-                        style: const TextStyle(
-                          fontSize: 17,
-                          fontWeight: FontWeight.w800,
-                          letterSpacing: 1,
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 12),
+              ],
+
+              // Action buttons
+              if (hasNextLesson)
+                Row(
+                  children: [
+                    Expanded(
+                      child: SizedBox(
+                        height: 54,
+                        child: OutlinedButton(
+                          onPressed: () => _exitLesson(completed: true),
+                          style: OutlinedButton.styleFrom(
+                            foregroundColor: darkGreen,
+                            side: BorderSide(
+                              color: darkGreen.withValues(alpha: 0.35),
+                              width: 1.5,
+                            ),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18),
+                            ),
+                          ),
+                          child: Text(
+                            S.get('ex_finish'),
+                            style: const TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
                         ),
                       ),
-                    ],
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: SizedBox(
+                        height: 54,
+                        child: ElevatedButton.icon(
+                          onPressed: _isStartingNextLesson
+                              ? null
+                              : _startNextLesson,
+                          icon: _isStartingNextLesson
+                              ? const SizedBox(
+                                  width: 18,
+                                  height: 18,
+                                  child: CircularProgressIndicator(
+                                    strokeWidth: 2.2,
+                                    color: Colors.white,
+                                  ),
+                                )
+                              : const Icon(
+                                  Icons.arrow_forward_rounded,
+                                  size: 20,
+                                ),
+                          label: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            child: Text(
+                              S.get('ex_next_lesson'),
+                              maxLines: 1,
+                              style: const TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w800,
+                              ),
+                            ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: orange,
+                            foregroundColor: Colors.white,
+                            disabledBackgroundColor: orange.withValues(
+                              alpha: 0.55,
+                            ),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18),
+                            ),
+                            elevation: 4,
+                            shadowColor: orange.withValues(alpha: 0.4),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                )
+              else
+                SizedBox(
+                  width: double.infinity,
+                  height: 56,
+                  child: ElevatedButton(
+                    onPressed: () => _exitLesson(completed: true),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: orange,
+                      foregroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18),
+                      ),
+                      elevation: 4,
+                      shadowColor: orange.withValues(alpha: 0.4),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(Icons.check_rounded, size: 22),
+                        const SizedBox(width: 8),
+                        Text(
+                          S.get('ex_finish'),
+                          style: const TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w800,
+                            letterSpacing: 1,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
               const SizedBox(height: 16),
             ],
           ),
@@ -935,107 +1180,82 @@ class _ExerciseScreenState extends State<ExerciseScreen>
     );
   }
 
+  Widget _withSafePop(Widget child) {
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, result) {
+        if (didPop) return;
+        if (_showResults) {
+          _exitLesson(completed: true);
+        } else {
+          _showQuitDialog();
+        }
+      },
+      child: child,
+    );
+  }
+
   // ── Build ────────────────────────────────────────────────────────────
 
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
-      return Scaffold(
-        backgroundColor: _c.cream,
-        body: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              // Animated loading indicator
-              TweenAnimationBuilder<double>(
-                tween: Tween(begin: 0, end: 1),
-                duration: const Duration(milliseconds: 800),
-                curve: Curves.easeOut,
-                builder: (context, value, child) {
-                  return Opacity(opacity: value, child: child);
-                },
-                child: Column(
-                  children: [
-                    Container(
-                      width: 72,
-                      height: 72,
-                      decoration: BoxDecoration(
-                        color: darkGreen.withValues(alpha: 0.06),
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Center(
-                        child: SizedBox(
-                          width: 36,
-                          height: 36,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 3.5,
-                            valueColor: AlwaysStoppedAnimation<Color>(orange),
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 20),
-                    Text(
-                      '${widget.level} · ${widget.title}',
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: darkGreen,
-                        fontWeight: FontWeight.w700,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                    const SizedBox(height: 6),
-                    Text(
-                      S.get('ex_loading'),
-                      style: TextStyle(
-                        fontSize: 13,
-                        color: darkGreen.withValues(alpha: 0.5),
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-      );
-    }
-
-    if (_error != null) {
-      return Scaffold(
-        appBar: AppBar(
-          title: Text(widget.title),
-          backgroundColor: darkGreen,
-          foregroundColor: Colors.white,
-        ),
-        body: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(32),
+      return _withSafePop(
+        Scaffold(
+          backgroundColor: _c.cream,
+          body: Center(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const Text('📭', style: TextStyle(fontSize: 48)),
-                const SizedBox(height: 16),
-                Text(
-                  _error!,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: darkGreen.withValues(alpha: 0.7),
+                // Animated loading indicator
+                TweenAnimationBuilder<double>(
+                  tween: Tween(begin: 0, end: 1),
+                  duration: const Duration(milliseconds: 800),
+                  curve: Curves.easeOut,
+                  builder: (context, value, child) {
+                    return Opacity(opacity: value, child: child);
+                  },
+                  child: Column(
+                    children: [
+                      Container(
+                        width: 72,
+                        height: 72,
+                        decoration: BoxDecoration(
+                          color: darkGreen.withValues(alpha: 0.06),
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Center(
+                          child: SizedBox(
+                            width: 36,
+                            height: 36,
+                            child: CircularProgressIndicator(
+                              strokeWidth: 3.5,
+                              valueColor: AlwaysStoppedAnimation<Color>(orange),
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+                      Text(
+                        '$_activeLevel · $_activeTitle',
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: darkGreen,
+                          fontWeight: FontWeight.w700,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 6),
+                      Text(
+                        S.get('ex_loading'),
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: darkGreen.withValues(alpha: 0.5),
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-                const SizedBox(height: 24),
-                ElevatedButton(
-                  onPressed: () => Navigator.pop(context),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: orange,
-                    foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                  child: Text(S.get('ex_back')),
                 ),
               ],
             ),
@@ -1044,45 +1264,94 @@ class _ExerciseScreenState extends State<ExerciseScreen>
       );
     }
 
+    if (_error != null) {
+      return _withSafePop(
+        Scaffold(
+          appBar: AppBar(
+            title: Text(_activeTitle),
+            backgroundColor: darkGreen,
+            foregroundColor: Colors.white,
+          ),
+          body: Center(
+            child: Padding(
+              padding: const EdgeInsets.all(32),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Text('📭', style: TextStyle(fontSize: 48)),
+                  const SizedBox(height: 16),
+                  Text(
+                    _error!,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: darkGreen.withValues(alpha: 0.7),
+                    ),
+                  ),
+                  const SizedBox(height: 24),
+                  ElevatedButton(
+                    onPressed: () => _exitLesson(),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: orange,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                    child: Text(S.get('ex_back')),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
     // Results screen
     if (_showResults) {
-      return Scaffold(
-        backgroundColor: _c.cream,
-        appBar: AppBar(
-          automaticallyImplyLeading: false,
-          title: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 0.2),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Text(
-                  widget.level,
-                  style: const TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w800,
+      return _withSafePop(
+        Scaffold(
+          backgroundColor: _c.cream,
+          appBar: AppBar(
+            automaticallyImplyLeading: false,
+            title: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 8,
+                    vertical: 3,
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withValues(alpha: 0.2),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Text(
+                    _activeLevel,
+                    style: const TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w800,
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(width: 8),
-              Text(
-                S.get('ex_results'),
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w700,
+                const SizedBox(width: 8),
+                Text(
+                  S.get('ex_results'),
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w700,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
+            centerTitle: true,
+            backgroundColor: darkGreen,
+            foregroundColor: Colors.white,
+            elevation: 0,
           ),
-          centerTitle: true,
-          backgroundColor: darkGreen,
-          foregroundColor: Colors.white,
-          elevation: 0,
+          body: _buildResultsScreen(),
         ),
-        body: _buildResultsScreen(),
       );
     }
 
@@ -1091,61 +1360,103 @@ class _ExerciseScreenState extends State<ExerciseScreen>
     final currentType =
         (currentExercise['type'] as String?)?.toLowerCase() ?? '';
 
-    return Scaffold(
-      backgroundColor: _c.cream,
-      body: SafeArea(
-        child: Column(
-          children: [
-            // ── Top bar with progress ──
-            _buildTopBar(progress, currentType),
+    return _withSafePop(
+      Scaffold(
+        backgroundColor: _c.cream,
+        body: SafeArea(
+          child: Column(
+            children: [
+              // ── Top bar with progress ──
+              _buildTopBar(progress, currentType),
 
-            // ── Exercise content ──
-            Expanded(
-              child: Stack(
-                children: [
-                  // Exercise widget with transition animation
-                  Positioned.fill(
-                    child: FadeTransition(
-                      opacity: _exerciseTransitionController,
-                      child: SlideTransition(
-                        position:
-                            Tween<Offset>(
-                              begin: const Offset(0.05, 0),
-                              end: Offset.zero,
-                            ).animate(
-                              CurvedAnimation(
-                                parent: _exerciseTransitionController,
-                                curve: Curves.easeOutCubic,
-                              ),
+              // ── Exercise content ──
+              Expanded(
+                child: Stack(
+                  children: [
+                    // Exercise widget with transition animation
+                    Positioned.fill(
+                      child: GestureDetector(
+                        behavior: HitTestBehavior.translucent,
+                        onTap: _showCorrectAnswer && !_lastAnswerCorrect
+                            ? () => _hideWrongFeedbackForRetry(haptic: false)
+                            : null,
+                        child: FadeTransition(
+                          opacity: _exerciseTransitionController,
+                          child: SlideTransition(
+                            position:
+                                Tween<Offset>(
+                                  begin: const Offset(0.05, 0),
+                                  end: Offset.zero,
+                                ).animate(
+                                  CurvedAnimation(
+                                    parent: _exerciseTransitionController,
+                                    curve: Curves.easeOutCubic,
+                                  ),
+                                ),
+                            child: Builder(
+                              builder: (context) {
+                                // Use measured feedback bar height when available to avoid overflow.
+                                final mq = MediaQuery.of(context);
+                                final fallback = (mq.size.height * 0.35).clamp(
+                                  200.0,
+                                  420.0,
+                                );
+                                final bottomPadding = _showFeedback
+                                    ? (_feedbackBarHeight > 0
+                                          ? _feedbackBarHeight
+                                          : fallback)
+                                    : 20.0;
+
+                                return LayoutBuilder(
+                                  builder: (ctx, constraints) {
+                                    final availableHeight =
+                                        constraints.maxHeight;
+                                    final contentHeight =
+                                        (availableHeight - bottomPadding).clamp(
+                                          0.0,
+                                          availableHeight,
+                                        );
+                                    return SizedBox(
+                                      height: contentHeight,
+                                      child: Padding(
+                                        padding: EdgeInsets.only(
+                                          left: 20,
+                                          right: 20,
+                                          top: 8,
+                                        ),
+                                        child: _buildExerciseWidget(
+                                          currentExercise,
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                );
+                              },
                             ),
-                        child: Padding(
-                          padding: EdgeInsets.only(
-                            left: 20,
-                            right: 20,
-                            top: 8,
-                            bottom: _showFeedback ? 200 : 20,
                           ),
-                          child: _buildExerciseWidget(currentExercise),
                         ),
                       ),
                     ),
-                  ),
 
-                  // ── Duolingo-style feedback bottom bar ──
-                  if (_showFeedback)
-                    Positioned(
-                      left: 0,
-                      right: 0,
-                      bottom: 0,
-                      child: SlideTransition(
-                        position: _feedbackSlideAnimation,
-                        child: _buildFeedbackBar(),
+                    // ── Duolingo-style feedback bottom bar ──
+                    if (_showFeedback)
+                      Positioned(
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        child: SlideTransition(
+                          position: _feedbackSlideAnimation,
+                          child: Container(
+                            key: _feedbackKey,
+                            child: _buildFeedbackBar(),
+                          ),
+                        ),
                       ),
-                    ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
@@ -1166,44 +1477,7 @@ class _ExerciseScreenState extends State<ExerciseScreen>
                   Icons.close_rounded,
                   color: darkGreen.withValues(alpha: 0.6),
                 ),
-                onPressed: () => showDialog(
-                  context: context,
-                  builder: (context) => AlertDialog(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    title: Row(
-                      children: [
-                        const Text('😢', style: TextStyle(fontSize: 28)),
-                        const SizedBox(width: 10),
-                        Flexible(child: Text(S.get('ex_quit_title'))),
-                      ],
-                    ),
-                    content: Text(S.get('ex_quit_message')),
-                    actions: [
-                      TextButton(
-                        onPressed: () => Navigator.pop(context),
-                        child: Text(
-                          S.get('no'),
-                          style: TextStyle(
-                            color: darkGreen,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                      TextButton(
-                        onPressed: () {
-                          Navigator.pop(context);
-                          Navigator.pop(context);
-                        },
-                        child: Text(
-                          S.get('yes'),
-                          style: TextStyle(color: orange),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                onPressed: _showQuitDialog,
                 padding: EdgeInsets.zero,
                 constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
               ),
@@ -1733,11 +2007,15 @@ class _ExerciseScreenState extends State<ExerciseScreen>
                     child: ElevatedButton.icon(
                       onPressed: _onShowCorrectAnswer,
                       icon: const Icon(Icons.visibility_rounded, size: 20),
-                      label: Text(
-                        S.get('ex_show_answer'),
-                        style: const TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w700,
+                      label: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Text(
+                          S.get('ex_show_answer'),
+                          maxLines: 1,
+                          style: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700,
+                          ),
                         ),
                       ),
                       style: ElevatedButton.styleFrom(

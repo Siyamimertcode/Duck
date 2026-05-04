@@ -56,7 +56,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   bool _showButtons = false;
 
   // Transition state
-  bool _showTransition = false;
+  final bool _showTransition = false;
   String _userName = '';
   bool _bubblesInitialized = false;
 

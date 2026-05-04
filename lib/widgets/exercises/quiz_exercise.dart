@@ -66,59 +66,61 @@ class _QuizExerciseState extends State<QuizExercise>
     final question = widget.exercise['question'] as String;
     final options = List<String>.from(widget.exercise['options']);
 
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        // Question with emoji decoration
-        Container(
-          padding: const EdgeInsets.all(20),
-          decoration: BoxDecoration(
-            color: darkGreen.withValues(alpha: 0.06),
-            borderRadius: BorderRadius.circular(20),
-            border: Border.all(color: darkGreen.withValues(alpha: 0.1)),
-          ),
-          child: Column(
-            children: [
-              const Text('🤔', style: TextStyle(fontSize: 32)),
-              const SizedBox(height: 10),
-              Text(
-                question,
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: _c.textPrimary,
-                  height: 1.3,
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 28),
-
-        // Options with staggered animation
-        ...List.generate(options.length, (i) {
-          final delay = i / options.length;
-          return AnimatedBuilder(
-            animation: _staggerController,
-            builder: (context, child) {
-              final progress =
-                  ((_staggerController.value - delay) / (1 - delay)).clamp(
-                    0.0,
-                    1.0,
-                  );
-              return Transform.translate(
-                offset: Offset(0, 20 * (1 - progress)),
-                child: Opacity(opacity: progress, child: child),
-              );
-            },
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 6),
-              child: _buildOptionButton(i, options[i]),
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          // Question with emoji decoration
+          Container(
+            padding: const EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              color: darkGreen.withValues(alpha: 0.06),
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(color: darkGreen.withValues(alpha: 0.1)),
             ),
-          );
-        }),
-      ],
+            child: Column(
+              children: [
+                const Text('🤔', style: TextStyle(fontSize: 32)),
+                const SizedBox(height: 10),
+                Text(
+                  question,
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: _c.textPrimary,
+                    height: 1.3,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 28),
+
+          // Options with staggered animation
+          ...List.generate(options.length, (i) {
+            final delay = i / options.length;
+            return AnimatedBuilder(
+              animation: _staggerController,
+              builder: (context, child) {
+                final progress =
+                    ((_staggerController.value - delay) / (1 - delay)).clamp(
+                      0.0,
+                      1.0,
+                    );
+                return Transform.translate(
+                  offset: Offset(0, 20 * (1 - progress)),
+                  child: Opacity(opacity: progress, child: child),
+                );
+              },
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 6),
+                child: _buildOptionButton(i, options[i]),
+              ),
+            );
+          }),
+        ],
+      ),
     );
   }
 

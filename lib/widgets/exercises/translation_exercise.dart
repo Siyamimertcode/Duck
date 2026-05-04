@@ -63,17 +63,33 @@ class _TranslationExerciseState extends State<TranslationExercise>
   }
 
   void _checkAnswer() {
-    final userAnswer = _controller.text.trim().toLowerCase();
-    final correctAnswer = (widget.exercise['answer'] as String)
-        .trim()
-        .toLowerCase();
+    final userAnswer = _normalizeAnswer(_controller.text);
+    final correctAnswer = _normalizeAnswer(widget.exercise['answer'] as String);
     widget.onAnswer(userAnswer == correctAnswer);
+  }
+
+  String _normalizeAnswer(String value) {
+    return value
+        .trim()
+        .toLowerCase()
+        .replaceAll(RegExp(r'[.,!?;:]'), '')
+        .replaceAll(RegExp(r'\s+'), ' ');
   }
 
   @override
   Widget build(BuildContext context) {
     final question = widget.exercise['question'] as String;
-    final sentence = widget.exercise['sentence'] as String;
+    final sentence = widget.exercise['sentence'] as String? ?? '';
+    final answer = widget.exercise['answer'] as String? ?? '';
+    final sentenceRevealsAnswer =
+        sentence.isNotEmpty &&
+        _normalizeAnswer(sentence) == _normalizeAnswer(answer);
+    final promptText = sentenceRevealsAnswer || sentence.isEmpty
+        ? question
+        : sentence;
+    final instructionText = sentenceRevealsAnswer
+        ? S.get('ex_translate_to_english')
+        : question;
 
     return SlideTransition(
       position: _slideAnim,
@@ -105,7 +121,7 @@ class _TranslationExerciseState extends State<TranslationExercise>
                           const SizedBox(width: 8),
                           Flexible(
                             child: Text(
-                              question,
+                              instructionText,
                               style: TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w600,
@@ -139,7 +155,7 @@ class _TranslationExerciseState extends State<TranslationExercise>
                         ],
                       ),
                       child: Text(
-                        sentence,
+                        promptText,
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,

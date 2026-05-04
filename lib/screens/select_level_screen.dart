@@ -432,12 +432,15 @@ class _SelectLevelScreenState extends State<SelectLevelScreen>
                         style: const TextStyle(fontSize: 18),
                       ),
                       const SizedBox(width: 8),
-                      Text(
-                        level['title'],
-                        style: TextStyle(
-                          fontSize: 17,
-                          fontWeight: FontWeight.w700,
-                          color: isSelected ? levelColor : darkGreen,
+                      Expanded(
+                        child: Text(
+                          level['title'],
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w700,
+                            color: isSelected ? levelColor : darkGreen,
+                          ),
+                          overflow: TextOverflow.ellipsis,
                         ),
                       ),
                     ],

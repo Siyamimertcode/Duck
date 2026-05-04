@@ -120,7 +120,7 @@ class _SpeakingExerciseState extends State<SpeakingExercise>
       if (mounted) {
         setState(() {
           _isListening = false;
-          _statusText = 'Tekrar deneyin';
+          _statusText = error;
         });
       }
     };
@@ -166,9 +166,13 @@ class _SpeakingExerciseState extends State<SpeakingExercise>
     // Split into words and check
     final spokenWords = spoken.split(RegExp(r'\s+'));
     for (final w in spokenWords) {
-      if (w == expected) return true;
+      if (w == expected) {
+        return true;
+      }
       // Levenshtein-like similarity: allow 1-2 char difference for shorter words
-      if (_isSimilar(w, expected)) return true;
+      if (_isSimilar(w, expected)) {
+        return true;
+      }
     }
 
     return false;
@@ -193,8 +197,12 @@ class _SpeakingExerciseState extends State<SpeakingExercise>
     final n = t.length;
     final d = List.generate(m + 1, (_) => List.filled(n + 1, 0));
 
-    for (int i = 0; i <= m; i++) d[i][0] = i;
-    for (int j = 0; j <= n; j++) d[0][j] = j;
+    for (int i = 0; i <= m; i++) {
+      d[i][0] = i;
+    }
+    for (int j = 0; j <= n; j++) {
+      d[0][j] = j;
+    }
 
     for (int i = 1; i <= m; i++) {
       for (int j = 1; j <= n; j++) {

@@ -1181,7 +1181,7 @@ KVKK kapsamındaki haklarınızı kullanmak için info@atakstudios.com adresine 
           Switch(
             value: value,
             onChanged: onChanged,
-            activeColor: darkGreen,
+            activeThumbColor: darkGreen,
             activeTrackColor: lightGreen.withOpacity(0.4),
             inactiveThumbColor: _c.textSecondary,
             inactiveTrackColor: _c.divider,
