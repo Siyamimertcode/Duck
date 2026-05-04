@@ -1,0 +1,1939 @@
+[
+    {
+        "id": 0,
+        "title": "Gelişmiş Present Perfect",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "I ______ this book for two hours.",
+                "options": [
+                    "have been reading",
+                    "am read",
+                    "read",
+                    "have read"
+                ],
+                "answer": "have been reading"
+            },
+            {
+                "type": "quiz",
+                "question": "She ______ three letters so far.",
+                "options": [
+                    "has written",
+                    "has been writing",
+                    "wrote",
+                    "writes"
+                ],
+                "answer": "has written"
+            },
+            {
+                "type": "fill_blank",
+                "question": "We have ______ known each other for years.",
+                "options": [
+                    "already",
+                    "yet",
+                    "since",
+                    "always"
+                ],
+                "answer": "always"
+            },
+            {
+                "type": "word_order",
+                "question": "Form a sentence",
+                "components": [
+                    "living",
+                    "here",
+                    "have",
+                    "you",
+                    "long",
+                    "How",
+                    "been",
+                    "?"
+                ],
+                "correctOrder": [
+                    "How",
+                    "long",
+                    "have",
+                    "you",
+                    "been",
+                    "living",
+                    "here",
+                    "?"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bütün gün çalışıyorum.",
+                "sentence": "I have been working all day.",
+                "answer": "I have been working all day."
+            },
+            {
+                "type": "matching",
+                "question": "Match the usages",
+                "pairs": [
+                    {
+                        "left": "Result (Sonuç)",
+                        "right": "Present Perfect Simple"
+                    },
+                    {
+                        "left": "Duration (Süreç)",
+                        "right": "Present Perfect Continuous"
+                    },
+                    {
+                        "left": "Just finished",
+                        "right": "Simple"
+                    },
+                    {
+                        "left": "Ongoing",
+                        "right": "Continuous"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "I've been waiting for ages.",
+                "answer": "I've been waiting for ages"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "title": "Present Perfect Continuous",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "Your eyes are red. ______ you ______ crying?",
+                "options": [
+                    "Have / been",
+                    "Did / cry",
+                    "Are / crying",
+                    "Do / cry"
+                ],
+                "answer": "Have / been"
+            },
+            {
+                "type": "quiz",
+                "question": "It ______ raining all week.",
+                "options": [
+                    "has been",
+                    "is",
+                    "was",
+                    "did"
+                ],
+                "answer": "has been"
+            },
+            {
+                "type": "fill_blank",
+                "question": "He has been ______ games since morning.",
+                "options": [
+                    "playing",
+                    "played",
+                    "plays",
+                    "play"
+                ],
+                "answer": "playing"
+            },
+            {
+                "type": "word_order",
+                "question": "Form a sentence",
+                "components": [
+                    "feeling",
+                    "not",
+                    "have",
+                    "been",
+                    "well",
+                    "lately",
+                    "I"
+                ],
+                "correctOrder": [
+                    "I",
+                    "have",
+                    "not",
+                    "been",
+                    "feeling",
+                    "well",
+                    "lately"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Ne yapıyordun?",
+                "sentence": "What have you been doing?",
+                "answer": "What have you been doing?"
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "For 2 hours",
+                        "right": "2 saattir"
+                    },
+                    {
+                        "left": "Since 10 AM",
+                        "right": "Sabah 10'dan beri"
+                    },
+                    {
+                        "left": "All day",
+                        "right": "Tüm gün"
+                    },
+                    {
+                        "left": "Lately",
+                        "right": "Son zamanlarda"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "I have been working out.",
+                "answer": "I have been working out"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Past Perfect",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "When I arrived, the train ______ already ______.",
+                "options": [
+                    "had / left",
+                    "has / left",
+                    "was / left",
+                    "did / leave"
+                ],
+                "answer": "had / left"
+            },
+            {
+                "type": "quiz",
+                "question": "She was tired because she ______ all night.",
+                "options": [
+                    "had worked",
+                    "has worked",
+                    "worked",
+                    "working"
+                ],
+                "answer": "had worked"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I realized I had ______ my wallet.",
+                "options": [
+                    "forgotten",
+                    "forgot",
+                    "forget",
+                    "forgetting"
+                ],
+                "answer": "forgotten"
+            },
+            {
+                "type": "word_order",
+                "question": "Put in the correct order",
+                "components": [
+                    "seen",
+                    "never",
+                    "He",
+                    "had",
+                    "such",
+                    "thing",
+                    "a"
+                ],
+                "correctOrder": [
+                    "He",
+                    "had",
+                    "never",
+                    "seen",
+                    "such",
+                    "a",
+                    "thing"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Eve vardığımda annem yemek yapmıştı.",
+                "sentence": "When I got home, my mother had cooked dinner.",
+                "answer": "When I got home my mother had cooked dinner."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "First action",
+                        "right": "Past Perfect"
+                    },
+                    {
+                        "left": "Second action",
+                        "right": "Past Simple"
+                    },
+                    {
+                        "left": "By the time",
+                        "right": "+ Past Perfect"
+                    },
+                    {
+                        "left": "After",
+                        "right": "+ Past Perfect"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "I had already eaten.",
+                "answer": "I had already eaten"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Past Perfect Continuous",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "He ______ for hours when I found him.",
+                "options": [
+                    "had been waiting",
+                    "waited",
+                    "was waiting",
+                    "has waited"
+                ],
+                "answer": "had been waiting"
+            },
+            {
+                "type": "quiz",
+                "question": "The road was wet because it ______ raining.",
+                "options": [
+                    "had been",
+                    "has been",
+                    "was",
+                    "is"
+                ],
+                "answer": "had been"
+            },
+            {
+                "type": "fill_blank",
+                "question": "They had been ______ tennis before lunch.",
+                "options": [
+                    "playing",
+                    "played",
+                    "play",
+                    "player"
+                ],
+                "answer": "playing"
+            },
+            {
+                "type": "word_order",
+                "question": "Form a sentence",
+                "components": [
+                    "working",
+                    "had",
+                    "She",
+                    "been",
+                    "hard",
+                    "very"
+                ],
+                "correctOrder": [
+                    "She",
+                    "had",
+                    "been",
+                    "working",
+                    "very",
+                    "hard"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Uzun zamandır İngilizce çalışıyordum.",
+                "sentence": "I had been studying English for a long time.",
+                "answer": "I had been studying English for a long time."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "Had been doing",
+                        "right": "Süregelen geçmiş eylem"
+                    },
+                    {
+                        "left": "Was doing",
+                        "right": "O anki geçmiş eylem"
+                    },
+                    {
+                        "left": "Had done",
+                        "right": "Bitmiş geçmiş eylem"
+                    },
+                    {
+                        "left": "Did",
+                        "right": "Geçmiş eylem"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "It had been snowing.",
+                "answer": "It had been snowing"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Future Perfect",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "By next year, I ______ graduated.",
+                "options": [
+                    "will have",
+                    "will be",
+                    "have",
+                    "am"
+                ],
+                "answer": "will have"
+            },
+            {
+                "type": "quiz",
+                "question": "I ______ finished the report by 5 PM.",
+                "options": [
+                    "will have",
+                    "will",
+                    "have",
+                    "had"
+                ],
+                "answer": "will have"
+            },
+            {
+                "type": "fill_blank",
+                "question": "They will have ______ married for 10 years.",
+                "options": [
+                    "been",
+                    "be",
+                    "being",
+                    "are"
+                ],
+                "answer": "been"
+            },
+            {
+                "type": "word_order",
+                "question": "Form a sentence",
+                "components": [
+                    "left",
+                    "have",
+                    "will",
+                    "She",
+                    "tomorrow",
+                    "by"
+                ],
+                "correctOrder": [
+                    "She",
+                    "will",
+                    "have",
+                    "left",
+                    "by",
+                    "tomorrow"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Yarına kadar bitirmiş olacağım.",
+                "sentence": "I will have finished by tomorrow.",
+                "answer": "I will have finished by tomorrow."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "By tomorrow",
+                        "right": "Yarına kadar"
+                    },
+                    {
+                        "left": "By the time",
+                        "right": "O zamana kadar"
+                    },
+                    {
+                        "left": "In two years",
+                        "right": "İki yıl içinde"
+                    },
+                    {
+                        "left": "Next month",
+                        "right": "Gelecek ay"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "I will have done it.",
+                "answer": "I will have done it"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Tüm Koşul Yapıları Tekrar (All Conditionals)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "Zero Conditional: If you heat ice, it ______.",
+                "options": [
+                    "melts",
+                    "melted",
+                    "will melt",
+                    "would melt"
+                ],
+                "answer": "melts"
+            },
+            {
+                "type": "quiz",
+                "question": "First Conditional: If it rains, I ______ go.",
+                "options": [
+                    "won't",
+                    "wouldn't",
+                    "don't",
+                    "didn't"
+                ],
+                "answer": "won't"
+            },
+            {
+                "type": "quiz",
+                "question": "Second Conditional: If I were rich, I ______ travel.",
+                "options": [
+                    "would",
+                    "will",
+                    "can",
+                    "did"
+                ],
+                "answer": "would"
+            },
+            {
+                "type": "word_order",
+                "question": "Put in the correct order",
+                "components": [
+                    "pass",
+                    "study",
+                    "If",
+                    "you",
+                    "will",
+                    "you"
+                ],
+                "correctOrder": [
+                    "If",
+                    "you",
+                    "study",
+                    "you",
+                    "will",
+                    "pass"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Su 100 derecede kaynar.",
+                "sentence": "Water boils at 100 degrees.",
+                "answer": "Water boils at 100 degrees."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "Zero",
+                        "right": "Facts (Gerçekler)"
+                    },
+                    {
+                        "left": "First",
+                        "right": "Possibility (İhtimal)"
+                    },
+                    {
+                        "left": "Second",
+                        "right": "Imaginary (Hayali)"
+                    },
+                    {
+                        "left": "Third",
+                        "right": "Past Regret (Geçmiş Pişmanlık)"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "If I study I will pass.",
+                "answer": "If I study I will pass"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "3. Koşul Cümleleri (Third Conditional)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "If I ______ known, I would have come.",
+                "options": [
+                    "had",
+                    "have",
+                    "was",
+                    "did"
+                ],
+                "answer": "had"
+            },
+            {
+                "type": "quiz",
+                "question": "She would have passed if she ______ studied.",
+                "options": [
+                    "had",
+                    "has",
+                    "was",
+                    "would"
+                ],
+                "answer": "had"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I would ______ called you if I had seen you.",
+                "options": [
+                    "have",
+                    "had",
+                    "has",
+                    "be"
+                ],
+                "answer": "have"
+            },
+            {
+                "type": "word_order",
+                "question": "Change the past structure",
+                "components": [
+                    "gone",
+                    "had",
+                    "If",
+                    "I",
+                    "would",
+                    "seen",
+                    "have",
+                    "it",
+                    "I"
+                ],
+                "correctOrder": [
+                    "If",
+                    "I",
+                    "had",
+                    "gone",
+                    "I",
+                    "would",
+                    "have",
+                    "seen",
+                    "it"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bilseydim yardım ederdim.",
+                "sentence": "If I had known, I would have helped.",
+                "answer": "If I had known I would have helped."
+            },
+            {
+                "type": "matching",
+                "question": "Form the structure",
+                "pairs": [
+                    {
+                        "left": "If + Past Perfect",
+                        "right": "Would + Have + V3"
+                    },
+                    {
+                        "left": "Had gone",
+                        "right": "Gitseydim"
+                    },
+                    {
+                        "left": "Would have gone",
+                        "right": "Giderdim"
+                    },
+                    {
+                        "left": "Regret",
+                        "right": "Pişmanlık"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "I would have done it.",
+                "answer": "I would have done it"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Karışık Koşul Cümleleri (Mixed Conditionals)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "If I had studied harder (past), I ______ have a better job now (present).",
+                "options": [
+                    "would",
+                    "will",
+                    "would have",
+                    "had"
+                ],
+                "answer": "would"
+            },
+            {
+                "type": "quiz",
+                "question": "If I were smarter (present), I ______ passed the test (past).",
+                "options": [
+                    "would have",
+                    "would",
+                    "will have",
+                    "had"
+                ],
+                "answer": "would have"
+            },
+            {
+                "type": "fill_blank",
+                "question": "If she ______ (be) born in the US, she would be American.",
+                "options": [
+                    "had been",
+                    "was",
+                    "is",
+                    "were"
+                ],
+                "answer": "had been"
+            },
+            {
+                "type": "word_order",
+                "question": "Form a sentence",
+                "components": [
+                    "rich",
+                    "were",
+                    "If",
+                    "I",
+                    "bought",
+                    "would",
+                    "have",
+                    "it"
+                ],
+                "correctOrder": [
+                    "If",
+                    "I",
+                    "were",
+                    "rich",
+                    "I",
+                    "would",
+                    "have",
+                    "bought",
+                    "it"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Oraya gitmeseydim şu an burada olmazdım.",
+                "sentence": "If I hadn't gone there, I wouldn't be here now.",
+                "answer": "If I hadn't gone there I wouldn't be here now."
+            },
+            {
+                "type": "matching",
+                "question": "Match the tenses",
+                "pairs": [
+                    {
+                        "left": "Past Cause",
+                        "right": "Present Effect"
+                    },
+                    {
+                        "left": "Present State",
+                        "right": "Past Consequence"
+                    },
+                    {
+                        "left": "Type 3",
+                        "right": "Past -> Past"
+                    },
+                    {
+                        "left": "Type 2",
+                        "right": "Present -> Present"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "If I were you I would have gone.",
+                "answer": "If I were you I would have gone"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Gelişmiş Modal Fiiller",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "You ______ have forgotten your keys.",
+                "options": [
+                    "must",
+                    "can",
+                    "should",
+                    "owe"
+                ],
+                "answer": "must"
+            },
+            {
+                "type": "quiz",
+                "question": "She ______ have been at home; I saw her outside.",
+                "options": [
+                    "can't",
+                    "must",
+                    "should",
+                    "could"
+                ],
+                "answer": "can't"
+            },
+            {
+                "type": "fill_blank",
+                "question": "It ______ have rained last night.",
+                "options": [
+                    "might",
+                    "can",
+                    "will",
+                    "shall"
+                ],
+                "answer": "might"
+            },
+            {
+                "type": "word_order",
+                "question": "Çıkarım yapın",
+                "components": [
+                    "left",
+                    "have",
+                    "must",
+                    "He"
+                ],
+                "correctOrder": [
+                    "He",
+                    "must",
+                    "have",
+                    "left"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Beni aramalıydın (ama aramadın).",
+                "sentence": "You should have called me.",
+                "answer": "You should have called me."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "Must have",
+                        "right": "Kesin (Olumlu)"
+                    },
+                    {
+                        "left": "Can't have",
+                        "right": "Kesin (Olumsuz)"
+                    },
+                    {
+                        "left": "Should have",
+                        "right": "Yapmalıydın (Pişmanlık)"
+                    },
+                    {
+                        "left": "Might have",
+                        "right": "Belki"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "It must have been love.",
+                "answer": "It must have been love"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Tahmin ve Çıkarım Yapma",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "Look at the snow. It ______ be cold outside.",
+                "options": [
+                    "must",
+                    "can't",
+                    "shouldn't",
+                    "won't"
+                ],
+                "answer": "must"
+            },
+            {
+                "type": "quiz",
+                "question": "He drives a Ferrari. He ______ be poor.",
+                "options": [
+                    "can't",
+                    "must",
+                    "might",
+                    "should"
+                ],
+                "answer": "can't"
+            },
+            {
+                "type": "fill_blank",
+                "question": "She isn't answering. She ______ be sleeping.",
+                "options": [
+                    "might",
+                    "can't",
+                    "won't",
+                    "shall"
+                ],
+                "answer": "might"
+            },
+            {
+                "type": "word_order",
+                "question": "Make a guess",
+                "components": [
+                    "be",
+                    "He",
+                    "joke",
+                    "must",
+                    "joking"
+                ],
+                "correctOrder": [
+                    "He",
+                    "must",
+                    "be",
+                    "joking"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "O, kardeşi olabilir.",
+                "sentence": "He could be her brother.",
+                "answer": "He could be her brother."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "100% Sure",
+                        "right": "Must / Can't"
+                    },
+                    {
+                        "left": "50% Possible",
+                        "right": "Might / Could"
+                    },
+                    {
+                        "left": "Expectation",
+                        "right": "Should"
+                    },
+                    {
+                        "left": "Impossible",
+                        "right": "Can't"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "He can't be serious.",
+                "answer": "He can't be serious"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "title": "İleri Seviye Edilgen Yapı (Advanced Passive)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "He is said ______ rich.",
+                "options": [
+                    "to be",
+                    "being",
+                    "be",
+                    "been"
+                ],
+                "answer": "to be"
+            },
+            {
+                "type": "quiz",
+                "question": "The house is believed to ______ built in 1900.",
+                "options": [
+                    "have been",
+                    "be",
+                    "being",
+                    "was"
+                ],
+                "answer": "have been"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I don't like ______ told what to do.",
+                "options": [
+                    "being",
+                    "be",
+                    "been",
+                    "to be"
+                ],
+                "answer": "being"
+            },
+            {
+                "type": "word_order",
+                "question": "Arrange the words",
+                "components": [
+                    "expected",
+                    "arrive",
+                    "is",
+                    "He",
+                    "to",
+                    "soon"
+                ],
+                "correctOrder": [
+                    "He",
+                    "is",
+                    "expected",
+                    "to",
+                    "arrive",
+                    "soon"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Onun çok çalıştığı söyleniyor.",
+                "sentence": "He is said to work hard.",
+                "answer": "He is said to work hard."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "It is said that",
+                        "right": "Denilir ki..."
+                    },
+                    {
+                        "left": "He is said to",
+                        "right": "Onun ... olduğu söylenir"
+                    },
+                    {
+                        "left": "Being done",
+                        "right": "Yapılıyor olmak"
+                    },
+                    {
+                        "left": "Having been done",
+                        "right": "Yapılmış olmak"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "It is believed to be true.",
+                "answer": "It is believed to be true"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Have / Get Yapısı (Causatives)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "I ______ my hair cut yesterday.",
+                "options": [
+                    "had",
+                    "did",
+                    "made",
+                    "got"
+                ],
+                "answer": "had"
+            },
+            {
+                "type": "quiz",
+                "question": "She ______ her car repaired.",
+                "options": [
+                    "got",
+                    "make",
+                    "did",
+                    "was"
+                ],
+                "answer": "got"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I will ______ him to help me.",
+                "options": [
+                    "get",
+                    "have",
+                    "make",
+                    "let"
+                ],
+                "answer": "get"
+            },
+            {
+                "type": "word_order",
+                "question": "Form a sentence",
+                "components": [
+                    "house",
+                    "painted",
+                    "We",
+                    "our",
+                    "had"
+                ],
+                "correctOrder": [
+                    "We",
+                    "had",
+                    "our",
+                    "house",
+                    "painted"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Arabamı yıkattım.",
+                "sentence": "I had my car washed.",
+                "answer": "I had my car washed."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "Have someone do",
+                        "right": "Birine yaptırmak (Rica/Görev)"
+                    },
+                    {
+                        "left": "Get someone to do",
+                        "right": "Birini ikna etmek"
+                    },
+                    {
+                        "left": "Have something done",
+                        "right": "Bir şeyi yaptırmak"
+                    },
+                    {
+                        "left": "Make someone do",
+                        "right": "Zorlamak"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "I got it fixed.",
+                "answer": "I got it fixed"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Gelişmiş Dolaylı Anlatım",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "He suggested ______ to the cinema.",
+                "options": [
+                    "going",
+                    "to go",
+                    "go",
+                    "went"
+                ],
+                "answer": "going"
+            },
+            {
+                "type": "quiz",
+                "question": "She accused me ______ stealing the money.",
+                "options": [
+                    "of",
+                    "for",
+                    "with",
+                    "about"
+                ],
+                "answer": "of"
+            },
+            {
+                "type": "fill_blank",
+                "question": "He apologized ______ being late.",
+                "options": [
+                    "for",
+                    "of",
+                    "to",
+                    "about"
+                ],
+                "answer": "for"
+            },
+            {
+                "type": "word_order",
+                "question": "Report the speech",
+                "components": [
+                    "refused",
+                    "He",
+                    "pay",
+                    "to"
+                ],
+                "correctOrder": [
+                    "He",
+                    "refused",
+                    "to",
+                    "pay"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Gitmemi tavsiye etti.",
+                "sentence": "He advised me to go.",
+                "answer": "He advised me to go."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "Insist",
+                        "right": "on"
+                    },
+                    {
+                        "left": "Apologize",
+                        "right": "for"
+                    },
+                    {
+                        "left": "Accuse",
+                        "right": "of"
+                    },
+                    {
+                        "left": "Congratulate",
+                        "right": "on"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "He denied stealing it.",
+                "answer": "He denied stealing it"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Devrik Cümleler (Inversion)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "Never ______ saw such a beautiful view.",
+                "options": [
+                    "have I",
+                    "I have",
+                    "did I",
+                    "I did"
+                ],
+                "answer": "have I"
+            },
+            {
+                "type": "quiz",
+                "question": "Rarely ______ he go out.",
+                "options": [
+                    "does",
+                    "do",
+                    "is",
+                    "has"
+                ],
+                "answer": "does"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Not only ______ she smart, but also kind.",
+                "options": [
+                    "is",
+                    "does",
+                    "has",
+                    "was"
+                ],
+                "answer": "is"
+            },
+            {
+                "type": "word_order",
+                "question": "Devrik yapın",
+                "components": [
+                    "sooner",
+                    "No",
+                    "arrived",
+                    "had",
+                    "I",
+                    "than",
+                    "left",
+                    "he"
+                ],
+                "correctOrder": [
+                    "No",
+                    "sooner",
+                    "had",
+                    "I",
+                    "arrived",
+                    "than",
+                    "he",
+                    "left"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Asla bu kadar korkmamıştım.",
+                "sentence": "Never have I been so scared.",
+                "answer": "Never have I been so scared."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "Never",
+                        "right": "Asla"
+                    },
+                    {
+                        "left": "Rarely",
+                        "right": "Nadiren"
+                    },
+                    {
+                        "left": "Seldom",
+                        "right": "Seyrek"
+                    },
+                    {
+                        "left": "No sooner",
+                        "right": "Olur olmaz"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "Little did I know.",
+                "answer": "Little did I know"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "title": "Vurgu Yapıları (Cleft Sentences)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "It was clean ______ I wanted.",
+                "options": [
+                    "that",
+                    "what",
+                    "who",
+                    "which"
+                ],
+                "answer": "that"
+            },
+            {
+                "type": "quiz",
+                "question": "______ (The thing) I need is money.",
+                "options": [
+                    "What",
+                    "That",
+                    "Which",
+                    "It"
+                ],
+                "answer": "What"
+            },
+            {
+                "type": "fill_blank",
+                "question": "The person ______ called me was Ali.",
+                "options": [
+                    "who",
+                    "which",
+                    "what",
+                    "whose"
+                ],
+                "answer": "who"
+            },
+            {
+                "type": "word_order",
+                "question": "Emphasize the part",
+                "components": [
+                    "John",
+                    "It",
+                    "called",
+                    "was",
+                    "who"
+                ],
+                "correctOrder": [
+                    "It",
+                    "was",
+                    "John",
+                    "who",
+                    "called"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "İstediğim tek şey biraz huzur.",
+                "sentence": "All I want is some peace.",
+                "answer": "All I want is some peace."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "It is...",
+                        "right": "who/that"
+                    },
+                    {
+                        "left": "What I need...",
+                        "right": "is"
+                    },
+                    {
+                        "left": "All I want...",
+                        "right": "is"
+                    },
+                    {
+                        "left": "The reason...",
+                        "right": "is why"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "It was you who helped me.",
+                "answer": "It was you who helped me"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "title": "Gelişmiş Bağlaçlar",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "______ it rained, we played football.",
+                "options": [
+                    "Although",
+                    "Despite",
+                    "However",
+                    "In spite"
+                ],
+                "answer": "Although"
+            },
+            {
+                "type": "quiz",
+                "question": "______ the rain, we went out.",
+                "options": [
+                    "Despite",
+                    "Although",
+                    "Even though",
+                    "However"
+                ],
+                "answer": "Despite"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I like him ______ he is annoying.",
+                "options": [
+                    "even though",
+                    "despite",
+                    "in spite of",
+                    "due to"
+                ],
+                "answer": "even though"
+            },
+            {
+                "type": "word_order",
+                "question": "Form a sentence",
+                "components": [
+                    "rich",
+                    "In spite of",
+                    "being",
+                    "he",
+                    "is",
+                    "unhappy"
+                ],
+                "correctOrder": [
+                    "In spite of",
+                    "being",
+                    "rich",
+                    "he",
+                    "is",
+                    "unhappy"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Her şeye rağmen mutluyum.",
+                "sentence": "I am happy despite everything.",
+                "answer": "I am happy despite everything."
+            },
+            {
+                "type": "matching",
+                "question": "Match the usages",
+                "pairs": [
+                    {
+                        "left": "Although",
+                        "right": "+ Sentence"
+                    },
+                    {
+                        "left": "Despite",
+                        "right": "+ Noun/V-ing"
+                    },
+                    {
+                        "left": "In spite of",
+                        "right": "+ Noun/V-ing"
+                    },
+                    {
+                        "left": "Even though",
+                        "right": "+ Sentence"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "Despite the fact that...",
+                "answer": "Despite the fact that"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "title": "Resmi ve Günlük Dil",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "Formal: 'I would like to inquire...'. Informal: 'I want to ______...'",
+                "options": [
+                    "ask",
+                    "request",
+                    "demand",
+                    "inquire"
+                ],
+                "answer": "ask"
+            },
+            {
+                "type": "quiz",
+                "question": "Formal: 'Commence'. Informal: '______'",
+                "options": [
+                    "Start",
+                    "End",
+                    "Finish",
+                    "Stop"
+                ],
+                "answer": "Start"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Thanks a ______ (Informal).",
+                "options": [
+                    "bunch",
+                    "lot",
+                    "many",
+                    "much"
+                ],
+                "answer": "lot"
+            },
+            {
+                "type": "word_order",
+                "question": "Make it formal",
+                "components": [
+                    "apologize",
+                    "We",
+                    "inconvenience",
+                    "for",
+                    "the",
+                    "any"
+                ],
+                "correctOrder": [
+                    "We",
+                    "apologize",
+                    "for",
+                    "any",
+                    "inconvenience"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bilgilendirmek isterim ki...",
+                "sentence": "I would like to inform you that...",
+                "answer": "I would like to inform you that..."
+            },
+            {
+                "type": "matching",
+                "question": "Match the pairs",
+                "pairs": [
+                    {
+                        "left": "Receive",
+                        "right": "Get"
+                    },
+                    {
+                        "left": "Inform",
+                        "right": "Tell"
+                    },
+                    {
+                        "left": "Assist",
+                        "right": "Help"
+                    },
+                    {
+                        "left": "Contact",
+                        "right": "Call/Get in touch"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "Yours sincerely.",
+                "answer": "Yours sincerely"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "title": "Deyimler ve Phrasal Verbs (1)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "To 'give up' means to ______.",
+                "options": [
+                    "quit",
+                    "start",
+                    "continue",
+                    "pause"
+                ],
+                "answer": "quit"
+            },
+            {
+                "type": "quiz",
+                "question": "To 'run out of' means to ______.",
+                "options": [
+                    "finish",
+                    "start",
+                    "run away",
+                    "escape"
+                ],
+                "answer": "finish"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I can't put ______ with this noise.",
+                "options": [
+                    "up",
+                    "on",
+                    "in",
+                    "off"
+                ],
+                "answer": "up"
+            },
+            {
+                "type": "word_order",
+                "question": "Form a sentence",
+                "components": [
+                    "smoking",
+                    "He",
+                    "gave",
+                    "up"
+                ],
+                "correctOrder": [
+                    "He",
+                    "gave",
+                    "up",
+                    "smoking"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Beni hayal kırıklığına uğrattın.",
+                "sentence": "You let me down.",
+                "answer": "You let me down."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "Break down",
+                        "right": "Bozulmak"
+                    },
+                    {
+                        "left": "Call off",
+                        "right": "İptal etmek"
+                    },
+                    {
+                        "left": "Carry on",
+                        "right": "Devam etmek"
+                    },
+                    {
+                        "left": "Find out",
+                        "right": "Öğrenmek/Keşfetmek"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "Don't give up!",
+                "answer": "Don't give up"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "title": "Deyimler ve Phrasal Verbs (2)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "To 'hit the sack' means to ______.",
+                "options": [
+                    "go to sleep",
+                    "hit a bag",
+                    "work hard",
+                    "eat"
+                ],
+                "answer": "go to sleep"
+            },
+            {
+                "type": "quiz",
+                "question": "It's 'raining cats and dogs' means it's raining ______.",
+                "options": [
+                    "heavily",
+                    "lightly",
+                    "animals",
+                    "cats"
+                ],
+                "answer": "heavily"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Break a ______! (Good luck)",
+                "options": [
+                    "leg",
+                    "arm",
+                    "head",
+                    "neck"
+                ],
+                "answer": "leg"
+            },
+            {
+                "type": "word_order",
+                "question": "Use the idiom",
+                "components": [
+                    "blue",
+                    "the",
+                    "Out",
+                    "of"
+                ],
+                "correctOrder": [
+                    "Out of the blue"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Çok kolay (bebek oyuncağı).",
+                "sentence": "It is a piece of cake.",
+                "answer": "It is a piece of cake."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "Piece of cake",
+                        "right": "Çok kolay"
+                    },
+                    {
+                        "left": "Cost an arm and a leg",
+                        "right": "Çok pahalı"
+                    },
+                    {
+                        "left": "See eye to eye",
+                        "right": "Aynı fikirde olmak"
+                    },
+                    {
+                        "left": "Once in a blue moon",
+                        "right": "Kırk yılda bir"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "Break a leg!",
+                "answer": "Break a leg"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "title": "Haberler ve Medya",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "A person who writes news is a ______.",
+                "options": [
+                    "journalist",
+                    "actor",
+                    "doctor",
+                    "pilot"
+                ],
+                "answer": "journalist"
+            },
+            {
+                "type": "quiz",
+                "question": "An article in a newspaper is a ______.",
+                "options": [
+                    "report",
+                    "story",
+                    "column",
+                    "headline"
+                ],
+                "answer": "report"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Read the ______ to know what happened.",
+                "options": [
+                    "headlines",
+                    "top",
+                    "head",
+                    "title"
+                ],
+                "answer": "headlines"
+            },
+            {
+                "type": "word_order",
+                "question": "Form a sentence",
+                "components": [
+                    "news",
+                    "good",
+                    "No",
+                    "news",
+                    "is"
+                ],
+                "correctOrder": [
+                    "No news is good news"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Son dakika haberleri.",
+                "sentence": "Breaking news.",
+                "answer": "Breaking news."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "Broadcast",
+                        "right": "Yayınlamak"
+                    },
+                    {
+                        "left": "Coverage",
+                        "right": "Kapsam/Haber"
+                    },
+                    {
+                        "left": "Interview",
+                        "right": "Röportaj"
+                    },
+                    {
+                        "left": "Paparazzi",
+                        "right": "Magazin muhabiri"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "Live broadcast.",
+                "answer": "Live broadcast"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "title": "Akıcı Konuşma Pratiği",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "Which word is a filler?",
+                "options": [
+                    "Um",
+                    "Go",
+                    "See",
+                    "Do"
+                ],
+                "answer": "Um"
+            },
+            {
+                "type": "quiz",
+                "question": "To speak fluently means to speak ______.",
+                "options": [
+                    "smoothly",
+                    "fast",
+                    "loud",
+                    "slow"
+                ],
+                "answer": "smoothly"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Let me ______ about it.",
+                "options": [
+                    "think",
+                    "thinks",
+                    "thinking",
+                    "thought"
+                ],
+                "answer": "think"
+            },
+            {
+                "type": "word_order",
+                "question": "Think and answer",
+                "components": [
+                    "you",
+                    "know",
+                    "mean",
+                    "I",
+                    "what"
+                ],
+                "correctOrder": [
+                    "You know what I mean"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Yani, demek istediğim...",
+                "sentence": "I mean, what I want to say is...",
+                "answer": "I mean what I want to say is"
+            },
+            {
+                "type": "matching",
+                "question": "Bağlayıcıları kullanın",
+                "pairs": [
+                    {
+                        "left": "Actually",
+                        "right": "Aslında"
+                    },
+                    {
+                        "left": "Basically",
+                        "right": "Temel olarak"
+                    },
+                    {
+                        "left": "To be honest",
+                        "right": "Dürüst olmak gerekirse"
+                    },
+                    {
+                        "left": "By the way",
+                        "right": "Bu arada"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "To be honest, I don't know.",
+                "answer": "To be honest I don't know"
+            }
+        ]
+    }
+]

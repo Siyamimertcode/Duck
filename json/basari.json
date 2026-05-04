@@ -1,0 +1,84 @@
+{
+  "basarilar": [
+    {
+      "id": 1,
+      "baslik": "İlk Adım",
+      "aciklama": "Uygulamaya ilk kez giriş yap",
+      "kosul": "ilk_giris",
+      "hedef": 1,
+      "xp": 20
+    },
+    {
+      "id": 2,
+      "baslik": "Mini Oyun Sever",
+      "aciklama": "Toplam 10 kere mini oyun oyna",
+      "kosul": "mini_oyun",
+      "hedef": 10,
+      "xp": 50
+    },
+    {
+      "id": 3,
+      "baslik": "Mini Oyun Ustası",
+      "aciklama": "Toplam 50 mini oyun tamamla",
+      "kosul": "mini_oyun",
+      "hedef": 50,
+      "xp": 200
+    },
+    {
+      "id": 4,
+      "baslik": "Derslere Başladım",
+      "aciklama": "Toplam 5 ders tamamla",
+      "kosul": "ders",
+      "hedef": 5,
+      "xp": 40
+    },
+    {
+      "id": 5,
+      "baslik": "Disiplinli Öğrenci",
+      "aciklama": "Toplam 25 ders tamamla",
+      "kosul": "ders",
+      "hedef": 25,
+      "xp": 120
+    },
+    {
+      "id": 6,
+      "baslik": "Hatasız Oyuncu",
+      "aciklama": "Toplam 5 mini oyunu hatasız bitir",
+      "kosul": "hatasiz_mini_oyun",
+      "hedef": 5,
+      "xp": 100
+    },
+    {
+      "id": 7,
+      "baslik": "Zaman Ayıran",
+      "aciklama": "Uygulamada toplam 5 saat geçir",
+      "kosul": "sure",
+      "hedef": 300,
+      "xp": 120
+    },
+    {
+      "id": 8,
+      "baslik": "Kararlı Kullanıcı",
+      "aciklama": "7 gün üst üste uygulamaya giriş yap",
+      "kosul": "gunluk_seri",
+      "hedef": 7,
+      "xp": 150
+    },
+    {
+      "id": 9,
+      "baslik": "XP Avcısı",
+      "aciklama": "Toplam 1000 XP kazan",
+      "kosul": "xp",
+      "hedef": 1000,
+      "xp": 200
+    },
+    {
+      "id": 10,
+      "baslik": "İstikrarlı Gelişim",
+      "aciklama": "Toplam 30 görev tamamla",
+      "kosul": "gorev",
+      "hedef": 30,
+      "xp": 180
+    }
+  ]
+}

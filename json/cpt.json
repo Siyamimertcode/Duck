@@ -1,0 +1,2267 @@
+{
+  "meta": {
+    "title": "Adaptive English Placement Test - Full Pool",
+    "total_pool_size": 150,
+    "questions_per_session": 50,
+    "levels": [
+      "A1",
+      "A2",
+      "B1",
+      "B2",
+      "C1"
+    ],
+    "version": "1.0.0"
+  },
+  "questions": [
+    {
+      "id": "1a",
+      "group_id": 1,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "Where ______ you from?",
+      "options": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "correct_answer": "are"
+    },
+    {
+      "id": "1b",
+      "group_id": 1,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "Where ______ she from?",
+      "options": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ],
+      "correct_answer": "is"
+    },
+    {
+      "id": "1c",
+      "group_id": 1,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "Where ______ they from?",
+      "options": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "correct_answer": "are"
+    },
+    {
+      "id": "2a",
+      "group_id": 2,
+      "level": "A1",
+      "points": 1,
+      "type": "fill_in_blank",
+      "question": "I have two ______.",
+      "options": [
+        "child",
+        "children",
+        "childs",
+        "childrens"
+      ],
+      "correct_answer": "children"
+    },
+    {
+      "id": "2b",
+      "group_id": 2,
+      "level": "A1",
+      "points": 1,
+      "type": "fill_in_blank",
+      "question": "Look at those ______.",
+      "options": [
+        "person",
+        "persons",
+        "people",
+        "peoples"
+      ],
+      "correct_answer": "people"
+    },
+    {
+      "id": "2c",
+      "group_id": 2,
+      "level": "A1",
+      "points": 1,
+      "type": "fill_in_blank",
+      "question": "My ______ are cold.",
+      "options": [
+        "foot",
+        "foots",
+        "feet",
+        "feets"
+      ],
+      "correct_answer": "feet"
+    },
+    {
+      "id": "3a",
+      "group_id": 3,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "She ______ like coffee.",
+      "options": [
+        "don't",
+        "doesn't",
+        "isn't",
+        "not"
+      ],
+      "correct_answer": "doesn't"
+    },
+    {
+      "id": "3b",
+      "group_id": 3,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "He ______ play tennis.",
+      "options": [
+        "don't",
+        "doesn't",
+        "aren't",
+        "no"
+      ],
+      "correct_answer": "doesn't"
+    },
+    {
+      "id": "3c",
+      "group_id": 3,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "It ______ work properly.",
+      "options": [
+        "don't",
+        "doesn't",
+        "isn't",
+        "not"
+      ],
+      "correct_answer": "doesn't"
+    },
+    {
+      "id": "4a",
+      "group_id": 4,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "The apple is ______ the table.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "to"
+      ],
+      "correct_answer": "on"
+    },
+    {
+      "id": "4b",
+      "group_id": 4,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "The milk is ______ the fridge.",
+      "options": [
+        "on",
+        "at",
+        "in",
+        "to"
+      ],
+      "correct_answer": "in"
+    },
+    {
+      "id": "4c",
+      "group_id": 4,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "He is waiting ______ the bus stop.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "to"
+      ],
+      "correct_answer": "at"
+    },
+    {
+      "id": "5a",
+      "group_id": 5,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "______ often do you exercise?",
+      "options": [
+        "How",
+        "What",
+        "When",
+        "Why"
+      ],
+      "correct_answer": "How"
+    },
+    {
+      "id": "5b",
+      "group_id": 5,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "______ old are you?",
+      "options": [
+        "How",
+        "What",
+        "When",
+        "Which"
+      ],
+      "correct_answer": "How"
+    },
+    {
+      "id": "5c",
+      "group_id": 5,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "______ much is this?",
+      "options": [
+        "How",
+        "What",
+        "When",
+        "Who"
+      ],
+      "correct_answer": "How"
+    },
+    {
+      "id": "6a",
+      "group_id": 6,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "Do you have ______ brothers?",
+      "options": [
+        "some",
+        "any",
+        "a",
+        "the"
+      ],
+      "correct_answer": "any"
+    },
+    {
+      "id": "6b",
+      "group_id": 6,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "I don't have ______ money.",
+      "options": [
+        "some",
+        "any",
+        "many",
+        "a"
+      ],
+      "correct_answer": "any"
+    },
+    {
+      "id": "6c",
+      "group_id": 6,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "Are there ______ eggs in the fridge?",
+      "options": [
+        "some",
+        "any",
+        "a",
+        "much"
+      ],
+      "correct_answer": "any"
+    },
+    {
+      "id": "7a",
+      "group_id": 7,
+      "level": "A1",
+      "points": 1,
+      "type": "fill_in_blank",
+      "question": "An elephant is ______ than a mouse.",
+      "options": [
+        "big",
+        "bigger",
+        "more big",
+        "biggest"
+      ],
+      "correct_answer": "bigger"
+    },
+    {
+      "id": "7b",
+      "group_id": 7,
+      "level": "A1",
+      "points": 1,
+      "type": "fill_in_blank",
+      "question": "Summer is ______ than winter.",
+      "options": [
+        "hot",
+        "hotter",
+        "more hot",
+        "hottest"
+      ],
+      "correct_answer": "hotter"
+    },
+    {
+      "id": "7c",
+      "group_id": 7,
+      "level": "A1",
+      "points": 1,
+      "type": "fill_in_blank",
+      "question": "This car is ______ than that one.",
+      "options": [
+        "fast",
+        "faster",
+        "more fast",
+        "fastest"
+      ],
+      "correct_answer": "faster"
+    },
+    {
+      "id": "8a",
+      "group_id": 8,
+      "level": "A1",
+      "points": 1,
+      "type": "fill_in_blank",
+      "question": "Where ______ you go yesterday?",
+      "options": [
+        "do",
+        "did",
+        "are",
+        "were"
+      ],
+      "correct_answer": "did"
+    },
+    {
+      "id": "8b",
+      "group_id": 8,
+      "level": "A1",
+      "points": 1,
+      "type": "fill_in_blank",
+      "question": "What time ______ she arrive last night?",
+      "options": [
+        "do",
+        "does",
+        "did",
+        "was"
+      ],
+      "correct_answer": "did"
+    },
+    {
+      "id": "8c",
+      "group_id": 8,
+      "level": "A1",
+      "points": 1,
+      "type": "fill_in_blank",
+      "question": "Why ______ they call you yesterday?",
+      "options": [
+        "do",
+        "did",
+        "are",
+        "were"
+      ],
+      "correct_answer": "did"
+    },
+    {
+      "id": "9a",
+      "group_id": 9,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "Listen! The baby ______ crying.",
+      "options": [
+        "is",
+        "are",
+        "do",
+        "does"
+      ],
+      "correct_answer": "is"
+    },
+    {
+      "id": "9b",
+      "group_id": 9,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "Look! They ______ dancing.",
+      "options": [
+        "is",
+        "are",
+        "do",
+        "be"
+      ],
+      "correct_answer": "are"
+    },
+    {
+      "id": "9c",
+      "group_id": 9,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "Be quiet. I ______ working.",
+      "options": [
+        "is",
+        "am",
+        "are",
+        "do"
+      ],
+      "correct_answer": "am"
+    },
+    {
+      "id": "10a",
+      "group_id": 10,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "This book is not yours, it's ______.",
+      "options": [
+        "my",
+        "mine",
+        "me",
+        "I"
+      ],
+      "correct_answer": "mine"
+    },
+    {
+      "id": "10b",
+      "group_id": 10,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "That car is not ours, it's ______.",
+      "options": [
+        "they",
+        "them",
+        "theirs",
+        "their"
+      ],
+      "correct_answer": "theirs"
+    },
+    {
+      "id": "10c",
+      "group_id": 10,
+      "level": "A1",
+      "points": 1,
+      "type": "multiple_choice",
+      "question": "Is this pen ______?",
+      "options": [
+        "you",
+        "your",
+        "yours",
+        "you're"
+      ],
+      "correct_answer": "yours"
+    },
+    {
+      "id": "11a",
+      "group_id": 11,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "I ______ Paris two years ago.",
+      "options": [
+        "visit",
+        "visited",
+        "have visited",
+        "visiting"
+      ],
+      "correct_answer": "visited"
+    },
+    {
+      "id": "11b",
+      "group_id": 11,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "She ______ the movie last night.",
+      "options": [
+        "watch",
+        "watched",
+        "has watched",
+        "watching"
+      ],
+      "correct_answer": "watched"
+    },
+    {
+      "id": "11c",
+      "group_id": 11,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "We ______ pizza yesterday.",
+      "options": [
+        "eat",
+        "ate",
+        "eaten",
+        "eating"
+      ],
+      "correct_answer": "ate"
+    },
+    {
+      "id": "12a",
+      "group_id": 12,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "I was sleeping when the phone ______.",
+      "options": [
+        "ring",
+        "rang",
+        "rung",
+        "ringing"
+      ],
+      "correct_answer": "rang"
+    },
+    {
+      "id": "12b",
+      "group_id": 12,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "We were walking when it started to ______.",
+      "options": [
+        "rain",
+        "rained",
+        "raining",
+        "rains"
+      ],
+      "correct_answer": "rain"
+    },
+    {
+      "id": "12c",
+      "group_id": 12,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "She was cooking when I ______ home.",
+      "options": [
+        "come",
+        "came",
+        "coming",
+        "comes"
+      ],
+      "correct_answer": "came"
+    },
+    {
+      "id": "13a",
+      "group_id": 13,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "You ______ stop at the red light.",
+      "options": [
+        "can",
+        "must",
+        "might",
+        "may"
+      ],
+      "correct_answer": "must"
+    },
+    {
+      "id": "13b",
+      "group_id": 13,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "Students ______ turn off their phones in class.",
+      "options": [
+        "should",
+        "must",
+        "can",
+        "might"
+      ],
+      "correct_answer": "must"
+    },
+    {
+      "id": "13c",
+      "group_id": 13,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "You ______ smoke in the hospital.",
+      "options": [
+        "mustn't",
+        "don't have to",
+        "needn't",
+        "couldn't"
+      ],
+      "correct_answer": "mustn't"
+    },
+    {
+      "id": "14a",
+      "group_id": 14,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "Have you ever ______ to Japan?",
+      "options": [
+        "be",
+        "been",
+        "was",
+        "were"
+      ],
+      "correct_answer": "been"
+    },
+    {
+      "id": "14b",
+      "group_id": 14,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "Has she ever ______ an octopus?",
+      "options": [
+        "eat",
+        "ate",
+        "eaten",
+        "eating"
+      ],
+      "correct_answer": "eaten"
+    },
+    {
+      "id": "14c",
+      "group_id": 14,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "We have never ______ him before.",
+      "options": [
+        "see",
+        "saw",
+        "seen",
+        "seeing"
+      ],
+      "correct_answer": "seen"
+    },
+    {
+      "id": "15a",
+      "group_id": 15,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "This is the boy ______ broke the window.",
+      "options": [
+        "which",
+        "who",
+        "where",
+        "what"
+      ],
+      "correct_answer": "who"
+    },
+    {
+      "id": "15b",
+      "group_id": 15,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "This is the book ______ I read yesterday.",
+      "options": [
+        "who",
+        "which",
+        "where",
+        "what"
+      ],
+      "correct_answer": "which"
+    },
+    {
+      "id": "15c",
+      "group_id": 15,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "That is the house ______ I was born.",
+      "options": [
+        "who",
+        "which",
+        "where",
+        "that"
+      ],
+      "correct_answer": "where"
+    },
+    {
+      "id": "16a",
+      "group_id": 16,
+      "level": "A2",
+      "points": 2,
+      "type": "fill_in_blank",
+      "question": "If you study hard, you ______ pass the exam.",
+      "options": [
+        "will",
+        "would",
+        "did",
+        "are"
+      ],
+      "correct_answer": "will"
+    },
+    {
+      "id": "16b",
+      "group_id": 16,
+      "level": "A2",
+      "points": 2,
+      "type": "fill_in_blank",
+      "question": "If it snows, we ______ build a snowman.",
+      "options": [
+        "will",
+        "would",
+        "did",
+        "do"
+      ],
+      "correct_answer": "will"
+    },
+    {
+      "id": "16c",
+      "group_id": 16,
+      "level": "A2",
+      "points": 2,
+      "type": "fill_in_blank",
+      "question": "If she calls, I ______ tell her the news.",
+      "options": [
+        "will",
+        "would",
+        "am",
+        "have"
+      ],
+      "correct_answer": "will"
+    },
+    {
+      "id": "17a",
+      "group_id": 17,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "He is good ______ playing football.",
+      "options": [
+        "at",
+        "in",
+        "on",
+        "with"
+      ],
+      "correct_answer": "at"
+    },
+    {
+      "id": "17b",
+      "group_id": 17,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "She is interested ______ history.",
+      "options": [
+        "at",
+        "on",
+        "in",
+        "of"
+      ],
+      "correct_answer": "in"
+    },
+    {
+      "id": "17c",
+      "group_id": 17,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "Are you afraid ______ spiders?",
+      "options": [
+        "at",
+        "of",
+        "in",
+        "on"
+      ],
+      "correct_answer": "of"
+    },
+    {
+      "id": "18a",
+      "group_id": 18,
+      "level": "A2",
+      "points": 2,
+      "type": "fill_in_blank",
+      "question": "Look at those clouds! It ______ rain.",
+      "options": [
+        "is going to",
+        "will",
+        "goes to",
+        "shall"
+      ],
+      "correct_answer": "is going to"
+    },
+    {
+      "id": "18b",
+      "group_id": 18,
+      "level": "A2",
+      "points": 2,
+      "type": "fill_in_blank",
+      "question": "I bought the tickets. We ______ watch a movie tonight.",
+      "options": [
+        "are going to",
+        "will",
+        "go to",
+        "might"
+      ],
+      "correct_answer": "are going to"
+    },
+    {
+      "id": "18c",
+      "group_id": 18,
+      "level": "A2",
+      "points": 2,
+      "type": "fill_in_blank",
+      "question": "She is pregnant. She ______ have a baby.",
+      "options": [
+        "is going to",
+        "will",
+        "goes to",
+        "can"
+      ],
+      "correct_answer": "is going to"
+    },
+    {
+      "id": "19a",
+      "group_id": 19,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "Please speak ______.",
+      "options": [
+        "quiet",
+        "quietly",
+        "quietness",
+        "quieter"
+      ],
+      "correct_answer": "quietly"
+    },
+    {
+      "id": "19b",
+      "group_id": 19,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "He runs very ______.",
+      "options": [
+        "fastly",
+        "fast",
+        "fastness",
+        "faster"
+      ],
+      "correct_answer": "fast"
+    },
+    {
+      "id": "19c",
+      "group_id": 19,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "They played ______.",
+      "options": [
+        "good",
+        "well",
+        "better",
+        "best"
+      ],
+      "correct_answer": "well"
+    },
+    {
+      "id": "20a",
+      "group_id": 20,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "The soup was ______ hot that I couldn't eat it.",
+      "options": [
+        "so",
+        "such",
+        "too",
+        "very"
+      ],
+      "correct_answer": "so"
+    },
+    {
+      "id": "20b",
+      "group_id": 20,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "It was ______ a cold day that we stayed inside.",
+      "options": [
+        "so",
+        "such",
+        "too",
+        "very"
+      ],
+      "correct_answer": "such"
+    },
+    {
+      "id": "20c",
+      "group_id": 20,
+      "level": "A2",
+      "points": 2,
+      "type": "multiple_choice",
+      "question": "The test was ______ easy.",
+      "options": [
+        "so",
+        "such",
+        "enough",
+        "much"
+      ],
+      "correct_answer": "so"
+    },
+    {
+      "id": "21a",
+      "group_id": 21,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "I have worked here ______ ten years.",
+      "options": [
+        "since",
+        "for",
+        "ago",
+        "during"
+      ],
+      "correct_answer": "for"
+    },
+    {
+      "id": "21b",
+      "group_id": 21,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "We have known each other ______ 2005.",
+      "options": [
+        "since",
+        "for",
+        "from",
+        "in"
+      ],
+      "correct_answer": "since"
+    },
+    {
+      "id": "21c",
+      "group_id": 21,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "She hasn't called ______ last week.",
+      "options": [
+        "since",
+        "for",
+        "until",
+        "by"
+      ],
+      "correct_answer": "since"
+    },
+    {
+      "id": "22a",
+      "group_id": 22,
+      "level": "B1",
+      "points": 3,
+      "type": "fill_in_blank",
+      "question": "If I ______ you, I would tell the truth.",
+      "options": [
+        "was",
+        "were",
+        "am",
+        "have been"
+      ],
+      "correct_answer": "were"
+    },
+    {
+      "id": "22b",
+      "group_id": 22,
+      "level": "B1",
+      "points": 3,
+      "type": "fill_in_blank",
+      "question": "If he ______ more money, he would buy a car.",
+      "options": [
+        "have",
+        "had",
+        "has",
+        "having"
+      ],
+      "correct_answer": "had"
+    },
+    {
+      "id": "22c",
+      "group_id": 22,
+      "level": "B1",
+      "points": 3,
+      "type": "fill_in_blank",
+      "question": "We would travel if we ______ more free time.",
+      "options": [
+        "have",
+        "had",
+        "has",
+        "will have"
+      ],
+      "correct_answer": "had"
+    },
+    {
+      "id": "23a",
+      "group_id": 23,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "The bridge ______ built in 1990.",
+      "options": [
+        "is",
+        "was",
+        "has been",
+        "had been"
+      ],
+      "correct_answer": "was"
+    },
+    {
+      "id": "23b",
+      "group_id": 23,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "The room ______ cleaned every day.",
+      "options": [
+        "is",
+        "was",
+        "are",
+        "has"
+      ],
+      "correct_answer": "is"
+    },
+    {
+      "id": "23c",
+      "group_id": 23,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "This song ______ written by the Beatles.",
+      "options": [
+        "is",
+        "was",
+        "were",
+        "has"
+      ],
+      "correct_answer": "was"
+    },
+    {
+      "id": "24a",
+      "group_id": 24,
+      "level": "B1",
+      "points": 3,
+      "type": "fill_in_blank",
+      "question": "Do you know where ______?",
+      "options": [
+        "is the station",
+        "the station is",
+        "the station was",
+        "is station"
+      ],
+      "correct_answer": "the station is"
+    },
+    {
+      "id": "24b",
+      "group_id": 24,
+      "level": "B1",
+      "points": 3,
+      "type": "fill_in_blank",
+      "question": "Can you tell me what time ______?",
+      "options": [
+        "it is",
+        "is it",
+        "it was",
+        "is"
+      ],
+      "correct_answer": "it is"
+    },
+    {
+      "id": "24c",
+      "group_id": 24,
+      "level": "B1",
+      "points": 3,
+      "type": "fill_in_blank",
+      "question": "I wonder why ______.",
+      "options": [
+        "is she crying",
+        "she is crying",
+        "she crying",
+        "does she cry"
+      ],
+      "correct_answer": "she is crying"
+    },
+    {
+      "id": "25a",
+      "group_id": 25,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "He has a nice car. He ______ be rich.",
+      "options": [
+        "must",
+        "can't",
+        "should",
+        "need"
+      ],
+      "correct_answer": "must"
+    },
+    {
+      "id": "25b",
+      "group_id": 25,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "She isn't here. She ______ be sick.",
+      "options": [
+        "might",
+        "mustn't",
+        "should",
+        "can"
+      ],
+      "correct_answer": "might"
+    },
+    {
+      "id": "25c",
+      "group_id": 25,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "That's impossible! It ______ be true.",
+      "options": [
+        "can't",
+        "must",
+        "mightn't",
+        "should"
+      ],
+      "correct_answer": "can't"
+    },
+    {
+      "id": "26a",
+      "group_id": 26,
+      "level": "B1",
+      "points": 3,
+      "type": "fill_in_blank",
+      "question": "I used ______ in New York.",
+      "options": [
+        "live",
+        "to live",
+        "living",
+        "lived"
+      ],
+      "correct_answer": "to live"
+    },
+    {
+      "id": "26b",
+      "group_id": 26,
+      "level": "B1",
+      "points": 3,
+      "type": "fill_in_blank",
+      "question": "She is used ______ early.",
+      "options": [
+        "get up",
+        "to get up",
+        "to getting up",
+        "getting up"
+      ],
+      "correct_answer": "to getting up"
+    },
+    {
+      "id": "26c",
+      "group_id": 26,
+      "level": "B1",
+      "points": 3,
+      "type": "fill_in_blank",
+      "question": "Did you ______ have long hair?",
+      "options": [
+        "use to",
+        "used to",
+        "using to",
+        "uses to"
+      ],
+      "correct_answer": "use to"
+    },
+    {
+      "id": "27a",
+      "group_id": 27,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "I am looking forward to ______ you.",
+      "options": [
+        "see",
+        "seeing",
+        "saw",
+        "seen"
+      ],
+      "correct_answer": "seeing"
+    },
+    {
+      "id": "27b",
+      "group_id": 27,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "He is tired of ______.",
+      "options": [
+        "wait",
+        "waiting",
+        "waited",
+        "waits"
+      ],
+      "correct_answer": "waiting"
+    },
+    {
+      "id": "27c",
+      "group_id": 27,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "She is good at ______ pictures.",
+      "options": [
+        "draw",
+        "drawing",
+        "drew",
+        "drawn"
+      ],
+      "correct_answer": "drawing"
+    },
+    {
+      "id": "28a",
+      "group_id": 28,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "You ______ seen the doctor.",
+      "options": [
+        "should have",
+        "should",
+        "must",
+        "could"
+      ],
+      "correct_answer": "should have"
+    },
+    {
+      "id": "28b",
+      "group_id": 28,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "He ______ left early, but I'm not sure.",
+      "options": [
+        "might have",
+        "must have",
+        "should have",
+        "can have"
+      ],
+      "correct_answer": "might have"
+    },
+    {
+      "id": "28c",
+      "group_id": 28,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "They ______ arrived by now.",
+      "options": [
+        "must have",
+        "can't have",
+        "should",
+        "ought"
+      ],
+      "correct_answer": "must have"
+    },
+    {
+      "id": "29a",
+      "group_id": 29,
+      "level": "B1",
+      "points": 3,
+      "type": "fill_in_blank",
+      "question": "It was raining, ______ we went out.",
+      "options": [
+        "although",
+        "but",
+        "however",
+        "despite"
+      ],
+      "correct_answer": "but"
+    },
+    {
+      "id": "29b",
+      "group_id": 29,
+      "level": "B1",
+      "points": 3,
+      "type": "fill_in_blank",
+      "question": "______ he studied, he failed.",
+      "options": [
+        "Despite",
+        "Although",
+        "However",
+        "In spite"
+      ],
+      "correct_answer": "Although"
+    },
+    {
+      "id": "29c",
+      "group_id": 29,
+      "level": "B1",
+      "points": 3,
+      "type": "fill_in_blank",
+      "question": "He bought the car ______ the high price.",
+      "options": [
+        "despite",
+        "although",
+        "even though",
+        "however"
+      ],
+      "correct_answer": "despite"
+    },
+    {
+      "id": "30a",
+      "group_id": 30,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "When I arrived, the train ______ already left.",
+      "options": [
+        "has",
+        "have",
+        "had",
+        "was"
+      ],
+      "correct_answer": "had"
+    },
+    {
+      "id": "30b",
+      "group_id": 30,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "She realized she ______ her wallet.",
+      "options": [
+        "forgot",
+        "had forgotten",
+        "has forgotten",
+        "forgets"
+      ],
+      "correct_answer": "had forgotten"
+    },
+    {
+      "id": "30c",
+      "group_id": 30,
+      "level": "B1",
+      "points": 3,
+      "type": "multiple_choice",
+      "question": "He told me he ______ the email.",
+      "options": [
+        "sent",
+        "had sent",
+        "has sent",
+        "sends"
+      ],
+      "correct_answer": "had sent"
+    },
+    {
+      "id": "31a",
+      "group_id": 31,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "It's high time we ______ home.",
+      "options": [
+        "go",
+        "went",
+        "gone",
+        "are going"
+      ],
+      "correct_answer": "went"
+    },
+    {
+      "id": "31b",
+      "group_id": 31,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "I'd rather you ______ that.",
+      "options": [
+        "not do",
+        "didn't do",
+        "don't do",
+        "won't do"
+      ],
+      "correct_answer": "didn't do"
+    },
+    {
+      "id": "31c",
+      "group_id": 31,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "I wish I ______ more time.",
+      "options": [
+        "have",
+        "had",
+        "have had",
+        "would have"
+      ],
+      "correct_answer": "had"
+    },
+    {
+      "id": "32a",
+      "group_id": 32,
+      "level": "B2",
+      "points": 4,
+      "type": "fill_in_blank",
+      "question": "She is believed ______ in Paris.",
+      "options": [
+        "to live",
+        "living",
+        "live",
+        "lives"
+      ],
+      "correct_answer": "to live"
+    },
+    {
+      "id": "32b",
+      "group_id": 32,
+      "level": "B2",
+      "points": 4,
+      "type": "fill_in_blank",
+      "question": "The thief is said ______ escaped.",
+      "options": [
+        "to have",
+        "having",
+        "to has",
+        "that he"
+      ],
+      "correct_answer": "to have"
+    },
+    {
+      "id": "32c",
+      "group_id": 32,
+      "level": "B2",
+      "points": 4,
+      "type": "fill_in_blank",
+      "question": "He is thought ______ the best player.",
+      "options": [
+        "being",
+        "to be",
+        "be",
+        "is"
+      ],
+      "correct_answer": "to be"
+    },
+    {
+      "id": "33a",
+      "group_id": 33,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "Never ______ such a beautiful view.",
+      "options": [
+        "I have seen",
+        "have I seen",
+        "I saw",
+        "did I see"
+      ],
+      "correct_answer": "have I seen"
+    },
+    {
+      "id": "33b",
+      "group_id": 33,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "Rarely ______ he go out.",
+      "options": [
+        "does",
+        "do",
+        "is",
+        "has"
+      ],
+      "correct_answer": "does"
+    },
+    {
+      "id": "33c",
+      "group_id": 33,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "Under no circumstances ______ you open the box.",
+      "options": [
+        "should",
+        "you should",
+        "you can",
+        "are you"
+      ],
+      "correct_answer": "should"
+    },
+    {
+      "id": "34a",
+      "group_id": 34,
+      "level": "B2",
+      "points": 4,
+      "type": "fill_in_blank",
+      "question": "We need to ______ up with a new idea.",
+      "options": [
+        "come",
+        "get",
+        "go",
+        "make"
+      ],
+      "correct_answer": "come"
+    },
+    {
+      "id": "34b",
+      "group_id": 34,
+      "level": "B2",
+      "points": 4,
+      "type": "fill_in_blank",
+      "question": "I can't ______ up with this noise anymore.",
+      "options": [
+        "put",
+        "set",
+        "keep",
+        "hold"
+      ],
+      "correct_answer": "put"
+    },
+    {
+      "id": "34c",
+      "group_id": 34,
+      "level": "B2",
+      "points": 4,
+      "type": "fill_in_blank",
+      "question": "We ran ______ of milk.",
+      "options": [
+        "out",
+        "away",
+        "off",
+        "down"
+      ],
+      "correct_answer": "out"
+    },
+    {
+      "id": "35a",
+      "group_id": 35,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "If only I ______ listened to you.",
+      "options": [
+        "have",
+        "had",
+        "would",
+        "did"
+      ],
+      "correct_answer": "had"
+    },
+    {
+      "id": "35b",
+      "group_id": 35,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "I wish I ______ so much cake.",
+      "options": [
+        "hadn't eaten",
+        "haven't eaten",
+        "didn't eat",
+        "don't eat"
+      ],
+      "correct_answer": "hadn't eaten"
+    },
+    {
+      "id": "35c",
+      "group_id": 35,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "Suppose you ______ a million dollars, what would you do?",
+      "options": [
+        "win",
+        "won",
+        "have won",
+        "winning"
+      ],
+      "correct_answer": "won"
+    },
+    {
+      "id": "36a",
+      "group_id": 36,
+      "level": "B2",
+      "points": 4,
+      "type": "fill_in_blank",
+      "question": "The project will be finished ______ Monday.",
+      "options": [
+        "by",
+        "until",
+        "to",
+        "from"
+      ],
+      "correct_answer": "by"
+    },
+    {
+      "id": "36b",
+      "group_id": 36,
+      "level": "B2",
+      "points": 4,
+      "type": "fill_in_blank",
+      "question": "We waited ______ midnight.",
+      "options": [
+        "until",
+        "by",
+        "for",
+        "to"
+      ],
+      "correct_answer": "until"
+    },
+    {
+      "id": "36c",
+      "group_id": 36,
+      "level": "B2",
+      "points": 4,
+      "type": "fill_in_blank",
+      "question": "He will have arrived ______ the time you leave.",
+      "options": [
+        "by",
+        "at",
+        "on",
+        "in"
+      ],
+      "correct_answer": "by"
+    },
+    {
+      "id": "37a",
+      "group_id": 37,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "It was ______ luck that we found it.",
+      "options": [
+        "pure",
+        "heavy",
+        "high",
+        "clean"
+      ],
+      "correct_answer": "pure"
+    },
+    {
+      "id": "37b",
+      "group_id": 37,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "There is a ______ chance of rain.",
+      "options": [
+        "strong",
+        "heavy",
+        "big",
+        "hard"
+      ],
+      "correct_answer": "strong"
+    },
+    {
+      "id": "37c",
+      "group_id": 37,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "She made a ______ mistake.",
+      "options": [
+        "serious",
+        "heavy",
+        "strong",
+        "hard"
+      ],
+      "correct_answer": "serious"
+    },
+    {
+      "id": "38a",
+      "group_id": 38,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "He accused me ______ lying.",
+      "options": [
+        "of",
+        "for",
+        "with",
+        "about"
+      ],
+      "correct_answer": "of"
+    },
+    {
+      "id": "38b",
+      "group_id": 38,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "She apologized ______ being late.",
+      "options": [
+        "for",
+        "of",
+        "about",
+        "with"
+      ],
+      "correct_answer": "for"
+    },
+    {
+      "id": "38c",
+      "group_id": 38,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "I insist ______ paying.",
+      "options": [
+        "on",
+        "in",
+        "at",
+        "for"
+      ],
+      "correct_answer": "on"
+    },
+    {
+      "id": "39a",
+      "group_id": 39,
+      "level": "B2",
+      "points": 4,
+      "type": "fill_in_blank",
+      "question": "No sooner had I arrived ______ the phone rang.",
+      "options": [
+        "than",
+        "when",
+        "then",
+        "after"
+      ],
+      "correct_answer": "than"
+    },
+    {
+      "id": "39b",
+      "group_id": 39,
+      "level": "B2",
+      "points": 4,
+      "type": "fill_in_blank",
+      "question": "Hardly had we started ______ it began to rain.",
+      "options": [
+        "when",
+        "than",
+        "then",
+        "after"
+      ],
+      "correct_answer": "when"
+    },
+    {
+      "id": "39c",
+      "group_id": 39,
+      "level": "B2",
+      "points": 4,
+      "type": "fill_in_blank",
+      "question": "Scarcely had she sat down ______ he entered.",
+      "options": [
+        "when",
+        "than",
+        "then",
+        "while"
+      ],
+      "correct_answer": "when"
+    },
+    {
+      "id": "40a",
+      "group_id": 40,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "He regrets ______ that.",
+      "options": [
+        "saying",
+        "to say",
+        "say",
+        "said"
+      ],
+      "correct_answer": "saying"
+    },
+    {
+      "id": "40b",
+      "group_id": 40,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "I stopped ______ a coffee.",
+      "options": [
+        "to buy",
+        "buying",
+        "buy",
+        "bought"
+      ],
+      "correct_answer": "to buy"
+    },
+    {
+      "id": "40c",
+      "group_id": 40,
+      "level": "B2",
+      "points": 4,
+      "type": "multiple_choice",
+      "question": "Remember ______ the door.",
+      "options": [
+        "to lock",
+        "locking",
+        "lock",
+        "locked"
+      ],
+      "correct_answer": "to lock"
+    },
+    {
+      "id": "41a",
+      "group_id": 41,
+      "level": "C1",
+      "points": 5,
+      "type": "fill_in_blank",
+      "question": "Had I known, I ______ helped you.",
+      "options": [
+        "would have",
+        "will have",
+        "would",
+        "had"
+      ],
+      "correct_answer": "would have"
+    },
+    {
+      "id": "41b",
+      "group_id": 41,
+      "level": "C1",
+      "points": 5,
+      "type": "fill_in_blank",
+      "question": "Should you see him, ______ him to call me.",
+      "options": [
+        "tell",
+        "to tell",
+        "telling",
+        "told"
+      ],
+      "correct_answer": "tell"
+    },
+    {
+      "id": "41c",
+      "group_id": 41,
+      "level": "C1",
+      "points": 5,
+      "type": "fill_in_blank",
+      "question": "Were I to accept the job, I ______ move.",
+      "options": [
+        "would have to",
+        "will have to",
+        "must",
+        "had to"
+      ],
+      "correct_answer": "would have to"
+    },
+    {
+      "id": "42a",
+      "group_id": 42,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "This evidence is ______ inconclusive.",
+      "options": [
+        "somewhat",
+        "utterly",
+        "perfectly",
+        "heavy"
+      ],
+      "correct_answer": "somewhat"
+    },
+    {
+      "id": "42b",
+      "group_id": 42,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "He is ______ opposed to the plan.",
+      "options": [
+        "bitterly",
+        "highly",
+        "deeply",
+        "widely"
+      ],
+      "correct_answer": "bitterly"
+    },
+    {
+      "id": "42c",
+      "group_id": 42,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "It is ______ unlikely that he will win.",
+      "options": [
+        "highly",
+        "deeply",
+        "strictly",
+        "heavy"
+      ],
+      "correct_answer": "highly"
+    },
+    {
+      "id": "43a",
+      "group_id": 43,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "Let's go, ______?",
+      "options": [
+        "shall we",
+        "will we",
+        "do we",
+        "let us"
+      ],
+      "correct_answer": "shall we"
+    },
+    {
+      "id": "43b",
+      "group_id": 43,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "Nobody called, ______?",
+      "options": [
+        "did they",
+        "didn't they",
+        "do they",
+        "did he"
+      ],
+      "correct_answer": "did they"
+    },
+    {
+      "id": "43c",
+      "group_id": 43,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "Don't be late, ______?",
+      "options": [
+        "will you",
+        "do you",
+        "are you",
+        "won't you"
+      ],
+      "correct_answer": "will you"
+    },
+    {
+      "id": "44a",
+      "group_id": 44,
+      "level": "C1",
+      "points": 5,
+      "type": "fill_in_blank",
+      "question": "Whatever ______ happen, don't panic.",
+      "options": [
+        "may",
+        "will",
+        "would",
+        "could"
+      ],
+      "correct_answer": "may"
+    },
+    {
+      "id": "44b",
+      "group_id": 44,
+      "level": "C1",
+      "points": 5,
+      "type": "fill_in_blank",
+      "question": "However hard he ______, he couldn't lift it.",
+      "options": [
+        "tried",
+        "tries",
+        "try",
+        "trying"
+      ],
+      "correct_answer": "tried"
+    },
+    {
+      "id": "44c",
+      "group_id": 44,
+      "level": "C1",
+      "points": 5,
+      "type": "fill_in_blank",
+      "question": "No matter where you ______, I will find you.",
+      "options": [
+        "go",
+        "will go",
+        "went",
+        "going"
+      ],
+      "correct_answer": "go"
+    },
+    {
+      "id": "45a",
+      "group_id": 45,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "It is essential that he ______ informed.",
+      "options": [
+        "be",
+        "is",
+        "will be",
+        "was"
+      ],
+      "correct_answer": "be"
+    },
+    {
+      "id": "45b",
+      "group_id": 45,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "I suggest that she ______ a doctor.",
+      "options": [
+        "see",
+        "sees",
+        "saw",
+        "will see"
+      ],
+      "correct_answer": "see"
+    },
+    {
+      "id": "45c",
+      "group_id": 45,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "The boss demanded that we ______ early.",
+      "options": [
+        "be",
+        "are",
+        "were",
+        "will be"
+      ],
+      "correct_answer": "be"
+    },
+    {
+      "id": "46a",
+      "group_id": 46,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "______ he was tired, he kept working.",
+      "options": [
+        "Albeit",
+        "Despite",
+        "However",
+        "Nevertheless"
+      ],
+      "correct_answer": "Albeit"
+    },
+    {
+      "id": "46b",
+      "group_id": 46,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "The plan is risky. ______, we must try.",
+      "options": [
+        "Nevertheless",
+        "Although",
+        "Despite",
+        "Albeit"
+      ],
+      "correct_answer": "Nevertheless"
+    },
+    {
+      "id": "46c",
+      "group_id": 46,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "______ the rain, the game continued.",
+      "options": [
+        "Notwithstanding",
+        "Although",
+        "However",
+        "Even"
+      ],
+      "correct_answer": "Notwithstanding"
+    },
+    {
+      "id": "47a",
+      "group_id": 47,
+      "level": "C1",
+      "points": 5,
+      "type": "fill_in_blank",
+      "question": "She has a tendency to ______.",
+      "options": [
+        "boast",
+        "praise",
+        "advertise",
+        "proud"
+      ],
+      "correct_answer": "boast"
+    },
+    {
+      "id": "47b",
+      "group_id": 47,
+      "level": "C1",
+      "points": 5,
+      "type": "fill_in_blank",
+      "question": "He made a ______ attempt to escape.",
+      "options": [
+        "futile",
+        "empty",
+        "blank",
+        "void"
+      ],
+      "correct_answer": "futile"
+    },
+    {
+      "id": "47c",
+      "group_id": 47,
+      "level": "C1",
+      "points": 5,
+      "type": "fill_in_blank",
+      "question": "There is a ______ distinction between them.",
+      "options": [
+        "subtle",
+        "thin",
+        "soft",
+        "weak"
+      ],
+      "correct_answer": "subtle"
+    },
+    {
+      "id": "48a",
+      "group_id": 48,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "To ______ matters worse, it started raining.",
+      "options": [
+        "make",
+        "do",
+        "get",
+        "have"
+      ],
+      "correct_answer": "make"
+    },
+    {
+      "id": "48b",
+      "group_id": 48,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "He took it for ______ that I would agree.",
+      "options": [
+        "granted",
+        "sure",
+        "certain",
+        "done"
+      ],
+      "correct_answer": "granted"
+    },
+    {
+      "id": "48c",
+      "group_id": 48,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "It stands to ______ that he will win.",
+      "options": [
+        "reason",
+        "logic",
+        "sense",
+        "mind"
+      ],
+      "correct_answer": "reason"
+    },
+    {
+      "id": "49a",
+      "group_id": 49,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "______ I to know the answer, I would tell you.",
+      "options": [
+        "Were",
+        "If",
+        "Had",
+        "Should"
+      ],
+      "correct_answer": "Were"
+    },
+    {
+      "id": "49b",
+      "group_id": 49,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "______ he apologized, I wouldn't forgive him.",
+      "options": [
+        "Even if",
+        "Even",
+        "As if",
+        "However"
+      ],
+      "correct_answer": "Even if"
+    },
+    {
+      "id": "49c",
+      "group_id": 49,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "______ as I try, I can't do it.",
+      "options": [
+        "Much",
+        "Even",
+        "Although",
+        "Hard"
+      ],
+      "correct_answer": "Much"
+    },
+    {
+      "id": "50a",
+      "group_id": 50,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "He was on the ______ of crying.",
+      "options": [
+        "verge",
+        "edge",
+        "rim",
+        "border"
+      ],
+      "correct_answer": "verge"
+    },
+    {
+      "id": "50b",
+      "group_id": 50,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "We are on the ______ of a new era.",
+      "options": [
+        "brink",
+        "edge",
+        "limit",
+        "line"
+      ],
+      "correct_answer": "brink"
+    },
+    {
+      "id": "50c",
+      "group_id": 50,
+      "level": "C1",
+      "points": 5,
+      "type": "multiple_choice",
+      "question": "She is about to ______ on a journey.",
+      "options": [
+        "embark",
+        "start",
+        "begin",
+        "commence"
+      ],
+      "correct_answer": "embark"
+    }
+  ]
+}

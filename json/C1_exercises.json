@@ -1,0 +1,611 @@
+[
+    {
+        "id": 0,
+        "title": "Gelişmiş Dilbilgisi Tekrarı",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "Seldom ______ seen such chaos.",
+                "options": [
+                    "have we",
+                    "we have",
+                    "did we",
+                    "we did"
+                ],
+                "answer": "have we"
+            },
+            {
+                "type": "quiz",
+                "question": "Had I known, I ______ differently.",
+                "options": [
+                    "would have acted",
+                    "acted",
+                    "act",
+                    "will act"
+                ],
+                "answer": "would have acted"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Not only did he lose his job, ______ he also lost his house.",
+                "options": [
+                    "but",
+                    "and",
+                    "so",
+                    "or"
+                ],
+                "answer": "but"
+            },
+            {
+                "type": "word_order",
+                "question": "Complex structure practice",
+                "components": [
+                    "circumstances",
+                    "Under",
+                    "no",
+                    "leave",
+                    "you",
+                    "should"
+                ],
+                "correctOrder": [
+                    "Under no circumstances should you leave"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Ne olursa olsun vazgeçmemelisin.",
+                "sentence": "No matter what happens, you shouldn't give up.",
+                "answer": "No matter what happens you shouldn't give up"
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "Inversion",
+                        "right": "Devrik Yapı"
+                    },
+                    {
+                        "left": "Subjunctive",
+                        "right": "İstek Kipi"
+                    },
+                    {
+                        "left": "Cleft",
+                        "right": "Vurgu Cümlesi"
+                    },
+                    {
+                        "left": "Ellipsis",
+                        "right": "Eksiltili Yapı"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "Under no circumstances.",
+                "answer": "Under no circumstances"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "title": "Karmaşık Cümle Yapıları",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "The person to ______ I spoke was nice.",
+                "options": [
+                    "whom",
+                    "who",
+                    "which",
+                    "that"
+                ],
+                "answer": "whom"
+            },
+            {
+                "type": "quiz",
+                "question": "Having ______ the work, he went home.",
+                "options": [
+                    "finished",
+                    "finish",
+                    "finishing",
+                    "finishes"
+                ],
+                "answer": "finished"
+            },
+            {
+                "type": "fill_blank",
+                "question": "____________ exhausted, she fell asleep immediately.",
+                "options": [
+                    "Being",
+                    "Be",
+                    "Is",
+                    "Was"
+                ],
+                "answer": "Being"
+            },
+            {
+                "type": "word_order",
+                "question": "Use a Participle Clause",
+                "components": [
+                    "Walking",
+                    "street",
+                    "down",
+                    "the",
+                    "met",
+                    "I",
+                    "Friend",
+                    "a"
+                ],
+                "correctOrder": [
+                    "Walking down the street I met a friend"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "İşini bitirince evine gitti.",
+                "sentence": "Having finished his work, he went home.",
+                "answer": "Having finished his work he went home"
+            },
+            {
+                "type": "matching",
+                "question": "Match the clause types",
+                "pairs": [
+                    {
+                        "left": "Relative",
+                        "right": "Who/Which..."
+                    },
+                    {
+                        "left": "Participle",
+                        "right": "Walking/Detailed..."
+                    },
+                    {
+                        "left": "Nominal",
+                        "right": "What I want..."
+                    },
+                    {
+                        "left": "Adverbial",
+                        "right": "When/While..."
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "Considering the circumstances.",
+                "answer": "Considering the circumstances"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Subjunctive Yapılar",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "I suggest that he ______ a doctor.",
+                "options": [
+                    "see",
+                    "sees",
+                    "saw",
+                    "seeing"
+                ],
+                "answer": "see"
+            },
+            {
+                "type": "quiz",
+                "question": "It is essential that she ______ on time.",
+                "options": [
+                    "be",
+                    "is",
+                    "was",
+                    "were"
+                ],
+                "answer": "be"
+            },
+            {
+                "type": "fill_blank",
+                "question": "God ______ the Queen.",
+                "options": [
+                    "save",
+                    "saves",
+                    "saved",
+                    "saving"
+                ],
+                "answer": "save"
+            },
+            {
+                "type": "word_order",
+                "question": "Make it Subjunctive",
+                "components": [
+                    "that",
+                    "suggets",
+                    "He",
+                    "we",
+                    "go"
+                ],
+                "correctOrder": [
+                    "He suggests that we go"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Doktor olması şart.",
+                "sentence": "It is valid that he be a doctor.",
+                "answer": "It is essential that he be a doctor."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "Suggest",
+                        "right": "Önermek"
+                    },
+                    {
+                        "left": "Demand",
+                        "right": "Talep etmek"
+                    },
+                    {
+                        "left": "Essential",
+                        "right": "Gerekli"
+                    },
+                    {
+                        "left": "Vital",
+                        "right": "Hayati"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "It is vital that you be there.",
+                "answer": "It is vital that you be there"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Gelişmiş Kelime Eşleşmeleri (Collocations)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "To ______ a promise.",
+                "options": [
+                    "keep",
+                    "do",
+                    "make",
+                    "take"
+                ],
+                "answer": "keep"
+            },
+            {
+                "type": "quiz",
+                "question": "To ______ a crime.",
+                "options": [
+                    "commit",
+                    "do",
+                    "make",
+                    "have"
+                ],
+                "answer": "commit"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I completely ______ with you.",
+                "options": [
+                    "agree",
+                    "accept",
+                    "admit",
+                    "approve"
+                ],
+                "answer": "agree"
+            },
+            {
+                "type": "word_order",
+                "question": "Use the collocation",
+                "components": [
+                    "take",
+                    "a",
+                    "chance"
+                ],
+                "correctOrder": [
+                    "take a chance"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Karar ver.",
+                "sentence": "Make a decision.",
+                "answer": "Make a decision."
+            },
+            {
+                "type": "matching",
+                "question": "Match the pairs",
+                "pairs": [
+                    {
+                        "left": "Do",
+                        "right": "Homework/Business"
+                    },
+                    {
+                        "left": "Make",
+                        "right": "Mistake/Money"
+                    },
+                    {
+                        "left": "Take",
+                        "right": "Photo/Break"
+                    },
+                    {
+                        "left": "Have",
+                        "right": "Fun/Shower"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "Make a difference.",
+                "answer": "Make a difference"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Akademik Yazmaya Giriş",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "Avoid using ______ in academic writing.",
+                "options": [
+                    "slang",
+                    "grammar",
+                    "vocabulary",
+                    "punctuation"
+                ],
+                "answer": "slang"
+            },
+            {
+                "type": "quiz",
+                "question": "Use ______ verbs like 'examine' instead of 'look at'.",
+                "options": [
+                    "formal",
+                    "informal",
+                    "simple",
+                    "short"
+                ],
+                "answer": "formal"
+            },
+            {
+                "type": "fill_blank",
+                "question": "This paper will ______ the causes of war.",
+                "options": [
+                    "discuss",
+                    "talk",
+                    "say",
+                    "tell"
+                ],
+                "answer": "discuss"
+            },
+            {
+                "type": "word_order",
+                "question": "Use academic language",
+                "components": [
+                    "paper",
+                    "This",
+                    "argues",
+                    "that"
+                ],
+                "correctOrder": [
+                    "This paper argues that"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Sonuç olarak...",
+                "sentence": "In conclusion...",
+                "answer": "In conclusion"
+            },
+            {
+                "type": "matching",
+                "question": "Match the pairs",
+                "pairs": [
+                    {
+                        "left": "Talk about",
+                        "right": "Discuss"
+                    },
+                    {
+                        "left": "Think about",
+                        "right": "Consider"
+                    },
+                    {
+                        "left": "Look into",
+                        "right": "Investigate"
+                    },
+                    {
+                        "left": "Come up with",
+                        "right": "Propose"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "Furthermore.",
+                "answer": "Furthermore"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "İkna Edici Konuşma",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "Use ______ evidence to support your argument.",
+                "options": [
+                    "strong",
+                    "weak",
+                    "no",
+                    "little"
+                ],
+                "answer": "strong"
+            },
+            {
+                "type": "quiz",
+                "question": "To ______ someone means to change their mind.",
+                "options": [
+                    "persuade",
+                    "dissuade",
+                    "stop",
+                    "make"
+                ],
+                "answer": "persuade"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I am ______ that we can succeed.",
+                "options": [
+                    "convinced",
+                    "sure",
+                    "maybe",
+                    "hope"
+                ],
+                "answer": "convinced"
+            },
+            {
+                "type": "word_order",
+                "question": "Persuade",
+                "components": [
+                    "believe",
+                    "truly",
+                    "I",
+                    "that"
+                ],
+                "correctOrder": [
+                    "I truly believe that"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Şüphesiz ki...",
+                "sentence": "Undoubtedly...",
+                "answer": "Undoubtedly"
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "Persuade",
+                        "right": "İkna etmek"
+                    },
+                    {
+                        "left": "Convince",
+                        "right": "İnandırmak"
+                    },
+                    {
+                        "left": "Argue",
+                        "right": "Savunmak"
+                    },
+                    {
+                        "left": "Claim",
+                        "right": "İddia etmek"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "It is undeniable that...",
+                "answer": "It is undeniable that"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Sunum Yapma",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "Start your presentation with an ______.",
+                "options": [
+                    "introduction",
+                    "end",
+                    "middle",
+                    "conclusion"
+                ],
+                "answer": "introduction"
+            },
+            {
+                "type": "quiz",
+                "question": "Maintain ______ contact with the audience.",
+                "options": [
+                    "eye",
+                    "hand",
+                    "foot",
+                    "ear"
+                ],
+                "answer": "eye"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Let's move ______ to the next point.",
+                "options": [
+                    "on",
+                    "in",
+                    "at",
+                    "by"
+                ],
+                "answer": "on"
+            },
+            {
+                "type": "word_order",
+                "question": "Presentation practice",
+                "components": [
+                    "attention",
+                    "Thank",
+                    "your",
+                    "for",
+                    "you"
+                ],
+                "correctOrder": [
+                    "Thank you for your attention"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bugün size ...dan bahsedeceğim.",
+                "sentence": "Today I will talk to you about...",
+                "answer": "Today I will talk to you about..."
+            },
+            {
+                "type": "matching",
+                "question": "Match the items",
+                "pairs": [
+                    {
+                        "left": "Intro",
+                        "right": "Giriş"
+                    },
+                    {
+                        "left": "Body",
+                        "right": "Gelişme"
+                    },
+                    {
+                        "left": "Conclusion",
+                        "right": "Sonuç"
+                    },
+                    {
+                        "left": "Q&A",
+                        "right": "Soru Cevap"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Read aloud",
+                "word": "Ladies and gentlemen.",
+                "answer": "Ladies and gentlemen"
+            }
+        ]
+    }
+]

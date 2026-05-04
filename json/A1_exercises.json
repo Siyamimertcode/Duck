@@ -1,0 +1,3900 @@
+[
+    {
+        "lessonId": 0,
+        "title": "Alfabe ve Telaffuz",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'A' harfinin İngilizce telaffuzu nedir?",
+                "options": [
+                    "Ay",
+                    "Ah",
+                    "Eh",
+                    "Oh"
+                ],
+                "answer": "Ay"
+            },
+            {
+                "type": "quiz",
+                "question": "Hangi harf 'double-u' olarak okunur?",
+                "options": [
+                    "W",
+                    "U",
+                    "V",
+                    "M"
+                ],
+                "answer": "W"
+            },
+            {
+                "type": "quiz",
+                "question": "'G' harfinin İngilizce okunuşu nedir?",
+                "options": [
+                    "Ci",
+                    "Gi",
+                    "Ji",
+                    "Di"
+                ],
+                "answer": "Ji"
+            },
+            {
+                "type": "fill_blank",
+                "question": "İngilizce alfabede ______ harf vardır.",
+                "options": [
+                    "24",
+                    "25",
+                    "26",
+                    "28"
+                ],
+                "answer": "26"
+            },
+            {
+                "type": "fill_blank",
+                "question": "'B' harfi ______ olarak telaffuz edilir.",
+                "options": [
+                    "Bay",
+                    "Bee",
+                    "Bi",
+                    "Bey"
+                ],
+                "answer": "Bee"
+            },
+            {
+                "type": "fill_blank",
+                "question": "İngilizce'de 'Z' harfi ______ olarak okunur.",
+                "options": [
+                    "Zed/Zee",
+                    "Za",
+                    "Ze",
+                    "Zi"
+                ],
+                "answer": "Zed/Zee"
+            },
+            {
+                "type": "word_order",
+                "question": "Harfleri al sıraya koy: A, B, C, ...",
+                "components": [
+                    "D",
+                    "F",
+                    "E",
+                    "G"
+                ],
+                "correctOrder": [
+                    "D",
+                    "E",
+                    "F",
+                    "G"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Harfleri alfabetik sıraya koy",
+                "components": [
+                    "M",
+                    "K",
+                    "L",
+                    "N"
+                ],
+                "correctOrder": [
+                    "K",
+                    "L",
+                    "M",
+                    "N"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu harfleri İngilizce yazın",
+                "sentence": "A, B, C, D, E",
+                "answer": "A, B, C, D, E"
+            },
+            {
+                "type": "translation",
+                "question": "Bu kelimeyi hecelere ayırın",
+                "sentence": "APPLE → A-P-P-L-E",
+                "answer": "A-P-P-L-E"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu harfi sesli okuyun",
+                "word": "A",
+                "answer": "A"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu harfi sesli okuyun",
+                "word": "Z",
+                "answer": "Z"
+            },
+            {
+                "type": "matching",
+                "question": "Harfleri doğru telaffuzlarıyla eşleştirin",
+                "pairs": [
+                    {
+                        "left": "A",
+                        "right": "Ay"
+                    },
+                    {
+                        "left": "E",
+                        "right": "İi"
+                    },
+                    {
+                        "left": "I",
+                        "right": "Ay"
+                    },
+                    {
+                        "left": "O",
+                        "right": "Ou"
+                    },
+                    {
+                        "left": "U",
+                        "right": "Yu"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 1,
+        "title": "Selamlaşma ve Vedalaşma",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'Good morning' ne demektir?",
+                "options": [
+                    "İyi akşamlar",
+                    "Günaydın",
+                    "İyi geceler",
+                    "Hoşça kal"
+                ],
+                "answer": "Günaydın"
+            },
+            {
+                "type": "quiz",
+                "question": "'Goodbye' ne anlama gelir?",
+                "options": [
+                    "Merhaba",
+                    "Hoşça kal",
+                    "Teşekkürler",
+                    "Lütfen"
+                ],
+                "answer": "Hoşça kal"
+            },
+            {
+                "type": "quiz",
+                "question": "Akşam selamlaşması hangisidir?",
+                "options": [
+                    "Good morning",
+                    "Good afternoon",
+                    "Good evening",
+                    "Good night"
+                ],
+                "answer": "Good evening"
+            },
+            {
+                "type": "fill_blank",
+                "question": "______, how are you?",
+                "options": [
+                    "Hello",
+                    "Goodbye",
+                    "Thanks",
+                    "Sorry"
+                ],
+                "answer": "Hello"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Good ______, see you tomorrow!",
+                "options": [
+                    "morning",
+                    "night",
+                    "hello",
+                    "day"
+                ],
+                "answer": "night"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Nice to ______ you!",
+                "options": [
+                    "see",
+                    "meet",
+                    "go",
+                    "have"
+                ],
+                "answer": "meet"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "are",
+                    "How",
+                    "you",
+                    "?"
+                ],
+                "correctOrder": [
+                    "How",
+                    "are",
+                    "you",
+                    "?"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "to",
+                    "Nice",
+                    "you",
+                    "meet"
+                ],
+                "correctOrder": [
+                    "Nice",
+                    "to",
+                    "meet",
+                    "you"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Günaydın",
+                "answer": "Good morning"
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Nasılsın?",
+                "answer": "How are you?"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "Hello!",
+                "answer": "Hello"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "Goodbye!",
+                "answer": "Goodbye"
+            },
+            {
+                "type": "matching",
+                "question": "Selamlaşmaları çevirileriyle eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Hello",
+                        "right": "Merhaba"
+                    },
+                    {
+                        "left": "Goodbye",
+                        "right": "Hoşça kal"
+                    },
+                    {
+                        "left": "Good morning",
+                        "right": "Günaydın"
+                    },
+                    {
+                        "left": "Good night",
+                        "right": "İyi geceler"
+                    },
+                    {
+                        "left": "See you",
+                        "right": "Görüşürüz"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 2,
+        "title": "Kendini Tanıtma",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'My name is Ali' ne demektir?",
+                "options": [
+                    "Benim adım Ali",
+                    "Ali nerede",
+                    "Ali kim",
+                    "Ali nasıl"
+                ],
+                "answer": "Benim adım Ali"
+            },
+            {
+                "type": "quiz",
+                "question": "'I am 20 years old' ne anlama gelir?",
+                "options": [
+                    "20 yaşındayım",
+                    "20 yıldır",
+                    "20 kişiyiz",
+                    "20 gün"
+                ],
+                "answer": "20 yaşındayım"
+            },
+            {
+                "type": "quiz",
+                "question": "'Where are you from?' sorusunun anlamı nedir?",
+                "options": [
+                    "Nerelisin?",
+                    "Nereye gidiyorsun?",
+                    "Nerede kalıyorsun?",
+                    "Ne iş yapıyorsun?"
+                ],
+                "answer": "Nerelisin?"
+            },
+            {
+                "type": "fill_blank",
+                "question": "My ______ is Sarah.",
+                "options": [
+                    "name",
+                    "age",
+                    "city",
+                    "job"
+                ],
+                "answer": "name"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I am ______ Turkey.",
+                "options": [
+                    "at",
+                    "in",
+                    "from",
+                    "to"
+                ],
+                "answer": "from"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I ______ a student.",
+                "options": [
+                    "is",
+                    "am",
+                    "are",
+                    "be"
+                ],
+                "answer": "am"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "name",
+                    "My",
+                    "is",
+                    "Mert"
+                ],
+                "correctOrder": [
+                    "My",
+                    "name",
+                    "is",
+                    "Mert"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "am",
+                    "I",
+                    "Turkey",
+                    "from"
+                ],
+                "correctOrder": [
+                    "I",
+                    "am",
+                    "from",
+                    "Turkey"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Benim adım Ayşe.",
+                "answer": "My name is Ayse."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Ben bir öğrenciyim.",
+                "answer": "I am a student."
+            },
+            {
+                "type": "speaking",
+                "question": "Kendinizi tanıtın",
+                "word": "My name is...",
+                "answer": "My name is"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "I am from Turkey.",
+                "answer": "I am from Turkey"
+            },
+            {
+                "type": "matching",
+                "question": "İfadeleri çevirileriyle eşleştirin",
+                "pairs": [
+                    {
+                        "left": "My name is",
+                        "right": "Benim adım"
+                    },
+                    {
+                        "left": "I am from",
+                        "right": "Ben ...dan/den"
+                    },
+                    {
+                        "left": "years old",
+                        "right": "yaşında"
+                    },
+                    {
+                        "left": "I am a student",
+                        "right": "Öğrenciyim"
+                    },
+                    {
+                        "left": "Nice to meet you",
+                        "right": "Tanıştığıma memnunum"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 3,
+        "title": "Ülkeler ve Milletler",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'Turkey' hangi ülkedir?",
+                "options": [
+                    "Türkiye",
+                    "Yunanistan",
+                    "İran",
+                    "Mısır"
+                ],
+                "answer": "Türkiye"
+            },
+            {
+                "type": "quiz",
+                "question": "'Japanese' ne demektir?",
+                "options": [
+                    "Japon",
+                    "Çinli",
+                    "Koreli",
+                    "Hintli"
+                ],
+                "answer": "Japon"
+            },
+            {
+                "type": "quiz",
+                "question": "İngiltere'nin İngilizcesi nedir?",
+                "options": [
+                    "England",
+                    "Ireland",
+                    "Iceland",
+                    "Scotland"
+                ],
+                "answer": "England"
+            },
+            {
+                "type": "fill_blank",
+                "question": "She is from ______. She is French.",
+                "options": [
+                    "France",
+                    "Italy",
+                    "Spain",
+                    "Germany"
+                ],
+                "answer": "France"
+            },
+            {
+                "type": "fill_blank",
+                "question": "He is ______. He is from Germany.",
+                "options": [
+                    "French",
+                    "German",
+                    "Spanish",
+                    "Italian"
+                ],
+                "answer": "German"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I am from ______. I am Turkish.",
+                "options": [
+                    "Turkey",
+                    "Greece",
+                    "Egypt",
+                    "Iran"
+                ],
+                "answer": "Turkey"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "is",
+                    "She",
+                    "from",
+                    "Japan"
+                ],
+                "correctOrder": [
+                    "She",
+                    "is",
+                    "from",
+                    "Japan"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "American",
+                    "He",
+                    "is",
+                    "an"
+                ],
+                "correctOrder": [
+                    "He",
+                    "is",
+                    "an",
+                    "American"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "O Almanya'dan.",
+                "answer": "He is from Germany."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Ben Türküm.",
+                "answer": "I am Turkish."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu ülke adını sesli okuyun",
+                "word": "United States",
+                "answer": "United States"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu milliyeti sesli okuyun",
+                "word": "Turkish",
+                "answer": "Turkish"
+            },
+            {
+                "type": "matching",
+                "question": "Ülkeleri milliyetleriyle eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Turkey",
+                        "right": "Turkish"
+                    },
+                    {
+                        "left": "France",
+                        "right": "French"
+                    },
+                    {
+                        "left": "Germany",
+                        "right": "German"
+                    },
+                    {
+                        "left": "Japan",
+                        "right": "Japanese"
+                    },
+                    {
+                        "left": "Spain",
+                        "right": "Spanish"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 4,
+        "title": "Sayılar (1-100)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'Thirteen' hangi sayıdır?",
+                "options": [
+                    "13",
+                    "30",
+                    "31",
+                    "3"
+                ],
+                "answer": "13"
+            },
+            {
+                "type": "quiz",
+                "question": "'Fifty' kaçtır?",
+                "options": [
+                    "15",
+                    "50",
+                    "55",
+                    "500"
+                ],
+                "answer": "50"
+            },
+            {
+                "type": "quiz",
+                "question": "'Seventy-two' kaçtır?",
+                "options": [
+                    "72",
+                    "27",
+                    "77",
+                    "62"
+                ],
+                "answer": "72"
+            },
+            {
+                "type": "fill_blank",
+                "question": "10 + 5 = ______",
+                "options": [
+                    "fourteen",
+                    "fifteen",
+                    "sixteen",
+                    "thirteen"
+                ],
+                "answer": "fifteen"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Twenty + thirty = ______",
+                "options": [
+                    "forty",
+                    "fifty",
+                    "sixty",
+                    "seventy"
+                ],
+                "answer": "fifty"
+            },
+            {
+                "type": "fill_blank",
+                "question": "One hundred minus one = ______",
+                "options": [
+                    "ninety-eight",
+                    "ninety-nine",
+                    "ninety-seven",
+                    "one hundred"
+                ],
+                "answer": "ninety-nine"
+            },
+            {
+                "type": "word_order",
+                "question": "Sayıları küçükten büyüğe sıralayın",
+                "components": [
+                    "twenty",
+                    "ten",
+                    "forty",
+                    "thirty"
+                ],
+                "correctOrder": [
+                    "ten",
+                    "twenty",
+                    "thirty",
+                    "forty"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Sayıları küçükten büyüğe sıralayın",
+                "components": [
+                    "sixty",
+                    "eighty",
+                    "seventy",
+                    "ninety"
+                ],
+                "correctOrder": [
+                    "sixty",
+                    "seventy",
+                    "eighty",
+                    "ninety"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu sayıyı İngilizce yazın",
+                "sentence": "45",
+                "answer": "forty-five"
+            },
+            {
+                "type": "translation",
+                "question": "Bu sayıyı İngilizce yazın",
+                "sentence": "88",
+                "answer": "eighty-eight"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu sayıyı sesli okuyun",
+                "word": "25",
+                "answer": "twenty-five"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu sayıyı sesli okuyun",
+                "word": "100",
+                "answer": "one hundred"
+            },
+            {
+                "type": "matching",
+                "question": "Sayıları İngilizceleriyle eşleştirin",
+                "pairs": [
+                    {
+                        "left": "11",
+                        "right": "eleven"
+                    },
+                    {
+                        "left": "20",
+                        "right": "twenty"
+                    },
+                    {
+                        "left": "33",
+                        "right": "thirty-three"
+                    },
+                    {
+                        "left": "50",
+                        "right": "fifty"
+                    },
+                    {
+                        "left": "99",
+                        "right": "ninety-nine"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 5,
+        "title": "Günler, Aylar ve Tarihler",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'Wednesday' hangi gündür?",
+                "options": [
+                    "Çarşamba",
+                    "Perşembe",
+                    "Salı",
+                    "Pazartesi"
+                ],
+                "answer": "Çarşamba"
+            },
+            {
+                "type": "quiz",
+                "question": "'August' hangi aydır?",
+                "options": [
+                    "Ağustos",
+                    "Aralık",
+                    "Nisan",
+                    "Ocak"
+                ],
+                "answer": "Ağustos"
+            },
+            {
+                "type": "quiz",
+                "question": "Haftanın ilk günü (İngiliz kültüründe) hangisidir?",
+                "options": [
+                    "Monday",
+                    "Sunday",
+                    "Saturday",
+                    "Friday"
+                ],
+                "answer": "Monday"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Today is ______. Tomorrow is Thursday.",
+                "options": [
+                    "Wednesday",
+                    "Tuesday",
+                    "Friday",
+                    "Monday"
+                ],
+                "answer": "Wednesday"
+            },
+            {
+                "type": "fill_blank",
+                "question": "The month after June is ______.",
+                "options": [
+                    "July",
+                    "May",
+                    "August",
+                    "April"
+                ],
+                "answer": "July"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Christmas is in ______.",
+                "options": [
+                    "November",
+                    "December",
+                    "January",
+                    "October"
+                ],
+                "answer": "December"
+            },
+            {
+                "type": "word_order",
+                "question": "Günleri sırasıyla dizin",
+                "components": [
+                    "Tuesday",
+                    "Monday",
+                    "Wednesday",
+                    "Thursday"
+                ],
+                "correctOrder": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Ayları sıraya koyun",
+                "components": [
+                    "March",
+                    "January",
+                    "April",
+                    "February"
+                ],
+                "correctOrder": [
+                    "January",
+                    "February",
+                    "March",
+                    "April"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu tarihi İngilizce yazın",
+                "sentence": "15 Mart",
+                "answer": "March 15"
+            },
+            {
+                "type": "translation",
+                "question": "Bu günü İngilizce yazın",
+                "sentence": "Pazartesi",
+                "answer": "Monday"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu günü sesli okuyun",
+                "word": "Saturday",
+                "answer": "Saturday"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu ayı sesli okuyun",
+                "word": "September",
+                "answer": "September"
+            },
+            {
+                "type": "matching",
+                "question": "Günleri Türkçeleriyle eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Monday",
+                        "right": "Pazartesi"
+                    },
+                    {
+                        "left": "Wednesday",
+                        "right": "Çarşamba"
+                    },
+                    {
+                        "left": "Friday",
+                        "right": "Cuma"
+                    },
+                    {
+                        "left": "Sunday",
+                        "right": "Pazar"
+                    },
+                    {
+                        "left": "Thursday",
+                        "right": "Perşembe"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 6,
+        "title": "'To Be' Fiili (am-is-are)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'I ___ happy.' cümlesinde boşluğa ne gelir?",
+                "options": [
+                    "am",
+                    "is",
+                    "are",
+                    "be"
+                ],
+                "answer": "am"
+            },
+            {
+                "type": "quiz",
+                "question": "'She ___ a doctor.' cümlesinde doğru olan nedir?",
+                "options": [
+                    "am",
+                    "is",
+                    "are",
+                    "be"
+                ],
+                "answer": "is"
+            },
+            {
+                "type": "quiz",
+                "question": "'They ___ students.' cümlesinde boşluğa ne gelir?",
+                "options": [
+                    "am",
+                    "is",
+                    "are",
+                    "be"
+                ],
+                "answer": "are"
+            },
+            {
+                "type": "fill_blank",
+                "question": "He ______ my brother.",
+                "options": [
+                    "am",
+                    "is",
+                    "are",
+                    "be"
+                ],
+                "answer": "is"
+            },
+            {
+                "type": "fill_blank",
+                "question": "We ______ from Turkey.",
+                "options": [
+                    "am",
+                    "is",
+                    "are",
+                    "be"
+                ],
+                "answer": "are"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I ______ not tired.",
+                "options": [
+                    "am",
+                    "is",
+                    "are",
+                    "be"
+                ],
+                "answer": "am"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "a",
+                    "She",
+                    "teacher",
+                    "is"
+                ],
+                "correctOrder": [
+                    "She",
+                    "is",
+                    "a",
+                    "teacher"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "happy",
+                    "We",
+                    "are",
+                    "very"
+                ],
+                "correctOrder": [
+                    "We",
+                    "are",
+                    "very",
+                    "happy"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "O bir doktor.",
+                "answer": "He is a doctor."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Biz mutluyuz.",
+                "answer": "We are happy."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "I am a student.",
+                "answer": "I am a student"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "They are friends.",
+                "answer": "They are friends"
+            },
+            {
+                "type": "matching",
+                "question": "Doğru 'to be' formlarını eşleştirin",
+                "pairs": [
+                    {
+                        "left": "I",
+                        "right": "am"
+                    },
+                    {
+                        "left": "He/She",
+                        "right": "is"
+                    },
+                    {
+                        "left": "We",
+                        "right": "are"
+                    },
+                    {
+                        "left": "They",
+                        "right": "are"
+                    },
+                    {
+                        "left": "You",
+                        "right": "are"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 7,
+        "title": "Kişi Zamirleri",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'She' zamiri kimi ifade eder?",
+                "options": [
+                    "O (erkek)",
+                    "O (kadın)",
+                    "Onlar",
+                    "Biz"
+                ],
+                "answer": "O (kadın)"
+            },
+            {
+                "type": "quiz",
+                "question": "'We' ne demektir?",
+                "options": [
+                    "Ben",
+                    "Sen",
+                    "Biz",
+                    "Onlar"
+                ],
+                "answer": "Biz"
+            },
+            {
+                "type": "quiz",
+                "question": "'They' zamirinin anlamı nedir?",
+                "options": [
+                    "Siz",
+                    "Onlar",
+                    "Biz",
+                    "O"
+                ],
+                "answer": "Onlar"
+            },
+            {
+                "type": "fill_blank",
+                "question": "______ is my mother. ______ is very kind.",
+                "options": [
+                    "She",
+                    "He",
+                    "It",
+                    "They"
+                ],
+                "answer": "She"
+            },
+            {
+                "type": "fill_blank",
+                "question": "______ are students. ______ go to school.",
+                "options": [
+                    "She",
+                    "He",
+                    "We",
+                    "It"
+                ],
+                "answer": "We"
+            },
+            {
+                "type": "fill_blank",
+                "question": "This is a cat. ______ is cute.",
+                "options": [
+                    "He",
+                    "She",
+                    "It",
+                    "They"
+                ],
+                "answer": "It"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "are",
+                    "They",
+                    "friends",
+                    "my"
+                ],
+                "correctOrder": [
+                    "They",
+                    "are",
+                    "my",
+                    "friends"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "teacher",
+                    "He",
+                    "a",
+                    "is"
+                ],
+                "correctOrder": [
+                    "He",
+                    "is",
+                    "a",
+                    "teacher"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "O (kadın) bir öğretmen.",
+                "answer": "She is a teacher."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Onlar arkadaş.",
+                "answer": "They are friends."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu zamiri sesli okuyun",
+                "word": "She",
+                "answer": "She"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "We are happy.",
+                "answer": "We are happy"
+            },
+            {
+                "type": "matching",
+                "question": "Zamirleri Türkçeleriyle eşleştirin",
+                "pairs": [
+                    {
+                        "left": "I",
+                        "right": "Ben"
+                    },
+                    {
+                        "left": "You",
+                        "right": "Sen"
+                    },
+                    {
+                        "left": "He",
+                        "right": "O (erkek)"
+                    },
+                    {
+                        "left": "She",
+                        "right": "O (kadın)"
+                    },
+                    {
+                        "left": "They",
+                        "right": "Onlar"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 8,
+        "title": "Artikeller (a, an, the)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'___ apple' — hangi artikel kullanılır?",
+                "options": [
+                    "a",
+                    "an",
+                    "the",
+                    "—"
+                ],
+                "answer": "an"
+            },
+            {
+                "type": "quiz",
+                "question": "'___ book' — hangi artikel kullanılır?",
+                "options": [
+                    "a",
+                    "an",
+                    "the",
+                    "—"
+                ],
+                "answer": "a"
+            },
+            {
+                "type": "quiz",
+                "question": "'the' artikeli ne zaman kullanılır?",
+                "options": [
+                    "Belirli bir şeyden bahsederken",
+                    "Her zaman",
+                    "Hiçbir zaman",
+                    "Sadece çoğullarda"
+                ],
+                "answer": "Belirli bir şeyden bahsederken"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I have ______ umbrella.",
+                "options": [
+                    "a",
+                    "an",
+                    "the",
+                    "—"
+                ],
+                "answer": "an"
+            },
+            {
+                "type": "fill_blank",
+                "question": "She is ______ engineer.",
+                "options": [
+                    "a",
+                    "an",
+                    "the",
+                    "—"
+                ],
+                "answer": "an"
+            },
+            {
+                "type": "fill_blank",
+                "question": "______ sun is very bright today.",
+                "options": [
+                    "A",
+                    "An",
+                    "The",
+                    "—"
+                ],
+                "answer": "The"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "is",
+                    "an",
+                    "It",
+                    "apple"
+                ],
+                "correctOrder": [
+                    "It",
+                    "is",
+                    "an",
+                    "apple"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "the",
+                    "I",
+                    "book",
+                    "like"
+                ],
+                "correctOrder": [
+                    "I",
+                    "like",
+                    "the",
+                    "book"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Bu bir kitap.",
+                "answer": "This is a book."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "O bir mühendis.",
+                "answer": "He is an engineer."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "It is an orange.",
+                "answer": "It is an orange"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "The cat is here.",
+                "answer": "The cat is here"
+            },
+            {
+                "type": "matching",
+                "question": "Doğru artikeli eşleştirin",
+                "pairs": [
+                    {
+                        "left": "___ apple",
+                        "right": "an"
+                    },
+                    {
+                        "left": "___ car",
+                        "right": "a"
+                    },
+                    {
+                        "left": "___ orange",
+                        "right": "an"
+                    },
+                    {
+                        "left": "___ house",
+                        "right": "a"
+                    },
+                    {
+                        "left": "___ egg",
+                        "right": "an"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 9,
+        "title": "Bu / Şu / Bunlar / Şunlar",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'This' ne demektir?",
+                "options": [
+                    "Bu",
+                    "Şu",
+                    "Bunlar",
+                    "Şunlar"
+                ],
+                "answer": "Bu"
+            },
+            {
+                "type": "quiz",
+                "question": "'Those' ne demektir?",
+                "options": [
+                    "Bu",
+                    "Şu",
+                    "Bunlar",
+                    "Şunlar"
+                ],
+                "answer": "Şunlar"
+            },
+            {
+                "type": "quiz",
+                "question": "Uzaktaki birden fazla nesne için hangisi kullanılır?",
+                "options": [
+                    "this",
+                    "that",
+                    "these",
+                    "those"
+                ],
+                "answer": "those"
+            },
+            {
+                "type": "fill_blank",
+                "question": "______ is my pen. (yakın, tekil)",
+                "options": [
+                    "This",
+                    "That",
+                    "These",
+                    "Those"
+                ],
+                "answer": "This"
+            },
+            {
+                "type": "fill_blank",
+                "question": "______ are my friends. (yakın, çoğul)",
+                "options": [
+                    "This",
+                    "That",
+                    "These",
+                    "Those"
+                ],
+                "answer": "These"
+            },
+            {
+                "type": "fill_blank",
+                "question": "______ is a nice house. (uzak, tekil)",
+                "options": [
+                    "This",
+                    "That",
+                    "These",
+                    "Those"
+                ],
+                "answer": "That"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "my",
+                    "This",
+                    "book",
+                    "is"
+                ],
+                "correctOrder": [
+                    "This",
+                    "is",
+                    "my",
+                    "book"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "are",
+                    "Those",
+                    "cars",
+                    "old"
+                ],
+                "correctOrder": [
+                    "Those",
+                    "are",
+                    "old",
+                    "cars"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Bu benim kalemim.",
+                "answer": "This is my pen."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Şunlar güzel çiçekler.",
+                "answer": "Those are beautiful flowers."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "This is my book.",
+                "answer": "This is my book"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "Those are my friends.",
+                "answer": "Those are my friends"
+            },
+            {
+                "type": "matching",
+                "question": "İşaret zamirlerini eşleştirin",
+                "pairs": [
+                    {
+                        "left": "This",
+                        "right": "Bu (tekil, yakın)"
+                    },
+                    {
+                        "left": "That",
+                        "right": "Şu (tekil, uzak)"
+                    },
+                    {
+                        "left": "These",
+                        "right": "Bunlar (çoğul, yakın)"
+                    },
+                    {
+                        "left": "Those",
+                        "right": "Şunlar (çoğul, uzak)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 10,
+        "title": "Basit Soru Cümleleri",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'What is your name?' ne demektir?",
+                "options": [
+                    "Adın ne?",
+                    "Nerelisin?",
+                    "Kaç yaşındasın?",
+                    "Nasılsın?"
+                ],
+                "answer": "Adın ne?"
+            },
+            {
+                "type": "quiz",
+                "question": "Soru cümlesinde 'do' nerede kullanılır?",
+                "options": [
+                    "Cümle başında",
+                    "Cümle sonunda",
+                    "Fiilden sonra",
+                    "Kullanılmaz"
+                ],
+                "answer": "Cümle başında"
+            },
+            {
+                "type": "quiz",
+                "question": "'Where do you live?' sorusunun anlamı nedir?",
+                "options": [
+                    "Nerede yaşıyorsun?",
+                    "Ne iş yapıyorsun?",
+                    "Nereden geliyorsun?",
+                    "Nereye gidiyorsun?"
+                ],
+                "answer": "Nerede yaşıyorsun?"
+            },
+            {
+                "type": "fill_blank",
+                "question": "______ is your favorite color?",
+                "options": [
+                    "What",
+                    "Where",
+                    "Who",
+                    "When"
+                ],
+                "answer": "What"
+            },
+            {
+                "type": "fill_blank",
+                "question": "______ do you go to school?",
+                "options": [
+                    "What",
+                    "When",
+                    "Who",
+                    "Which"
+                ],
+                "answer": "When"
+            },
+            {
+                "type": "fill_blank",
+                "question": "______ old are you?",
+                "options": [
+                    "What",
+                    "How",
+                    "Where",
+                    "Who"
+                ],
+                "answer": "How"
+            },
+            {
+                "type": "word_order",
+                "question": "Soruyu doğru sıraya koyun",
+                "components": [
+                    "your",
+                    "What",
+                    "name",
+                    "is",
+                    "?"
+                ],
+                "correctOrder": [
+                    "What",
+                    "is",
+                    "your",
+                    "name",
+                    "?"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Soruyu doğru sıraya koyun",
+                "components": [
+                    "live",
+                    "do",
+                    "Where",
+                    "you",
+                    "?"
+                ],
+                "correctOrder": [
+                    "Where",
+                    "do",
+                    "you",
+                    "live",
+                    "?"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu soruyu İngilizceye çevirin",
+                "sentence": "Kaç yaşındasın?",
+                "answer": "How old are you?"
+            },
+            {
+                "type": "translation",
+                "question": "Bu soruyu İngilizceye çevirin",
+                "sentence": "Bu nedir?",
+                "answer": "What is this?"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu soruyu sesli okuyun",
+                "word": "What is your name?",
+                "answer": "What is your name"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu soruyu sesli okuyun",
+                "word": "Where are you from?",
+                "answer": "Where are you from"
+            },
+            {
+                "type": "matching",
+                "question": "Soru kelimelerini eşleştirin",
+                "pairs": [
+                    {
+                        "left": "What",
+                        "right": "Ne"
+                    },
+                    {
+                        "left": "Where",
+                        "right": "Nerede"
+                    },
+                    {
+                        "left": "When",
+                        "right": "Ne zaman"
+                    },
+                    {
+                        "left": "Who",
+                        "right": "Kim"
+                    },
+                    {
+                        "left": "How",
+                        "right": "Nasıl"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 11,
+        "title": "There is / There are Kullanımı",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'There is a cat.' ne demektir?",
+                "options": [
+                    "Bir kedi var.",
+                    "Kedi orada.",
+                    "Kedi burada.",
+                    "Kedim var."
+                ],
+                "answer": "Bir kedi var."
+            },
+            {
+                "type": "quiz",
+                "question": "Çoğul isimlerle hangisi kullanılır?",
+                "options": [
+                    "There is",
+                    "There are",
+                    "There was",
+                    "There do"
+                ],
+                "answer": "There are"
+            },
+            {
+                "type": "quiz",
+                "question": "'There are three books.' cümlesinin anlamı?",
+                "options": [
+                    "Üç kitap var.",
+                    "Kitaplar orada.",
+                    "Üç kitap al.",
+                    "Kitapları koy."
+                ],
+                "answer": "Üç kitap var."
+            },
+            {
+                "type": "fill_blank",
+                "question": "There ______ a dog in the garden.",
+                "options": [
+                    "is",
+                    "are",
+                    "am",
+                    "be"
+                ],
+                "answer": "is"
+            },
+            {
+                "type": "fill_blank",
+                "question": "There ______ five students in the class.",
+                "options": [
+                    "is",
+                    "are",
+                    "am",
+                    "be"
+                ],
+                "answer": "are"
+            },
+            {
+                "type": "fill_blank",
+                "question": "______ there any milk in the fridge?",
+                "options": [
+                    "Is",
+                    "Are",
+                    "Do",
+                    "Does"
+                ],
+                "answer": "Is"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "a",
+                    "There",
+                    "park",
+                    "is",
+                    "near",
+                    "here"
+                ],
+                "correctOrder": [
+                    "There",
+                    "is",
+                    "a",
+                    "park",
+                    "near",
+                    "here"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "many",
+                    "are",
+                    "There",
+                    "people"
+                ],
+                "correctOrder": [
+                    "There",
+                    "are",
+                    "many",
+                    "people"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Masada bir kitap var.",
+                "answer": "There is a book on the table."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Bahçede iki kedi var.",
+                "answer": "There are two cats in the garden."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "There is a book.",
+                "answer": "There is a book"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "There are many students.",
+                "answer": "There are many students"
+            },
+            {
+                "type": "matching",
+                "question": "Doğru yapıyı eşleştirin",
+                "pairs": [
+                    {
+                        "left": "a cat",
+                        "right": "There is"
+                    },
+                    {
+                        "left": "two dogs",
+                        "right": "There are"
+                    },
+                    {
+                        "left": "an apple",
+                        "right": "There is"
+                    },
+                    {
+                        "left": "many people",
+                        "right": "There are"
+                    },
+                    {
+                        "left": "a school",
+                        "right": "There is"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 12,
+        "title": "Çoğul İsimler",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'Book' kelimesinin çoğulu nedir?",
+                "options": [
+                    "Books",
+                    "Bookes",
+                    "Bookies",
+                    "Bookks"
+                ],
+                "answer": "Books"
+            },
+            {
+                "type": "quiz",
+                "question": "'Child' kelimesinin çoğulu nedir?",
+                "options": [
+                    "Childs",
+                    "Childes",
+                    "Children",
+                    "Childies"
+                ],
+                "answer": "Children"
+            },
+            {
+                "type": "quiz",
+                "question": "Hangisi düzensiz çoğuldur?",
+                "options": [
+                    "cats",
+                    "dogs",
+                    "men",
+                    "books"
+                ],
+                "answer": "men"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I have two ______ (baby).",
+                "options": [
+                    "babys",
+                    "babies",
+                    "babyes",
+                    "babyies"
+                ],
+                "answer": "babies"
+            },
+            {
+                "type": "fill_blank",
+                "question": "The ______ (woman) are talking.",
+                "options": [
+                    "womans",
+                    "womens",
+                    "women",
+                    "womanes"
+                ],
+                "answer": "women"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I see three ______ (box).",
+                "options": [
+                    "boxs",
+                    "boxes",
+                    "boxies",
+                    "boxen"
+                ],
+                "answer": "boxes"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "two",
+                    "are",
+                    "There",
+                    "cats"
+                ],
+                "correctOrder": [
+                    "There",
+                    "are",
+                    "two",
+                    "cats"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "children",
+                    "The",
+                    "playing",
+                    "are"
+                ],
+                "correctOrder": [
+                    "The",
+                    "children",
+                    "are",
+                    "playing"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Üç çocuk var.",
+                "answer": "There are three children."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Kadınlar konuşuyor.",
+                "answer": "The women are talking."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu kelimeyi sesli okuyun",
+                "word": "Children",
+                "answer": "Children"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "There are five boxes.",
+                "answer": "There are five boxes"
+            },
+            {
+                "type": "matching",
+                "question": "Tekil-çoğul eşleştirmesi yapın",
+                "pairs": [
+                    {
+                        "left": "child",
+                        "right": "children"
+                    },
+                    {
+                        "left": "woman",
+                        "right": "women"
+                    },
+                    {
+                        "left": "man",
+                        "right": "men"
+                    },
+                    {
+                        "left": "tooth",
+                        "right": "teeth"
+                    },
+                    {
+                        "left": "foot",
+                        "right": "feet"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 13,
+        "title": "Temel Sıfatlar",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'Big' ne demektir?",
+                "options": [
+                    "Büyük",
+                    "Küçük",
+                    "Uzun",
+                    "Kısa"
+                ],
+                "answer": "Büyük"
+            },
+            {
+                "type": "quiz",
+                "question": "'Beautiful' kelimesinin karşıtı nedir?",
+                "options": [
+                    "Ugly",
+                    "Pretty",
+                    "Nice",
+                    "Lovely"
+                ],
+                "answer": "Ugly"
+            },
+            {
+                "type": "quiz",
+                "question": "Sıfatlar İngilizcede nereye gelir?",
+                "options": [
+                    "İsimden önce",
+                    "İsimden sonra",
+                    "Fiilden sonra",
+                    "Cümle sonuna"
+                ],
+                "answer": "İsimden önce"
+            },
+            {
+                "type": "fill_blank",
+                "question": "She has a ______ car. (new)",
+                "options": [
+                    "new",
+                    "news",
+                    "newer",
+                    "newly"
+                ],
+                "answer": "new"
+            },
+            {
+                "type": "fill_blank",
+                "question": "The weather is ______ today.",
+                "options": [
+                    "cold",
+                    "colder",
+                    "coldly",
+                    "colds"
+                ],
+                "answer": "cold"
+            },
+            {
+                "type": "fill_blank",
+                "question": "This is a very ______ book.",
+                "options": [
+                    "interest",
+                    "interesting",
+                    "interested",
+                    "interests"
+                ],
+                "answer": "interesting"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "a",
+                    "It",
+                    "big",
+                    "is",
+                    "house"
+                ],
+                "correctOrder": [
+                    "It",
+                    "is",
+                    "a",
+                    "big",
+                    "house"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "is",
+                    "very",
+                    "She",
+                    "tall"
+                ],
+                "correctOrder": [
+                    "She",
+                    "is",
+                    "very",
+                    "tall"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Bu güzel bir çiçek.",
+                "answer": "This is a beautiful flower."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Hava soğuk.",
+                "answer": "The weather is cold."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu sıfatı sesli okuyun",
+                "word": "Beautiful",
+                "answer": "Beautiful"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "It is a big house.",
+                "answer": "It is a big house"
+            },
+            {
+                "type": "matching",
+                "question": "Sıfatları zıtlarıyla eşleştirin",
+                "pairs": [
+                    {
+                        "left": "big",
+                        "right": "small"
+                    },
+                    {
+                        "left": "hot",
+                        "right": "cold"
+                    },
+                    {
+                        "left": "old",
+                        "right": "new"
+                    },
+                    {
+                        "left": "happy",
+                        "right": "sad"
+                    },
+                    {
+                        "left": "tall",
+                        "right": "short"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 14,
+        "title": "İyelik Sıfatları",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'My' ne demektir?",
+                "options": [
+                    "Benim",
+                    "Senin",
+                    "Onun",
+                    "Bizim"
+                ],
+                "answer": "Benim"
+            },
+            {
+                "type": "quiz",
+                "question": "'Their' hangi zamir grubuna aittir?",
+                "options": [
+                    "Ben",
+                    "Sen",
+                    "O",
+                    "Onlar"
+                ],
+                "answer": "Onlar"
+            },
+            {
+                "type": "quiz",
+                "question": "'Her book' ne demektir?",
+                "options": [
+                    "Onun kitabı (kadın)",
+                    "Onun kitabı (erkek)",
+                    "Senin kitabın",
+                    "Benim kitabım"
+                ],
+                "answer": "Onun kitabı (kadın)"
+            },
+            {
+                "type": "fill_blank",
+                "question": "This is ______ house. (ben)",
+                "options": [
+                    "my",
+                    "me",
+                    "I",
+                    "mine"
+                ],
+                "answer": "my"
+            },
+            {
+                "type": "fill_blank",
+                "question": "______ name is Ali. (o, erkek)",
+                "options": [
+                    "He",
+                    "His",
+                    "Him",
+                    "Her"
+                ],
+                "answer": "His"
+            },
+            {
+                "type": "fill_blank",
+                "question": "We love ______ school. (biz)",
+                "options": [
+                    "we",
+                    "us",
+                    "our",
+                    "ours"
+                ],
+                "answer": "our"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "is",
+                    "her",
+                    "This",
+                    "bag"
+                ],
+                "correctOrder": [
+                    "This",
+                    "is",
+                    "her",
+                    "bag"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "their",
+                    "like",
+                    "They",
+                    "teacher"
+                ],
+                "correctOrder": [
+                    "They",
+                    "like",
+                    "their",
+                    "teacher"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Bu benim kitabım.",
+                "answer": "This is my book."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Onların evi büyük.",
+                "answer": "Their house is big."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "My name is Ali.",
+                "answer": "My name is Ali"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "Her bag is red.",
+                "answer": "Her bag is red"
+            },
+            {
+                "type": "matching",
+                "question": "İyelik sıfatlarını eşleştirin",
+                "pairs": [
+                    {
+                        "left": "I",
+                        "right": "my"
+                    },
+                    {
+                        "left": "you",
+                        "right": "your"
+                    },
+                    {
+                        "left": "he",
+                        "right": "his"
+                    },
+                    {
+                        "left": "she",
+                        "right": "her"
+                    },
+                    {
+                        "left": "they",
+                        "right": "their"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 15,
+        "title": "Aile Üyeleri",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'Mother' ne demektir?",
+                "options": [
+                    "Anne",
+                    "Baba",
+                    "Kız kardeş",
+                    "Abla"
+                ],
+                "answer": "Anne"
+            },
+            {
+                "type": "quiz",
+                "question": "'Uncle' ne demektir?",
+                "options": [
+                    "Amca/Dayı",
+                    "Hala/Teyze",
+                    "Kuzen",
+                    "Dede"
+                ],
+                "answer": "Amca/Dayı"
+            },
+            {
+                "type": "quiz",
+                "question": "Annenizin annesi kimin?",
+                "options": [
+                    "Grandmother",
+                    "Grandfather",
+                    "Aunt",
+                    "Mother"
+                ],
+                "answer": "Grandmother"
+            },
+            {
+                "type": "fill_blank",
+                "question": "My father's brother is my ______.",
+                "options": [
+                    "uncle",
+                    "aunt",
+                    "cousin",
+                    "nephew"
+                ],
+                "answer": "uncle"
+            },
+            {
+                "type": "fill_blank",
+                "question": "My sister's daughter is my ______.",
+                "options": [
+                    "niece",
+                    "nephew",
+                    "cousin",
+                    "aunt"
+                ],
+                "answer": "niece"
+            },
+            {
+                "type": "fill_blank",
+                "question": "My mother's mother is my ______.",
+                "options": [
+                    "grandmother",
+                    "grandfather",
+                    "aunt",
+                    "mother"
+                ],
+                "answer": "grandmother"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "a",
+                    "has",
+                    "She",
+                    "brother"
+                ],
+                "correctOrder": [
+                    "She",
+                    "has",
+                    "a",
+                    "brother"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "is",
+                    "My",
+                    "a",
+                    "father",
+                    "doctor"
+                ],
+                "correctOrder": [
+                    "My",
+                    "father",
+                    "is",
+                    "a",
+                    "doctor"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Benim iki kardeşim var.",
+                "answer": "I have two siblings."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Onun annesi öğretmen.",
+                "answer": "His mother is a teacher."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu kelimeyi sesli okuyun",
+                "word": "Grandmother",
+                "answer": "Grandmother"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "I have a brother.",
+                "answer": "I have a brother"
+            },
+            {
+                "type": "matching",
+                "question": "Aile üyelerini eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Mother",
+                        "right": "Anne"
+                    },
+                    {
+                        "left": "Father",
+                        "right": "Baba"
+                    },
+                    {
+                        "left": "Brother",
+                        "right": "Erkek kardeş"
+                    },
+                    {
+                        "left": "Sister",
+                        "right": "Kız kardeş"
+                    },
+                    {
+                        "left": "Grandfather",
+                        "right": "Dede"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 16,
+        "title": "Günlük Rutinler",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'Wake up' ne demektir?",
+                "options": [
+                    "Uyanmak",
+                    "Uyumak",
+                    "Yemek",
+                    "Gitmek"
+                ],
+                "answer": "Uyanmak"
+            },
+            {
+                "type": "quiz",
+                "question": "'Have breakfast' ne anlama gelir?",
+                "options": [
+                    "Kahvaltı yapmak",
+                    "Öğle yemeği",
+                    "Akşam yemeği",
+                    "Atıştırmak"
+                ],
+                "answer": "Kahvaltı yapmak"
+            },
+            {
+                "type": "quiz",
+                "question": "'Go to bed' ne demektir?",
+                "options": [
+                    "Yatmak",
+                    "Kalkmak",
+                    "Gitmek",
+                    "Gelmek"
+                ],
+                "answer": "Yatmak"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I ______ up at 7 o'clock every morning.",
+                "options": [
+                    "wake",
+                    "woke",
+                    "waking",
+                    "wakes"
+                ],
+                "answer": "wake"
+            },
+            {
+                "type": "fill_blank",
+                "question": "She ______ her teeth after breakfast.",
+                "options": [
+                    "brush",
+                    "brushes",
+                    "brushed",
+                    "brushing"
+                ],
+                "answer": "brushes"
+            },
+            {
+                "type": "fill_blank",
+                "question": "We ______ to school by bus.",
+                "options": [
+                    "go",
+                    "goes",
+                    "going",
+                    "went"
+                ],
+                "answer": "go"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "at",
+                    "wake",
+                    "I",
+                    "up",
+                    "7"
+                ],
+                "correctOrder": [
+                    "I",
+                    "wake",
+                    "up",
+                    "at",
+                    "7"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "breakfast",
+                    "have",
+                    "We",
+                    "at",
+                    "8"
+                ],
+                "correctOrder": [
+                    "We",
+                    "have",
+                    "breakfast",
+                    "at",
+                    "8"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Ben her sabah 7'de uyanırım.",
+                "answer": "I wake up at 7 every morning."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "O dişlerini fırçalar.",
+                "answer": "She brushes her teeth."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "I wake up at seven.",
+                "answer": "I wake up at seven"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "I have breakfast.",
+                "answer": "I have breakfast"
+            },
+            {
+                "type": "matching",
+                "question": "Günlük rutinleri eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Wake up",
+                        "right": "Uyanmak"
+                    },
+                    {
+                        "left": "Have breakfast",
+                        "right": "Kahvaltı yapmak"
+                    },
+                    {
+                        "left": "Go to school",
+                        "right": "Okula gitmek"
+                    },
+                    {
+                        "left": "Go to bed",
+                        "right": "Yatmak"
+                    },
+                    {
+                        "left": "Brush teeth",
+                        "right": "Diş fırçalamak"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 17,
+        "title": "Yiyecekler ve İçecekler",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'Bread' ne demektir?",
+                "options": [
+                    "Ekmek",
+                    "Et",
+                    "Süt",
+                    "Peynir"
+                ],
+                "answer": "Ekmek"
+            },
+            {
+                "type": "quiz",
+                "question": "'Water' ne anlama gelir?",
+                "options": [
+                    "Su",
+                    "Çay",
+                    "Kahve",
+                    "Süt"
+                ],
+                "answer": "Su"
+            },
+            {
+                "type": "quiz",
+                "question": "'I am hungry' ne demektir?",
+                "options": [
+                    "Açım",
+                    "Tokum",
+                    "Susadım",
+                    "Yoruldum"
+                ],
+                "answer": "Açım"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I would like a glass of ______.",
+                "options": [
+                    "water",
+                    "bread",
+                    "egg",
+                    "rice"
+                ],
+                "answer": "water"
+            },
+            {
+                "type": "fill_blank",
+                "question": "She eats ______ for breakfast.",
+                "options": [
+                    "eggs",
+                    "water",
+                    "tea",
+                    "coffee"
+                ],
+                "answer": "eggs"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Can I have some ______, please?",
+                "options": [
+                    "tea",
+                    "table",
+                    "chair",
+                    "pen"
+                ],
+                "answer": "tea"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "like",
+                    "I",
+                    "coffee",
+                    "would"
+                ],
+                "correctOrder": [
+                    "I",
+                    "would",
+                    "like",
+                    "coffee"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "drink",
+                    "water",
+                    "I",
+                    "every",
+                    "day"
+                ],
+                "correctOrder": [
+                    "I",
+                    "drink",
+                    "water",
+                    "every",
+                    "day"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Bir bardak su istiyorum.",
+                "answer": "I would like a glass of water."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "O çay içer.",
+                "answer": "She drinks tea."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu kelimeyi sesli okuyun",
+                "word": "Breakfast",
+                "answer": "Breakfast"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "I am hungry.",
+                "answer": "I am hungry"
+            },
+            {
+                "type": "matching",
+                "question": "Yiyecekleri çevirileriyle eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Bread",
+                        "right": "Ekmek"
+                    },
+                    {
+                        "left": "Milk",
+                        "right": "Süt"
+                    },
+                    {
+                        "left": "Cheese",
+                        "right": "Peynir"
+                    },
+                    {
+                        "left": "Egg",
+                        "right": "Yumurta"
+                    },
+                    {
+                        "left": "Rice",
+                        "right": "Pirinç"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 18,
+        "title": "Simple Present Tense",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'She plays tennis.' cümlesinde neden '-s' eki var?",
+                "options": [
+                    "3. tekil şahıs olduğu için",
+                    "Çoğul olduğu için",
+                    "Geçmiş zaman olduğu için",
+                    "Soru olduğu için"
+                ],
+                "answer": "3. tekil şahıs olduğu için"
+            },
+            {
+                "type": "quiz",
+                "question": "'Do you like pizza?' cümlesinin anlamı?",
+                "options": [
+                    "Pizzayı sever misin?",
+                    "Pizza ister misin?",
+                    "Pizza var mı?",
+                    "Pizza nerede?"
+                ],
+                "answer": "Pizzayı sever misin?"
+            },
+            {
+                "type": "quiz",
+                "question": "'I don't like coffee.' ne demektir?",
+                "options": [
+                    "Kahve sevmiyorum",
+                    "Kahve istiyorum",
+                    "Kahve içerim",
+                    "Kahvem yok"
+                ],
+                "answer": "Kahve sevmiyorum"
+            },
+            {
+                "type": "fill_blank",
+                "question": "He ______ to school every day.",
+                "options": [
+                    "go",
+                    "goes",
+                    "going",
+                    "went"
+                ],
+                "answer": "goes"
+            },
+            {
+                "type": "fill_blank",
+                "question": "They ______ football on Sundays.",
+                "options": [
+                    "play",
+                    "plays",
+                    "playing",
+                    "played"
+                ],
+                "answer": "play"
+            },
+            {
+                "type": "fill_blank",
+                "question": "She ______ not like fish.",
+                "options": [
+                    "do",
+                    "does",
+                    "is",
+                    "has"
+                ],
+                "answer": "does"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "goes",
+                    "She",
+                    "school",
+                    "to",
+                    "every",
+                    "day"
+                ],
+                "correctOrder": [
+                    "She",
+                    "goes",
+                    "to",
+                    "school",
+                    "every",
+                    "day"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "like",
+                    "Do",
+                    "you",
+                    "music",
+                    "?"
+                ],
+                "correctOrder": [
+                    "Do",
+                    "you",
+                    "like",
+                    "music",
+                    "?"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "O her gün okula gider.",
+                "answer": "He goes to school every day."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Biz futbol oynarız.",
+                "answer": "We play football."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "I like pizza.",
+                "answer": "I like pizza"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "She goes to school.",
+                "answer": "She goes to school"
+            },
+            {
+                "type": "matching",
+                "question": "Doğru fiil formunu eşleştirin",
+                "pairs": [
+                    {
+                        "left": "I/You/We/They",
+                        "right": "play"
+                    },
+                    {
+                        "left": "He/She/It",
+                        "right": "plays"
+                    },
+                    {
+                        "left": "I/You/We/They",
+                        "right": "go"
+                    },
+                    {
+                        "left": "He/She/It",
+                        "right": "goes"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 19,
+        "title": "Renkler ve Kıyafetler",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'Red' ne demektir?",
+                "options": [
+                    "Kırmızı",
+                    "Mavi",
+                    "Yeşil",
+                    "Sarı"
+                ],
+                "answer": "Kırmızı"
+            },
+            {
+                "type": "quiz",
+                "question": "'T-shirt' ne demektir?",
+                "options": [
+                    "Tişört",
+                    "Pantolon",
+                    "Etek",
+                    "Şapka"
+                ],
+                "answer": "Tişört"
+            },
+            {
+                "type": "quiz",
+                "question": "'She is wearing a blue dress.' ne anlama gelir?",
+                "options": [
+                    "Mavi elbise giyiyor",
+                    "Mavi elbisesi var",
+                    "Mavi elbise istiyor",
+                    "Mavi elbise güzel"
+                ],
+                "answer": "Mavi elbise giyiyor"
+            },
+            {
+                "type": "fill_blank",
+                "question": "The sky is ______.",
+                "options": [
+                    "blue",
+                    "red",
+                    "green",
+                    "yellow"
+                ],
+                "answer": "blue"
+            },
+            {
+                "type": "fill_blank",
+                "question": "He is wearing a ______ jacket.",
+                "options": [
+                    "black",
+                    "sky",
+                    "sun",
+                    "tree"
+                ],
+                "answer": "black"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I like your ______ shoes.",
+                "options": [
+                    "white",
+                    "happy",
+                    "fast",
+                    "big"
+                ],
+                "answer": "white"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "wearing",
+                    "She",
+                    "a",
+                    "is",
+                    "red",
+                    "dress"
+                ],
+                "correctOrder": [
+                    "She",
+                    "is",
+                    "wearing",
+                    "a",
+                    "red",
+                    "dress"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "is",
+                    "My",
+                    "shirt",
+                    "favorite",
+                    "blue"
+                ],
+                "correctOrder": [
+                    "My",
+                    "favorite",
+                    "shirt",
+                    "is",
+                    "blue"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Gökyüzü mavidir.",
+                "answer": "The sky is blue."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "O kırmızı elbise giyiyor.",
+                "answer": "She is wearing a red dress."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu rengi sesli okuyun",
+                "word": "Yellow",
+                "answer": "Yellow"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "I like blue.",
+                "answer": "I like blue"
+            },
+            {
+                "type": "matching",
+                "question": "Renkleri Türkçeleriyle eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Red",
+                        "right": "Kırmızı"
+                    },
+                    {
+                        "left": "Blue",
+                        "right": "Mavi"
+                    },
+                    {
+                        "left": "Green",
+                        "right": "Yeşil"
+                    },
+                    {
+                        "left": "Yellow",
+                        "right": "Sarı"
+                    },
+                    {
+                        "left": "Black",
+                        "right": "Siyah"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 20,
+        "title": "Edatlar (in, on, at, under)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'The cat is on the table.' ne demektir?",
+                "options": [
+                    "Kedi masanın üstünde.",
+                    "Kedi masanın altında.",
+                    "Kedi masanın yanında.",
+                    "Kedi masanın içinde."
+                ],
+                "answer": "Kedi masanın üstünde."
+            },
+            {
+                "type": "quiz",
+                "question": "'under' edatının anlamı nedir?",
+                "options": [
+                    "Altında",
+                    "Üstünde",
+                    "İçinde",
+                    "Yanında"
+                ],
+                "answer": "Altında"
+            },
+            {
+                "type": "quiz",
+                "question": "'The book is in the bag.' cümlesinde 'in' ne anlama gelir?",
+                "options": [
+                    "İçinde",
+                    "Üzerinde",
+                    "Altında",
+                    "Arkasında"
+                ],
+                "answer": "İçinde"
+            },
+            {
+                "type": "fill_blank",
+                "question": "The keys are ______ the table.",
+                "options": [
+                    "on",
+                    "at",
+                    "is",
+                    "to"
+                ],
+                "answer": "on"
+            },
+            {
+                "type": "fill_blank",
+                "question": "She lives ______ Istanbul.",
+                "options": [
+                    "in",
+                    "on",
+                    "at",
+                    "to"
+                ],
+                "answer": "in"
+            },
+            {
+                "type": "fill_blank",
+                "question": "The dog is ______ the bed.",
+                "options": [
+                    "under",
+                    "on top",
+                    "above",
+                    "over"
+                ],
+                "answer": "under"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "is",
+                    "The",
+                    "in",
+                    "cat",
+                    "box",
+                    "the"
+                ],
+                "correctOrder": [
+                    "The",
+                    "cat",
+                    "is",
+                    "in",
+                    "the",
+                    "box"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "on",
+                    "book",
+                    "The",
+                    "is",
+                    "the",
+                    "table"
+                ],
+                "correctOrder": [
+                    "The",
+                    "book",
+                    "is",
+                    "on",
+                    "the",
+                    "table"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Kedi masanın altında.",
+                "answer": "The cat is under the table."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Kitap çantanın içinde.",
+                "answer": "The book is in the bag."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "The cat is on the table.",
+                "answer": "The cat is on the table"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "It is under the bed.",
+                "answer": "It is under the bed"
+            },
+            {
+                "type": "matching",
+                "question": "Edatları Türkçeleriyle eşleştirin",
+                "pairs": [
+                    {
+                        "left": "in",
+                        "right": "içinde"
+                    },
+                    {
+                        "left": "on",
+                        "right": "üzerinde"
+                    },
+                    {
+                        "left": "under",
+                        "right": "altında"
+                    },
+                    {
+                        "left": "next to",
+                        "right": "yanında"
+                    },
+                    {
+                        "left": "behind",
+                        "right": "arkasında"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 21,
+        "title": "Meslekler",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'Doctor' ne demektir?",
+                "options": [
+                    "Doktor",
+                    "Öğretmen",
+                    "Mühendis",
+                    "Avukat"
+                ],
+                "answer": "Doktor"
+            },
+            {
+                "type": "quiz",
+                "question": "'She is a nurse.' ne anlama gelir?",
+                "options": [
+                    "O bir hemşire.",
+                    "O bir doktor.",
+                    "O bir öğretmen.",
+                    "O bir polis."
+                ],
+                "answer": "O bir hemşire."
+            },
+            {
+                "type": "quiz",
+                "question": "Okullarda ders veren kişi kimdir?",
+                "options": [
+                    "Teacher",
+                    "Doctor",
+                    "Engineer",
+                    "Driver"
+                ],
+                "answer": "Teacher"
+            },
+            {
+                "type": "fill_blank",
+                "question": "My father is a ______. He works in a hospital.",
+                "options": [
+                    "doctor",
+                    "teacher",
+                    "driver",
+                    "farmer"
+                ],
+                "answer": "doctor"
+            },
+            {
+                "type": "fill_blank",
+                "question": "She is a ______. She teaches English.",
+                "options": [
+                    "teacher",
+                    "doctor",
+                    "nurse",
+                    "pilot"
+                ],
+                "answer": "teacher"
+            },
+            {
+                "type": "fill_blank",
+                "question": "He drives a bus. He is a ______.",
+                "options": [
+                    "driver",
+                    "pilot",
+                    "farmer",
+                    "cook"
+                ],
+                "answer": "driver"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "is",
+                    "a",
+                    "She",
+                    "teacher"
+                ],
+                "correctOrder": [
+                    "She",
+                    "is",
+                    "a",
+                    "teacher"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "want",
+                    "I",
+                    "a",
+                    "to",
+                    "be",
+                    "doctor"
+                ],
+                "correctOrder": [
+                    "I",
+                    "want",
+                    "to",
+                    "be",
+                    "a",
+                    "doctor"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "O bir mühendis.",
+                "answer": "He is an engineer."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Babam doktor.",
+                "answer": "My father is a doctor."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu mesleği sesli okuyun",
+                "word": "Engineer",
+                "answer": "Engineer"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "I want to be a teacher.",
+                "answer": "I want to be a teacher"
+            },
+            {
+                "type": "matching",
+                "question": "Meslekleri Türkçeleriyle eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Doctor",
+                        "right": "Doktor"
+                    },
+                    {
+                        "left": "Teacher",
+                        "right": "Öğretmen"
+                    },
+                    {
+                        "left": "Engineer",
+                        "right": "Mühendis"
+                    },
+                    {
+                        "left": "Nurse",
+                        "right": "Hemşire"
+                    },
+                    {
+                        "left": "Driver",
+                        "right": "Şoför"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 22,
+        "title": "Yön Tarifi",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'Turn left' ne demektir?",
+                "options": [
+                    "Sola dön",
+                    "Sağa dön",
+                    "Düz git",
+                    "Geri dön"
+                ],
+                "answer": "Sola dön"
+            },
+            {
+                "type": "quiz",
+                "question": "'Go straight' ne anlama gelir?",
+                "options": [
+                    "Düz gidin",
+                    "Sola dönün",
+                    "Sağa dönün",
+                    "Durun"
+                ],
+                "answer": "Düz gidin"
+            },
+            {
+                "type": "quiz",
+                "question": "'It is next to the bank.' cümlesinde 'next to' ne demektir?",
+                "options": [
+                    "Yanında",
+                    "Karşısında",
+                    "Arkasında",
+                    "İçinde"
+                ],
+                "answer": "Yanında"
+            },
+            {
+                "type": "fill_blank",
+                "question": "______ right at the traffic lights.",
+                "options": [
+                    "Turn",
+                    "Go",
+                    "Come",
+                    "Walk"
+                ],
+                "answer": "Turn"
+            },
+            {
+                "type": "fill_blank",
+                "question": "The school is ______ the hospital.",
+                "options": [
+                    "next to",
+                    "in",
+                    "on",
+                    "at"
+                ],
+                "answer": "next to"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Go ______ for two blocks.",
+                "options": [
+                    "straight",
+                    "left",
+                    "right",
+                    "back"
+                ],
+                "answer": "straight"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "left",
+                    "Turn",
+                    "the",
+                    "at",
+                    "corner"
+                ],
+                "correctOrder": [
+                    "Turn",
+                    "left",
+                    "at",
+                    "the",
+                    "corner"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "is",
+                    "the",
+                    "Where",
+                    "hospital",
+                    "?"
+                ],
+                "correctOrder": [
+                    "Where",
+                    "is",
+                    "the",
+                    "hospital",
+                    "?"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Sola dönün.",
+                "answer": "Turn left."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Düz gidin.",
+                "answer": "Go straight."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "Turn right.",
+                "answer": "Turn right"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "Go straight ahead.",
+                "answer": "Go straight ahead"
+            },
+            {
+                "type": "matching",
+                "question": "Yönleri eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Turn left",
+                        "right": "Sola dön"
+                    },
+                    {
+                        "left": "Turn right",
+                        "right": "Sağa dön"
+                    },
+                    {
+                        "left": "Go straight",
+                        "right": "Düz git"
+                    },
+                    {
+                        "left": "Go back",
+                        "right": "Geri dön"
+                    },
+                    {
+                        "left": "Stop",
+                        "right": "Dur"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 23,
+        "title": "Hava Durumu ve Mevsimler",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'It is sunny.' ne demektir?",
+                "options": [
+                    "Güneşli.",
+                    "Yağmurlu.",
+                    "Bulutlu.",
+                    "Karlı."
+                ],
+                "answer": "Güneşli."
+            },
+            {
+                "type": "quiz",
+                "question": "'Winter' hangi mevsimdir?",
+                "options": [
+                    "Kış",
+                    "Yaz",
+                    "İlkbahar",
+                    "Sonbahar"
+                ],
+                "answer": "Kış"
+            },
+            {
+                "type": "quiz",
+                "question": "'It is raining.' ne anlama gelir?",
+                "options": [
+                    "Yağmur yağıyor.",
+                    "Kar yağıyor.",
+                    "Güneşli.",
+                    "Bulutlu."
+                ],
+                "answer": "Yağmur yağıyor."
+            },
+            {
+                "type": "fill_blank",
+                "question": "It is very ______ today. I need a jacket.",
+                "options": [
+                    "cold",
+                    "hot",
+                    "sunny",
+                    "dry"
+                ],
+                "answer": "cold"
+            },
+            {
+                "type": "fill_blank",
+                "question": "In ______, the leaves fall from the trees.",
+                "options": [
+                    "autumn",
+                    "summer",
+                    "spring",
+                    "winter"
+                ],
+                "answer": "autumn"
+            },
+            {
+                "type": "fill_blank",
+                "question": "It is ______. Take your umbrella.",
+                "options": [
+                    "rainy",
+                    "sunny",
+                    "hot",
+                    "warm"
+                ],
+                "answer": "rainy"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "is",
+                    "today",
+                    "sunny",
+                    "It"
+                ],
+                "correctOrder": [
+                    "It",
+                    "is",
+                    "sunny",
+                    "today"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "the",
+                    "What",
+                    "like",
+                    "weather",
+                    "is",
+                    "?"
+                ],
+                "correctOrder": [
+                    "What",
+                    "is",
+                    "the",
+                    "weather",
+                    "like",
+                    "?"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Bugün yağmurlu.",
+                "answer": "It is rainy today."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Hava nasıl?",
+                "answer": "What is the weather like?"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "It is sunny today.",
+                "answer": "It is sunny today"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu mevsimi sesli okuyun",
+                "word": "Spring",
+                "answer": "Spring"
+            },
+            {
+                "type": "matching",
+                "question": "Hava durumlarını eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Sunny",
+                        "right": "Güneşli"
+                    },
+                    {
+                        "left": "Rainy",
+                        "right": "Yağmurlu"
+                    },
+                    {
+                        "left": "Cloudy",
+                        "right": "Bulutlu"
+                    },
+                    {
+                        "left": "Snowy",
+                        "right": "Karlı"
+                    },
+                    {
+                        "left": "Windy",
+                        "right": "Rüzgarlı"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lessonId": 24,
+        "title": "Can ile Yetenek Belirtme",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "'I can swim.' ne demektir?",
+                "options": [
+                    "Yüzebilirim.",
+                    "Yüzüyorum.",
+                    "Yüzmeliyim.",
+                    "Yüzdüm."
+                ],
+                "answer": "Yüzebilirim."
+            },
+            {
+                "type": "quiz",
+                "question": "'She can't drive.' ne anlama gelir?",
+                "options": [
+                    "Araba kullanamaz.",
+                    "Araba kullanıyor.",
+                    "Araba kullanmalı.",
+                    "Araba kullandı."
+                ],
+                "answer": "Araba kullanamaz."
+            },
+            {
+                "type": "quiz",
+                "question": "'Can you help me?' sorusunun anlamı?",
+                "options": [
+                    "Bana yardım edebilir misin?",
+                    "Bana yardım et.",
+                    "Yardım ediyorsun.",
+                    "Yardım etmelisin."
+                ],
+                "answer": "Bana yardım edebilir misin?"
+            },
+            {
+                "type": "fill_blank",
+                "question": "She ______ speak three languages.",
+                "options": [
+                    "can",
+                    "cans",
+                    "could",
+                    "canning"
+                ],
+                "answer": "can"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I ______ play the guitar.",
+                "options": [
+                    "can't",
+                    "don't can",
+                    "am not can",
+                    "not can"
+                ],
+                "answer": "can't"
+            },
+            {
+                "type": "fill_blank",
+                "question": "______ you ride a bicycle?",
+                "options": [
+                    "Can",
+                    "Do can",
+                    "Are can",
+                    "Is can"
+                ],
+                "answer": "Can"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "can",
+                    "He",
+                    "very",
+                    "swim",
+                    "well"
+                ],
+                "correctOrder": [
+                    "He",
+                    "can",
+                    "swim",
+                    "very",
+                    "well"
+                ]
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi doğru sıraya koyun",
+                "components": [
+                    "play",
+                    "Can",
+                    "the",
+                    "you",
+                    "piano",
+                    "?"
+                ],
+                "correctOrder": [
+                    "Can",
+                    "you",
+                    "play",
+                    "the",
+                    "piano",
+                    "?"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "Ben yüzebilirim.",
+                "answer": "I can swim."
+            },
+            {
+                "type": "translation",
+                "question": "Bu cümleyi İngilizceye çevirin",
+                "sentence": "O İngilizce konuşabilir.",
+                "answer": "She can speak English."
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "I can swim.",
+                "answer": "I can swim"
+            },
+            {
+                "type": "speaking",
+                "question": "Bu cümleyi sesli okuyun",
+                "word": "Can you help me?",
+                "answer": "Can you help me"
+            },
+            {
+                "type": "matching",
+                "question": "Yetenekleri eşleştirin",
+                "pairs": [
+                    {
+                        "left": "swim",
+                        "right": "yüzmek"
+                    },
+                    {
+                        "left": "drive",
+                        "right": "araba kullanmak"
+                    },
+                    {
+                        "left": "cook",
+                        "right": "yemek yapmak"
+                    },
+                    {
+                        "left": "sing",
+                        "right": "şarkı söylemek"
+                    },
+                    {
+                        "left": "dance",
+                        "right": "dans etmek"
+                    }
+                ]
+            }
+        ]
+    }
+]

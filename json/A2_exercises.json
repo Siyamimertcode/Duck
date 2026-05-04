@@ -1,0 +1,2290 @@
+[
+    {
+        "id": 0,
+        "title": "Geniş Zaman Tekrarı",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "My father usually ______ up at 6:00.",
+                "options": [
+                    "get",
+                    "getting",
+                    "gets",
+                    "got"
+                ],
+                "answer": "gets"
+            },
+            {
+                "type": "quiz",
+                "question": "______ you like chocolate?",
+                "options": [
+                    "Does",
+                    "Do",
+                    "Are",
+                    "Is"
+                ],
+                "answer": "Do"
+            },
+            {
+                "type": "fill_blank",
+                "question": "She ______ doesn't eat meat.",
+                "options": [
+                    "sometimes",
+                    "never",
+                    "always",
+                    "rarely"
+                ],
+                "answer": "never"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I ______ coffee every morning.",
+                "options": [
+                    "drink",
+                    "drinks",
+                    "drinking",
+                    "drank"
+                ],
+                "answer": "drink"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi düzenleyin",
+                "components": [
+                    "play",
+                    "football",
+                    "We",
+                    "Sundays",
+                    "on"
+                ],
+                "correctOrder": [
+                    "We",
+                    "play",
+                    "football",
+                    "on",
+                    "Sundays"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "O nerede yaşar?",
+                "sentence": "Where does he live?",
+                "answer": "Where does he live?"
+            },
+            {
+                "type": "speaking",
+                "question": "Cümleyi okuyun",
+                "word": "I wake up early.",
+                "answer": "I wake up early"
+            },
+            {
+                "type": "matching",
+                "question": "Zaman ifadelerini eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Every day",
+                        "right": "Her gün"
+                    },
+                    {
+                        "left": "Always",
+                        "right": "Daima"
+                    },
+                    {
+                        "left": "Often",
+                        "right": "Sık sık"
+                    },
+                    {
+                        "left": "Never",
+                        "right": "Asla"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "title": "Şimdiki Zaman",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "Listen! The baby ______.",
+                "options": [
+                    "cry",
+                    "cries",
+                    "is crying",
+                    "cried"
+                ],
+                "answer": "is crying"
+            },
+            {
+                "type": "quiz",
+                "question": "We ______ TV right now.",
+                "options": [
+                    "are watching",
+                    "watch",
+                    "watches",
+                    "watching"
+                ],
+                "answer": "are watching"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I ______ for my exam at the moment.",
+                "options": [
+                    "study",
+                    "am studying",
+                    "studies",
+                    "studying"
+                ],
+                "answer": "am studying"
+            },
+            {
+                "type": "word_order",
+                "question": "Soru oluşturun",
+                "components": [
+                    "you",
+                    "doing",
+                    "What",
+                    "are",
+                    "?"
+                ],
+                "correctOrder": [
+                    "What",
+                    "are",
+                    "you",
+                    "doing",
+                    "?"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Yağmur yağıyor.",
+                "sentence": "It is raining.",
+                "answer": "It is raining."
+            },
+            {
+                "type": "speaking",
+                "question": "Cümleyi okuyun",
+                "word": "She is reading a book.",
+                "answer": "She is reading a book"
+            },
+            {
+                "type": "matching",
+                "question": "Fiilleri -ing haliyle eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Run",
+                        "right": "Running"
+                    },
+                    {
+                        "left": "Make",
+                        "right": "Making"
+                    },
+                    {
+                        "left": "Sit",
+                        "right": "Sitting"
+                    },
+                    {
+                        "left": "Go",
+                        "right": "Going"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Geniş Zaman mı Şimdiki Zaman mı?",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "I usually ______ jeans, but today I am wearing a skirt.",
+                "options": [
+                    "wear",
+                    "am wearing",
+                    "wears",
+                    "wearing"
+                ],
+                "answer": "wear"
+            },
+            {
+                "type": "quiz",
+                "question": "Look! The bus ______.",
+                "options": [
+                    "comes",
+                    "is coming",
+                    "come",
+                    "coming"
+                ],
+                "answer": "is coming"
+            },
+            {
+                "type": "fill_blank",
+                "question": "He ______ works on Saturdays.",
+                "options": [
+                    "rarely",
+                    "now",
+                    "at the moment",
+                    "today"
+                ],
+                "answer": "rarely"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi düzenleyin",
+                "components": [
+                    "do",
+                    "not",
+                    "They",
+                    "now",
+                    "sleeping",
+                    "are"
+                ],
+                "correctOrder": [
+                    "They",
+                    "are",
+                    "not",
+                    "sleeping",
+                    "now"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Genellikle çay içerim ama şimdi kahve içiyorum.",
+                "sentence": "I usually drink tea but now I am drinking coffee.",
+                "answer": "I usually drink tea but now I am drinking coffee."
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "I am working properly.",
+                "answer": "I am working properly"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Geçmiş Zaman (Düzenli Fiiller)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "We ______ football yesterday.",
+                "options": [
+                    "play",
+                    "played",
+                    "playing",
+                    "plays"
+                ],
+                "answer": "played"
+            },
+            {
+                "type": "quiz",
+                "question": "She ______ the house last weekend.",
+                "options": [
+                    "clean",
+                    "cleaned",
+                    "cleans",
+                    "cleaning"
+                ],
+                "answer": "cleaned"
+            },
+            {
+                "type": "fill_blank",
+                "question": "They ______ TV last night.",
+                "options": [
+                    "watch",
+                    "watched",
+                    "watching",
+                    "watches"
+                ],
+                "answer": "watched"
+            },
+            {
+                "type": "word_order",
+                "question": "Düzgün cümle kurun",
+                "components": [
+                    "visited",
+                    "grandmother",
+                    "We",
+                    "our",
+                    "week",
+                    "last"
+                ],
+                "correctOrder": [
+                    "We",
+                    "visited",
+                    "our",
+                    "grandmother",
+                    "last",
+                    "week"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Dün yağmur yağdı.",
+                "sentence": "It rained yesterday.",
+                "answer": "It rained yesterday."
+            },
+            {
+                "type": "matching",
+                "question": "Fiillerin geçmiş hallerini eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Walk",
+                        "right": "Walked"
+                    },
+                    {
+                        "left": "Study",
+                        "right": "Studied"
+                    },
+                    {
+                        "left": "Stop",
+                        "right": "Stopped"
+                    },
+                    {
+                        "left": "Like",
+                        "right": "Liked"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Sesli okuyun",
+                "word": "I worked yesterday.",
+                "answer": "I worked yesterday"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Geçmiş Zaman (Düzensiz Fiiller)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "I ______ to the cinema last night.",
+                "options": [
+                    "go",
+                    "went",
+                    "gone",
+                    "going"
+                ],
+                "answer": "went"
+            },
+            {
+                "type": "quiz",
+                "question": "He ______ a new car last month.",
+                "options": [
+                    "buy",
+                    "bought",
+                    "buys",
+                    "buying"
+                ],
+                "answer": "bought"
+            },
+            {
+                "type": "fill_blank",
+                "question": "We ______ a pizza for dinner.",
+                "options": [
+                    "eat",
+                    "ate",
+                    "eaten",
+                    "eating"
+                ],
+                "answer": "ate"
+            },
+            {
+                "type": "word_order",
+                "question": "Sıralayın",
+                "components": [
+                    "saw",
+                    "I",
+                    "an",
+                    "elephant",
+                    "zoo",
+                    "at",
+                    "the"
+                ],
+                "correctOrder": [
+                    "I",
+                    "saw",
+                    "an",
+                    "elephant",
+                    "at",
+                    "the",
+                    "zoo"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "O, anahtarlarını kaybetti.",
+                "sentence": "She lost her keys.",
+                "answer": "She lost her keys."
+            },
+            {
+                "type": "matching",
+                "question": "Düzensiz fiilleri eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Go",
+                        "right": "Went"
+                    },
+                    {
+                        "left": "See",
+                        "right": "Saw"
+                    },
+                    {
+                        "left": "Do",
+                        "right": "Did"
+                    },
+                    {
+                        "left": "Have",
+                        "right": "Had"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "I found my phone.",
+                "answer": "I found my phone"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Zaman İfadeleri",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "I saw him two days ______.",
+                "options": [
+                    "ago",
+                    "last",
+                    "yesterday",
+                    "before"
+                ],
+                "answer": "ago"
+            },
+            {
+                "type": "quiz",
+                "question": "We went there ______ week.",
+                "options": [
+                    "last",
+                    "ago",
+                    "yesterday",
+                    "past"
+                ],
+                "answer": "last"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I was born ______ 1995.",
+                "options": [
+                    "in",
+                    "on",
+                    "at",
+                    "ago"
+                ],
+                "answer": "in"
+            },
+            {
+                "type": "word_order",
+                "question": "Düzenleyin",
+                "components": [
+                    "yesterday",
+                    "Where",
+                    "you",
+                    "were",
+                    "morning",
+                    "?"
+                ],
+                "correctOrder": [
+                    "Where",
+                    "were",
+                    "you",
+                    "yesterday",
+                    "morning",
+                    "?"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Geçen yıl Paris'teydim.",
+                "sentence": "I was in Paris last year.",
+                "answer": "I was in Paris last year."
+            },
+            {
+                "type": "matching",
+                "question": "Zaman ifadelerini eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Yesterday",
+                        "right": "Dün"
+                    },
+                    {
+                        "left": "Last week",
+                        "right": "Geçen hafta"
+                    },
+                    {
+                        "left": "Two days ago",
+                        "right": "İki gün önce"
+                    },
+                    {
+                        "left": "In the past",
+                        "right": "Geçmişte"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "See you next week.",
+                "answer": "See you next week"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Sayılabilen ve Sayılamayan İsimler",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "Which one is countable (sayılabilir)?",
+                "options": [
+                    "Water",
+                    "Bread",
+                    "Apple",
+                    "Rice"
+                ],
+                "answer": "Apple"
+            },
+            {
+                "type": "quiz",
+                "question": "Which one is uncountable (sayılamaz)?",
+                "options": [
+                    "Car",
+                    "Money",
+                    "Dog",
+                    "Book"
+                ],
+                "answer": "Money"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I need ______ water.",
+                "options": [
+                    "a",
+                    "some",
+                    "many",
+                    "two"
+                ],
+                "answer": "some"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümle kurun",
+                "components": [
+                    "drinking",
+                    "some",
+                    "He",
+                    "milk",
+                    "is"
+                ],
+                "correctOrder": [
+                    "He",
+                    "is",
+                    "drinking",
+                    "some",
+                    "milk"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Biraz ekmek istiyorum.",
+                "sentence": "I want some bread.",
+                "answer": "I want some bread."
+            },
+            {
+                "type": "matching",
+                "question": "Kategorize edin",
+                "pairs": [
+                    {
+                        "left": "Banana",
+                        "right": "Countable"
+                    },
+                    {
+                        "left": "Sugar",
+                        "right": "Uncountable"
+                    },
+                    {
+                        "left": "Chair",
+                        "right": "Countable"
+                    },
+                    {
+                        "left": "Music",
+                        "right": "Uncountable"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "A glass of water.",
+                "answer": "A glass of water"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Much / Many / A Lot Of Kullanımı",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "How ______ apples do we have?",
+                "options": [
+                    "much",
+                    "many",
+                    "any",
+                    "some"
+                ],
+                "answer": "many"
+            },
+            {
+                "type": "quiz",
+                "question": "How ______ water do you drink?",
+                "options": [
+                    "much",
+                    "many",
+                    "some",
+                    "a lot"
+                ],
+                "answer": "much"
+            },
+            {
+                "type": "fill_blank",
+                "question": "There are ______ people in the park.",
+                "options": [
+                    "much",
+                    "a lot of",
+                    "a little",
+                    "any"
+                ],
+                "answer": "a lot of"
+            },
+            {
+                "type": "word_order",
+                "question": "Düzenleyin",
+                "components": [
+                    "much",
+                    "How",
+                    "is",
+                    "money",
+                    "it",
+                    "?"
+                ],
+                "correctOrder": [
+                    "How",
+                    "much",
+                    "money",
+                    "is",
+                    "it",
+                    "?"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Hiç param yok.",
+                "sentence": "I don't have enough money.",
+                "answer": "I don't have any money."
+            },
+            {
+                "type": "matching",
+                "question": "Eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Many",
+                        "right": "Countable Nouns"
+                    },
+                    {
+                        "left": "Much",
+                        "right": "Uncountable Nouns"
+                    },
+                    {
+                        "left": "A lot of",
+                        "right": "Both"
+                    },
+                    {
+                        "left": "Any",
+                        "right": "Questions / Negatives"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "How much is it?",
+                "answer": "How much is it"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Karşılaştırmalar (Comparative)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "My car is ______ than yours.",
+                "options": [
+                    "fast",
+                    "faster",
+                    "fastest",
+                    "more fast"
+                ],
+                "answer": "faster"
+            },
+            {
+                "type": "quiz",
+                "question": "Istanbul is ______ than Ankara.",
+                "options": [
+                    "crowded",
+                    "more crowded",
+                    "crowdeder",
+                    "most crowded"
+                ],
+                "answer": "more crowded"
+            },
+            {
+                "type": "fill_blank",
+                "question": "An elephant is ______ than a mouse.",
+                "options": [
+                    "big",
+                    "biggest",
+                    "bigger",
+                    "more big"
+                ],
+                "answer": "bigger"
+            },
+            {
+                "type": "word_order",
+                "question": "Sıralayın",
+                "components": [
+                    "is",
+                    "Ali",
+                    "Can",
+                    "taller",
+                    "than"
+                ],
+                "correctOrder": [
+                    "Ali",
+                    "is",
+                    "taller",
+                    "than",
+                    "Can"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Bu kitap diğerinden daha iyi.",
+                "sentence": "This book is better than the other one.",
+                "answer": "This book is better than the other one."
+            },
+            {
+                "type": "matching",
+                "question": "Karşılaştırma hallerini eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Good",
+                        "right": "Better"
+                    },
+                    {
+                        "left": "Bad",
+                        "right": "Worse"
+                    },
+                    {
+                        "left": "Big",
+                        "right": "Bigger"
+                    },
+                    {
+                        "left": "Happy",
+                        "right": "Happier"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "Better late than never.",
+                "answer": "Better late than never"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "En Üstünlük (Superlative)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "This is the ______ movie ever!",
+                "options": [
+                    "good",
+                    "better",
+                    "best",
+                    "goodest"
+                ],
+                "answer": "best"
+            },
+            {
+                "type": "quiz",
+                "question": "Everest is the ______ mountain in the world.",
+                "options": [
+                    "high",
+                    "higher",
+                    "highest",
+                    "most high"
+                ],
+                "answer": "highest"
+            },
+            {
+                "type": "fill_blank",
+                "question": "She is the ______ girl in the class.",
+                "options": [
+                    "beautiful",
+                    "more beautiful",
+                    "most beautiful",
+                    "beauty"
+                ],
+                "answer": "most beautiful"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümle kurun",
+                "components": [
+                    "animal",
+                    "The",
+                    "is",
+                    "blue whale",
+                    "biggest",
+                    "the"
+                ],
+                "correctOrder": [
+                    "The",
+                    "blue whale",
+                    "is",
+                    "the",
+                    "biggest",
+                    "animal"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "En hızlı araba budur.",
+                "sentence": "This is the fastest car.",
+                "answer": "This is the fastest car."
+            },
+            {
+                "type": "matching",
+                "question": "Sıfatları Superlative halleriyle eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Bad",
+                        "right": "The Worst"
+                    },
+                    {
+                        "left": "Far",
+                        "right": "The Farthest"
+                    },
+                    {
+                        "left": "Funny",
+                        "right": "The Funniest"
+                    },
+                    {
+                        "left": "Interesting",
+                        "right": "The Most Interesting"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "The most important thing.",
+                "answer": "The most important thing"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Gelecek Zaman: Going To",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "Look at those clouds! It ______ rain.",
+                "options": [
+                    "is going to",
+                    "will",
+                    "goes",
+                    "go to"
+                ],
+                "answer": "is going to"
+            },
+            {
+                "type": "quiz",
+                "question": "I ______ visit my grandmother this weekend.",
+                "options": [
+                    "will",
+                    "am going to",
+                    "go to",
+                    "visiting"
+                ],
+                "answer": "am going to"
+            },
+            {
+                "type": "fill_blank",
+                "question": "They ______ going to buy a new house.",
+                "options": [
+                    "is",
+                    "am",
+                    "are",
+                    "will"
+                ],
+                "answer": "are"
+            },
+            {
+                "type": "word_order",
+                "question": "Planı düzenleyin",
+                "components": [
+                    "going",
+                    "travel",
+                    "He",
+                    "is",
+                    "to",
+                    "Italy"
+                ],
+                "correctOrder": [
+                    "He",
+                    "is",
+                    "going",
+                    "to",
+                    "travel",
+                    "to",
+                    "Italy"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Yarın ne yapacaksın?",
+                "sentence": "What are you going to do tomorrow?",
+                "answer": "What are you going to do tomorrow?"
+            },
+            {
+                "type": "matching",
+                "question": "Kısaltmaları eşleştirin",
+                "pairs": [
+                    {
+                        "left": "I am",
+                        "right": "I'm"
+                    },
+                    {
+                        "left": "He is",
+                        "right": "He's"
+                    },
+                    {
+                        "left": "We are",
+                        "right": "We're"
+                    },
+                    {
+                        "left": "They are",
+                        "right": "They're"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "I'm going to sleep.",
+                "answer": "I'm going to sleep"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Gelecek Zaman: Will",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "I think it ______ snow tomorrow.",
+                "options": [
+                    "will",
+                    "is going to",
+                    "snows",
+                    "snowed"
+                ],
+                "answer": "will"
+            },
+            {
+                "type": "quiz",
+                "question": "Wait! I ______ help you.",
+                "options": [
+                    "am going to",
+                    "will",
+                    "am helping",
+                    "help"
+                ],
+                "answer": "will"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Don't worry, I ______ tell anyone.",
+                "options": [
+                    "will",
+                    "won't",
+                    "don't",
+                    "am not"
+                ],
+                "answer": "won't"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümleyi kurun",
+                "components": [
+                    "always",
+                    "love",
+                    "I",
+                    "will",
+                    "you"
+                ],
+                "correctOrder": [
+                    "I",
+                    "will",
+                    "always",
+                    "love",
+                    "you"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Seni asla unutmayacağım.",
+                "sentence": "I will never forget you.",
+                "answer": "I will never forget you."
+            },
+            {
+                "type": "matching",
+                "question": "Kullanımları eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Prediction (Tahmin)",
+                        "right": "I think it will rain"
+                    },
+                    {
+                        "left": "Promise (Söz)",
+                        "right": "I will call you"
+                    },
+                    {
+                        "left": "Offer (Teklif)",
+                        "right": "I will open the door"
+                    },
+                    {
+                        "left": "Plan",
+                        "right": "I am going to work"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "It will be okay.",
+                "answer": "It will be okay"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Can / Can't Kullanımı",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "I ______ swim very well.",
+                "options": [
+                    "can",
+                    "do",
+                    "am",
+                    "have"
+                ],
+                "answer": "can"
+            },
+            {
+                "type": "quiz",
+                "question": "______ you speak Spanish?",
+                "options": [
+                    "Can",
+                    "Are",
+                    "Do",
+                    "Have"
+                ],
+                "answer": "Can"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I'm sorry, I ______ come to the party.",
+                "options": [
+                    "can",
+                    "can't",
+                    "don't",
+                    "won't"
+                ],
+                "answer": "can't"
+            },
+            {
+                "type": "word_order",
+                "question": "Soru sorun",
+                "components": [
+                    "play",
+                    "piano",
+                    "Can",
+                    "you",
+                    "the",
+                    "?"
+                ],
+                "correctOrder": [
+                    "Can",
+                    "you",
+                    "play",
+                    "the",
+                    "piano",
+                    "?"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Hızlı koşabilirim.",
+                "sentence": "I can run fast.",
+                "answer": "I can run fast."
+            },
+            {
+                "type": "matching",
+                "question": "Yetenekleri eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Bird",
+                        "right": "Can fly"
+                    },
+                    {
+                        "left": "Fish",
+                        "right": "Can swim"
+                    },
+                    {
+                        "left": "Baby",
+                        "right": "Can't walk"
+                    },
+                    {
+                        "left": "Snake",
+                        "right": "Can't fly"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "Can you hear me?",
+                "answer": "Can you hear me"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Rica ve Teklif Etme",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "______ I have a glass of water, please?",
+                "options": [
+                    "Can",
+                    "Am",
+                    "Do",
+                    "Will"
+                ],
+                "answer": "Can"
+            },
+            {
+                "type": "quiz",
+                "question": "______ you like some coffee?",
+                "options": [
+                    "Do",
+                    "Would",
+                    "Are",
+                    "Can"
+                ],
+                "answer": "Would"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Could you ______ the door, please?",
+                "options": [
+                    "open",
+                    "to open",
+                    "opening",
+                    "opened"
+                ],
+                "answer": "open"
+            },
+            {
+                "type": "word_order",
+                "question": "Rica cümlesi kurun",
+                "components": [
+                    "pass",
+                    "salt",
+                    "you",
+                    "Could",
+                    "the",
+                    "please",
+                    "?"
+                ],
+                "correctOrder": [
+                    "Could",
+                    "you",
+                    "pass",
+                    "the",
+                    "salt",
+                    "please",
+                    "?"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Biraz kek ister misin?",
+                "sentence": "Would you like some cake?",
+                "answer": "Would you like some cake?"
+            },
+            {
+                "type": "matching",
+                "question": "Cümleleri amaçlarıyla eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Can you help me?",
+                        "right": "Request (Rica)"
+                    },
+                    {
+                        "left": "Would you like tea?",
+                        "right": "Offer (Teklif)"
+                    },
+                    {
+                        "left": "Can I help you?",
+                        "right": "Offer (Teklif)"
+                    },
+                    {
+                        "left": "Open the door!",
+                        "right": "Order (Emir)"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "Would you like to dance?",
+                "answer": "Would you like to dance"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "title": "Kısa Soru Ekleri (Question Tags)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "You are a student, ______?",
+                "options": [
+                    "aren't you",
+                    "are you",
+                    "don't you",
+                    "isn't it"
+                ],
+                "answer": "aren't you"
+            },
+            {
+                "type": "quiz",
+                "question": "She doesn't like milk, ______?",
+                "options": [
+                    "does she",
+                    "doesn't she",
+                    "is she",
+                    "isn't she"
+                ],
+                "answer": "does she"
+            },
+            {
+                "type": "fill_blank",
+                "question": "It is a beautiful day, ______?",
+                "options": [
+                    "isn't it",
+                    "is it",
+                    "doesn't it",
+                    "wasn't it"
+                ],
+                "answer": "isn't it"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümle oluşturun",
+                "components": [
+                    "can",
+                    "swim",
+                    "he",
+                    "He",
+                    "can't",
+                    "?"
+                ],
+                "correctOrder": [
+                    "He",
+                    "can",
+                    "swim",
+                    "can't",
+                    "he",
+                    "?"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "O doktor, değil mi?",
+                "sentence": "He is a doctor, isn't he?",
+                "answer": "He is a doctor, isn't he?"
+            },
+            {
+                "type": "matching",
+                "question": "Eşleştirin",
+                "pairs": [
+                    {
+                        "left": "She is",
+                        "right": "isn't she?"
+                    },
+                    {
+                        "left": "You aren't",
+                        "right": "are you?"
+                    },
+                    {
+                        "left": "They play",
+                        "right": "don't they?"
+                    },
+                    {
+                        "left": "He didn't go",
+                        "right": "did he?"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "It's cold, isn't it?",
+                "answer": "It's cold isn't it"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "title": "Nasıl? Zarfları (Adverbs of Manner)",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "He drives very ______.",
+                "options": [
+                    "careful",
+                    "carefully",
+                    "slow",
+                    "good"
+                ],
+                "answer": "carefully"
+            },
+            {
+                "type": "quiz",
+                "question": "She sings ______.",
+                "options": [
+                    "beautiful",
+                    "beautifully",
+                    "bad",
+                    "happy"
+                ],
+                "answer": "beautifully"
+            },
+            {
+                "type": "fill_blank",
+                "question": "The turtle walks ______.",
+                "options": [
+                    "slow",
+                    "slowly",
+                    "fast",
+                    "quick"
+                ],
+                "answer": "slowly"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümle kurun",
+                "components": [
+                    "speaks",
+                    "English",
+                    "She",
+                    "well"
+                ],
+                "correctOrder": [
+                    "She",
+                    "speaks",
+                    "English",
+                    "well"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Lütfen sessiz konuş.",
+                "sentence": "Please speak quietly.",
+                "answer": "Please speak quietly."
+            },
+            {
+                "type": "matching",
+                "question": "Sıfatları zarflarla eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Good",
+                        "right": "Well"
+                    },
+                    {
+                        "left": "Fast",
+                        "right": "Fast"
+                    },
+                    {
+                        "left": "Happy",
+                        "right": "Happily"
+                    },
+                    {
+                        "left": "Hard",
+                        "right": "Hard"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "Listen carefully.",
+                "answer": "Listen carefully"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "title": "Hareket Edatları",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "The cat jumped ______ the box.",
+                "options": [
+                    "into",
+                    "of",
+                    "to",
+                    "at"
+                ],
+                "answer": "into"
+            },
+            {
+                "type": "quiz",
+                "question": "They walked ______ the forest.",
+                "options": [
+                    "through",
+                    "on",
+                    "at",
+                    "between"
+                ],
+                "answer": "through"
+            },
+            {
+                "type": "fill_blank",
+                "question": "He swam ______ the river.",
+                "options": [
+                    "across",
+                    "through",
+                    "over",
+                    "above"
+                ],
+                "answer": "across"
+            },
+            {
+                "type": "word_order",
+                "question": "Düzenleyin",
+                "components": [
+                    "walked",
+                    "the",
+                    "bridge",
+                    "We",
+                    "over"
+                ],
+                "correctOrder": [
+                    "We",
+                    "walked",
+                    "over",
+                    "the",
+                    "bridge"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Tünelden geçtiler.",
+                "sentence": "They went through the tunnel.",
+                "answer": "They went through the tunnel."
+            },
+            {
+                "type": "matching",
+                "question": "Edatları eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Into",
+                        "right": "İçine doğru"
+                    },
+                    {
+                        "left": "Out of",
+                        "right": "Dışına doğru"
+                    },
+                    {
+                        "left": "Over",
+                        "right": "Üzerinden"
+                    },
+                    {
+                        "left": "Under",
+                        "right": "Altından"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "Walk towards the door.",
+                "answer": "Walk towards the door"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "title": "Şehirde Yerler",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "You can buy bread at the ______.",
+                "options": [
+                    "bakery",
+                    "pharmacy",
+                    "library",
+                    "butcher"
+                ],
+                "answer": "bakery"
+            },
+            {
+                "type": "quiz",
+                "question": "Students study books in the ______.",
+                "options": [
+                    "library",
+                    "cinema",
+                    "park",
+                    "museum"
+                ],
+                "answer": "library"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I need medicine, I'm going to the ______.",
+                "options": [
+                    "pharmacy",
+                    "gym",
+                    "shop",
+                    "cafe"
+                ],
+                "answer": "pharmacy"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümle kurun",
+                "components": [
+                    "is",
+                    "museum",
+                    "Where",
+                    "the",
+                    "?"
+                ],
+                "correctOrder": [
+                    "Where",
+                    "is",
+                    "the",
+                    "museum",
+                    "?"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Postane nerede?",
+                "sentence": "Where is the post office?",
+                "answer": "Where is the post office?"
+            },
+            {
+                "type": "matching",
+                "question": "Yerler ve aktiviteleri eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Cinema",
+                        "right": "Watch movies"
+                    },
+                    {
+                        "left": "School",
+                        "right": "Learn"
+                    },
+                    {
+                        "left": "Hospital",
+                        "right": "See a doctor"
+                    },
+                    {
+                        "left": "Restaurant",
+                        "right": "Eat food"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "Police Station.",
+                "answer": "Police Station"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "title": "Yol Tarifi Sorma ve Anlatma",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "Go ______ ahead.",
+                "options": [
+                    "straight",
+                    "right",
+                    "left",
+                    "turn"
+                ],
+                "answer": "straight"
+            },
+            {
+                "type": "quiz",
+                "question": "Turn ______ at the traffic lights.",
+                "options": [
+                    "left",
+                    "straight",
+                    "front",
+                    "side"
+                ],
+                "answer": "left"
+            },
+            {
+                "type": "fill_blank",
+                "question": "The bank is ______ to the supermarket.",
+                "options": [
+                    "next",
+                    "near",
+                    "opposite",
+                    "behind"
+                ],
+                "answer": "next"
+            },
+            {
+                "type": "word_order",
+                "question": "Tarif edin",
+                "components": [
+                    "Take",
+                    "right",
+                    "the",
+                    "second"
+                ],
+                "correctOrder": [
+                    "Take",
+                    "the",
+                    "second",
+                    "right"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Buradan uzak mı?",
+                "sentence": "Is it far from here?",
+                "answer": "Is it far from here?"
+            },
+            {
+                "type": "matching",
+                "question": "Yönleri eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Turn left",
+                        "right": "Sola dön"
+                    },
+                    {
+                        "left": "Turn right",
+                        "right": "Sağa dön"
+                    },
+                    {
+                        "left": "Go straight",
+                        "right": "Düz git"
+                    },
+                    {
+                        "left": "Cross",
+                        "right": "Karşıya geç"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "It is on the corner.",
+                "answer": "It is on the corner"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "title": "Alışveriş ve Fiyatlar",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "How ______ is this t-shirt?",
+                "options": [
+                    "much",
+                    "many",
+                    "price",
+                    "cost"
+                ],
+                "answer": "much"
+            },
+            {
+                "type": "quiz",
+                "question": "Can I ______ it on?",
+                "options": [
+                    "try",
+                    "wear",
+                    "do",
+                    "make"
+                ],
+                "answer": "try"
+            },
+            {
+                "type": "fill_blank",
+                "question": "It's too ______, I have no money.",
+                "options": [
+                    "expensive",
+                    "cheap",
+                    "good",
+                    "nice"
+                ],
+                "answer": "expensive"
+            },
+            {
+                "type": "word_order",
+                "question": "Soru sorun",
+                "components": [
+                    "pay",
+                    "Can",
+                    "credit card",
+                    "by",
+                    "I",
+                    "?"
+                ],
+                "correctOrder": [
+                    "Can",
+                    "I",
+                    "pay",
+                    "by",
+                    "credit card",
+                    "?"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "İndirim var mı?",
+                "sentence": "Is there a discount?",
+                "answer": "Is there a discount?"
+            },
+            {
+                "type": "matching",
+                "question": "Kelimeleri eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Cheap",
+                        "right": "Ucuz"
+                    },
+                    {
+                        "left": "Expensive",
+                        "right": "Pahalı"
+                    },
+                    {
+                        "left": "Cash",
+                        "right": "Nakit"
+                    },
+                    {
+                        "left": "Receipt",
+                        "right": "Fiş"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "Here is your change.",
+                "answer": "Here is your change"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "title": "Sağlık ve Hastalık",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "I have a ______. My head hurts.",
+                "options": [
+                    "headache",
+                    "toothache",
+                    "stomachache",
+                    "flu"
+                ],
+                "answer": "headache"
+            },
+            {
+                "type": "quiz",
+                "question": "You should ______ a doctor.",
+                "options": [
+                    "see",
+                    "go",
+                    "look",
+                    "watch"
+                ],
+                "answer": "see"
+            },
+            {
+                "type": "fill_blank",
+                "question": "He has a high ______.",
+                "options": [
+                    "temperature",
+                    "heat",
+                    "cold",
+                    "pain"
+                ],
+                "answer": "temperature"
+            },
+            {
+                "type": "word_order",
+                "question": "Tavsiye verin",
+                "components": [
+                    "should",
+                    "medicine",
+                    "take",
+                    "You",
+                    "some"
+                ],
+                "correctOrder": [
+                    "You",
+                    "should",
+                    "take",
+                    "some",
+                    "medicine"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Kendimi iyi hissetmiyorum.",
+                "sentence": "I don't feel well.",
+                "answer": "I don't feel well."
+            },
+            {
+                "type": "matching",
+                "question": "Hastalıkları eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Flu",
+                        "right": "Grip"
+                    },
+                    {
+                        "left": "Cough",
+                        "right": "Öksürük"
+                    },
+                    {
+                        "left": "Sore throat",
+                        "right": "Boğaz ağrısı"
+                    },
+                    {
+                        "left": "Broken leg",
+                        "right": "Kırık bacak"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "Get well soon!",
+                "answer": "Get well soon"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "title": "Hava Durumu",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "It is ______ today. Take your umbrella.",
+                "options": [
+                    "rainy",
+                    "sunny",
+                    "hot",
+                    "cloudy"
+                ],
+                "answer": "rainy"
+            },
+            {
+                "type": "quiz",
+                "question": "In winter, it is usually ______.",
+                "options": [
+                    "cold",
+                    "hot",
+                    "warm",
+                    "dry"
+                ],
+                "answer": "cold"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Look at the snow! It is ______.",
+                "options": [
+                    "snowing",
+                    "snow",
+                    "snowy",
+                    "snown"
+                ],
+                "answer": "snowing"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümle kurun",
+                "components": [
+                    "weather",
+                    "the",
+                    "like",
+                    "What",
+                    "is",
+                    "?"
+                ],
+                "correctOrder": [
+                    "What",
+                    "is",
+                    "the",
+                    "weather",
+                    "like",
+                    "?"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Hava çok sıcak.",
+                "sentence": "The weather is very hot.",
+                "answer": "The weather is very hot."
+            },
+            {
+                "type": "matching",
+                "question": "Havayı eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Sunny",
+                        "right": "Güneşli"
+                    },
+                    {
+                        "left": "Cloudy",
+                        "right": "Bulutlu"
+                    },
+                    {
+                        "left": "Windy",
+                        "right": "Rüzgarlı"
+                    },
+                    {
+                        "left": "Foggy",
+                        "right": "Sisli"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "It is freezing outside.",
+                "answer": "It is freezing outside"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "title": "Basit Bağlaçlar",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "I like tea ______ coffee.",
+                "options": [
+                    "and",
+                    "but",
+                    "so",
+                    "because"
+                ],
+                "answer": "and"
+            },
+            {
+                "type": "quiz",
+                "question": "I wanted to go, ______ I was tired.",
+                "options": [
+                    "but",
+                    "and",
+                    "so",
+                    "or"
+                ],
+                "answer": "but"
+            },
+            {
+                "type": "fill_blank",
+                "question": "It was raining, ______ we stayed at home.",
+                "options": [
+                    "so",
+                    "because",
+                    "but",
+                    "or"
+                ],
+                "answer": "so"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümle kurun",
+                "components": [
+                    "ate",
+                    "He",
+                    "hungry",
+                    "was",
+                    "because",
+                    "he"
+                ],
+                "correctOrder": [
+                    "He",
+                    "ate",
+                    "because",
+                    "he",
+                    "was",
+                    "hungry"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Çalıştım çünkü sınavım vardı.",
+                "sentence": "I studied because I had an exam.",
+                "answer": "I studied because I had an exam."
+            },
+            {
+                "type": "matching",
+                "question": "Bağlaçları eşleştirin",
+                "pairs": [
+                    {
+                        "left": "And",
+                        "right": "Ve"
+                    },
+                    {
+                        "left": "But",
+                        "right": "Ama"
+                    },
+                    {
+                        "left": "So",
+                        "right": "Bu yüzden"
+                    },
+                    {
+                        "left": "Because",
+                        "right": "Çünkü"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "Apples and oranges.",
+                "answer": "Apples and oranges"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "title": "Günlük Diyaloglar",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "- Thank you very much. \n- ______.",
+                "options": [
+                    "You're welcome",
+                    "No",
+                    "Please",
+                    "Sorry"
+                ],
+                "answer": "You're welcome"
+            },
+            {
+                "type": "quiz",
+                "question": "- How are you? \n- ______.",
+                "options": [
+                    "I'm fine, thanks",
+                    "I'm 20",
+                    "I'm Ali",
+                    "I'm student"
+                ],
+                "answer": "I'm fine, thanks"
+            },
+            {
+                "type": "fill_blank",
+                "question": "Excuse me, ______ help me?",
+                "options": [
+                    "can you",
+                    "you are",
+                    "do you",
+                    "are you"
+                ],
+                "answer": "can you"
+            },
+            {
+                "type": "word_order",
+                "question": "Cümle kurun",
+                "components": [
+                    "weekend",
+                    "Have",
+                    "nice",
+                    "a"
+                ],
+                "correctOrder": [
+                    "Have",
+                    "a",
+                    "nice",
+                    "weekend"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Görüşürüz!",
+                "sentence": "See you!",
+                "answer": "See you!"
+            },
+            {
+                "type": "matching",
+                "question": "Diyalogları eşleştirin",
+                "pairs": [
+                    {
+                        "left": "I'm sorry",
+                        "right": "That's okay"
+                    },
+                    {
+                        "left": "Good morning",
+                        "right": "Good morning"
+                    },
+                    {
+                        "left": "See you later",
+                        "right": "Bye"
+                    },
+                    {
+                        "left": "Nice to meet you",
+                        "right": "Me too"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "See you later.",
+                "answer": "See you later"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "title": "Günlük Problemleri Anlatma",
+        "exercises": [
+            {
+                "type": "quiz",
+                "question": "I ______ the bus.",
+                "options": [
+                    "missed",
+                    "lost",
+                    "forgot",
+                    "left"
+                ],
+                "answer": "missed"
+            },
+            {
+                "type": "quiz",
+                "question": "My phone battery is ______.",
+                "options": [
+                    "dead",
+                    "die",
+                    "empty",
+                    "off"
+                ],
+                "answer": "dead"
+            },
+            {
+                "type": "fill_blank",
+                "question": "I ______ my wallet at home.",
+                "options": [
+                    "left",
+                    "forgot",
+                    "lost",
+                    "missed"
+                ],
+                "answer": "left"
+            },
+            {
+                "type": "word_order",
+                "question": "Düzenleyin",
+                "components": [
+                    "lost",
+                    "I",
+                    "passport",
+                    "my",
+                    "have"
+                ],
+                "correctOrder": [
+                    "I",
+                    "have",
+                    "lost",
+                    "my",
+                    "passport"
+                ]
+            },
+            {
+                "type": "translation",
+                "question": "Geç kaldım.",
+                "sentence": "I am late.",
+                "answer": "I am late."
+            },
+            {
+                "type": "matching",
+                "question": "Problemleri eşleştirin",
+                "pairs": [
+                    {
+                        "left": "Lost keys",
+                        "right": "Anahtarları kaybetmek"
+                    },
+                    {
+                        "left": "Miss the bus",
+                        "right": "Otobüsü kaçırmak"
+                    },
+                    {
+                        "left": "Break a glass",
+                        "right": "Bardak kırmak"
+                    },
+                    {
+                        "left": "Be late",
+                        "right": "Geç kalmak"
+                    }
+                ]
+            },
+            {
+                "type": "speaking",
+                "question": "Okuyun",
+                "word": "I have a problem.",
+                "answer": "I have a problem"
+            }
+        ]
+    }
+]

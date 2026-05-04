@@ -1,0 +1,64 @@
+{
+  "gunlukGorevler": [
+    { "id": 1, "baslik": "Giriş Yap", "aciklama": "Uygulamaya giriş yap", "hedef": 1, "xp": 10 },
+    { "id": 2, "baslik": "Ders Tamamla", "aciklama": "En az 1 ders tamamla", "hedef": 1, "xp": 10 },
+    { "id": 3, "baslik": "Mini Oyun Oyna", "aciklama": "1 mini oyun oyna", "hedef": 1, "xp": 15 },
+    { "id": 4, "baslik": "Zaman Geçir", "aciklama": "Uygulamada 10 dakika geçir", "hedef": 10, "xp": 15 },
+
+    { "id": 5, "baslik": "5 Alıştırma Yap", "aciklama": "Toplam 5 alıştırma tamamla", "hedef": 5, "xp": 25 },
+    { "id": 6, "baslik": "Kelime Tekrarı", "aciklama": "5 kelimeyi tekrar et", "hedef": 5, "xp": 15 },
+    { "id": 7, "baslik": "Zaman Geçir", "aciklama": "Uygulamada 15 dakika geçir", "hedef": 15, "xp": 20 },
+    { "id": 8, "baslik": "Doğru Seri", "aciklama": "Üst üste 5 doğru cevap ver", "hedef": 5, "xp": 20 },
+
+    { "id": 9, "baslik": "Kelime Eşleştirme", "aciklama": "1 kelime eşleştirme oyunu bitir", "hedef": 1, "xp": 15 },
+    { "id": 10, "baslik": "2 Ders Tamamla", "aciklama": "Toplam 2 ders tamamla", "hedef": 2, "xp": 25 },
+    { "id": 11, "baslik": "Geri Dönüş", "aciklama": "Uygulamayı gün içinde tekrar aç", "hedef": 2, "xp": 10 },
+    { "id": 12, "baslik": "2 Mini Oyun Oyna", "aciklama": "2 mini oyun tamamla", "hedef": 2, "xp": 30 },
+
+    { "id": 13, "baslik": "Zaman Geçir", "aciklama": "Uygulamada 25 dakika geçir", "hedef": 25, "xp": 30 },
+    { "id": 14, "baslik": "3 Ders Tamamla", "aciklama": "Toplam 3 ders tamamla", "hedef": 3, "xp": 40 },
+    { "id": 15, "baslik": "Kelime Oyunu", "aciklama": "Kelime oyunu oyna", "hedef": 1, "xp": 15 },
+    { "id": 16, "baslik": "Günlük Seri", "aciklama": "Günlük seriyi bozma", "hedef": 1, "xp": 15 },
+
+    { "id": 17, "baslik": "3 Mini Oyun Oyna", "aciklama": "3 mini oyun tamamla", "hedef": 3, "xp": 45 },
+    { "id": 18, "baslik": "XP Topla", "aciklama": "Gün içinde 50 XP kazan", "hedef": 50, "xp": 20 },
+    { "id": 19, "baslik": "Zaman Geçir", "aciklama": "Uygulamada 30 dakika geçir", "hedef": 30, "xp": 40 },
+    { "id": 20, "baslik": "Balon Oyunu", "aciklama": "Balon oyunu oyna", "hedef": 1, "xp": 20 },
+
+    { "id": 21, "baslik": "4 Ders Tamamla", "aciklama": "Toplam 4 ders tamamla", "hedef": 4, "xp": 55 },
+    { "id": 22, "baslik": "Yanlışsız Oyun", "aciklama": "1 mini oyunu hatasız bitir", "hedef": 1, "xp": 30 },
+    { "id": 23, "baslik": "10 Alıştırma Yap", "aciklama": "Toplam 10 alıştırma tamamla", "hedef": 10, "xp": 40 },
+    { "id": 24, "baslik": "25 Dakika Zaman Geçir", "aciklama": "Uygulamada 25 dakika geçir", "hedef": 25, "xp": 30 },
+
+    { "id": 25, "baslik": "100 XP Kazan", "aciklama": "Gün içinde 100 XP kazan", "hedef": 100, "xp": 30 },
+    { "id": 26, "baslik": "Hatasız 2 Mini Oyun", "aciklama": "2 mini oyunu hatasız bitir", "hedef": 2, "xp": 60 },
+    { "id": 27, "baslik": "45 Dakika Zaman Geçir", "aciklama": "Uygulamada 45 dakika geçir", "hedef": 45, "xp": 45 },
+    { "id": 28, "baslik": "Günlük Tamamlama", "aciklama": "3 görev tamamla", "hedef": 3, "xp": 25 }
+  ],
+
+  "haftalikGorevler": [
+    { "id": 101, "baslik": "3 Gün Üst Üste Gir", "aciklama": "Uygulamaya 3 gün üst üste giriş yap", "hedef": 3, "xp": 50 },
+    { "id": 102, "baslik": "Haftalık Mini Oyun", "aciklama": "Toplam 10 kere mini oyun oyna", "hedef": 10, "xp": 100 },
+    { "id": 103, "baslik": "Ders Maratonu", "aciklama": "Toplam 30 ders tamamla", "hedef": 30, "xp": 120 },
+    { "id": 104, "baslik": "XP Avcısı", "aciklama": "Hafta boyunca 300 XP kazan", "hedef": 300, "xp": 150 },
+
+    { "id": 105, "baslik": "5 Günlük Seri", "aciklama": "5 gün üst üste giriş yap", "hedef": 5, "xp": 80 },
+    { "id": 106, "baslik": "Kelime Ustası", "aciklama": "50 kelime öğren", "hedef": 50, "xp": 120 },
+    { "id": 107, "baslik": "Oyun Haftası", "aciklama": "5 mini oyun oyna", "hedef": 5, "xp": 80 },
+    { "id": 108, "baslik": "150 Dakika Zaman Geçir", "aciklama": "Hafta boyunca 150 dakika zaman geçir", "hedef": 150, "xp": 120 },
+
+    { "id": 109, "baslik": "Hatasız Gün", "aciklama": "Bir gün boyunca hatasız 3 görev bitir", "hedef": 3, "xp": 70 },
+    { "id": 110, "baslik": "15 Ders Tamamla", "aciklama": "Toplam 15 ders tamamla", "hedef": 15, "xp": 140 },
+    { "id": 111, "baslik": "Dinleme Haftası", "aciklama": "5 dinleme oyunu tamamla", "hedef": 5, "xp": 80 },
+    { "id": 112, "baslik": "Seviye Atlama", "aciklama": "En az 2 seviye atla", "hedef": 2, "xp": 150 },
+
+    { "id": 113, "baslik": "25 Ders Tamamla", "aciklama": "Toplam 25 ders tamamla", "hedef": 25, "xp": 180 },
+    { "id": 114, "baslik": "Konuşma Haftası", "aciklama": "5 konuşma görevi yap", "hedef": 5, "xp": 80 },
+    { "id": 115, "baslik": "300 Dakika Zaman Geçir", "aciklama": "Hafta boyunca 300 dakika zaman geçir", "hedef": 300, "xp": 200 },
+
+    { "id": 116, "baslik": "500 XP Kazan", "aciklama": "Hafta boyunca 500 XP kazan", "hedef": 500, "xp": 250 },
+    { "id": 117, "baslik": "40 Mini Oyun Oyna", "aciklama": "Toplam 40 mini oyun tamamla", "hedef": 40, "xp": 250 },
+    { "id": 118, "baslik": "7 Günlük Seri", "aciklama": "7 gün boyunca seriyi bozma", "hedef": 7, "xp": 200 },
+    { "id": 119, "baslik": "Haftayı Bitir", "aciklama": "Toplam 15 görev tamamla", "hedef": 15, "xp": 200 }
+  ]
+}
