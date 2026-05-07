@@ -64,13 +64,6 @@ class _VocabularyScreenState extends State<VocabularyScreen>
         _isLoading = false;
       });
       _animController.forward();
-
-      // Auto-speak the first word
-      if (_words.isNotEmpty) {
-        Future.delayed(const Duration(milliseconds: 500), () {
-          if (mounted) TtsService().speakEnglish(_words[_currentIndex].english);
-        });
-      }
     }
   }
 
@@ -101,6 +94,10 @@ class _VocabularyScreenState extends State<VocabularyScreen>
   void _startPractice() {
     setState(() {
       _showIntro = false;
+    });
+    Future.delayed(const Duration(milliseconds: 350), () {
+      if (!mounted || _words.isEmpty) return;
+      TtsService().speakEnglish(_words[_currentIndex].english);
     });
   }
 

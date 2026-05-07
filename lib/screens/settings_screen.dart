@@ -1,5 +1,7 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../services/user_preferences.dart';
 import '../services/notification_service.dart';
 import '../services/app_state.dart';
@@ -605,6 +607,32 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   Widget _buildAboutSection() {
+    const double partnerLogoBaseHeight = 110;
+    const double partnerLogoMaxWidth = 180;
+    const double atakLogoScale = 1.5;
+    const double royalLogoScale = 0.75;
+    final double partnerLogoSlotHeight = partnerLogoBaseHeight * atakLogoScale;
+
+    Widget buildPartnerLogo({required String asset, required double scale}) {
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          SizedBox(
+            height: partnerLogoSlotHeight,
+            child: Center(
+              child: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: partnerLogoMaxWidth * scale,
+                  maxHeight: partnerLogoBaseHeight * scale,
+                ),
+                child: Image.asset(asset, fit: BoxFit.contain),
+              ),
+            ),
+          ),
+        ],
+      );
+    }
+
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(20),
@@ -655,70 +683,54 @@ class _SettingsScreenState extends State<SettingsScreen> {
               letterSpacing: -0.5,
             ),
           ),
-          const SizedBox(height: 2),
-          Text(
-            S.get('settings_app_desc'),
-            style: TextStyle(
-              fontSize: 13,
-              color: darkGreen.withOpacity(0.5),
-              fontWeight: FontWeight.w500,
-            ),
-          ),
-          const SizedBox(height: 4),
+          const SizedBox(height: 6),
           Text(
             'Versiyon 1.0.0',
             style: TextStyle(fontSize: 13, color: darkGreen.withOpacity(0.4)),
           ),
-          const SizedBox(height: 16),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  darkGreen.withOpacity(0.06),
-                  darkGreen.withOpacity(0.03),
-                ],
+          const SizedBox(height: 12),
+          // Logo section (no boxes)
+          const SizedBox(height: 6),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: buildPartnerLogo(
+                  asset: 'assets/Atakstulogo.png',
+                  scale: atakLogoScale,
+                ),
               ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: buildPartnerLogo(
+                  asset: 'assets/logo.png',
+                  scale: royalLogoScale,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          // Placement: move the 'produced by' note under the logos
+          Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: darkGreen.withOpacity(0.03),
               borderRadius: BorderRadius.circular(12),
               border: Border.all(color: darkGreen.withOpacity(0.08)),
             ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Container(
-                  width: 28,
-                  height: 28,
-                  decoration: BoxDecoration(
-                    color: orange.withOpacity(0.15),
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: Icon(Icons.code_rounded, color: orange, size: 16),
-                ),
-                const SizedBox(width: 10),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Atak Studios',
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w700,
-                        color: darkGreen,
-                      ),
-                    ),
-                    Text(
-                      S.get('settings_developer'),
-                      style: TextStyle(
-                        fontSize: 11,
-                        color: darkGreen.withOpacity(0.4),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
+            child: Text(
+              'Uygulama Atak Studios tarafından Royal English Time için özel olarak üretilmiştir.',
+              style: TextStyle(
+                fontSize: 12,
+                color: darkGreen.withOpacity(0.7),
+                height: 1.5,
+                fontWeight: FontWeight.w500,
+              ),
+              textAlign: TextAlign.center,
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 16),
           Text(
             '© 2025 Atak Studios. Tüm hakları saklıdır.',
             style: TextStyle(fontSize: 12, color: darkGreen.withOpacity(0.4)),
@@ -761,6 +773,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
             icon: Icons.shield_rounded,
             title: S.get('settings_kvkk'),
             onTap: () => _showLegalPage(S.get('settings_kvkk'), _kvkkText),
+          ),
+          _buildDivider(),
+          _buildLegalTile(
+            icon: Icons.mail_rounded,
+            title: 'İletişim',
+            onTap: () => _showLegalPage('İletişim', _contactInfo),
           ),
         ],
       ),
@@ -888,14 +906,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 ),
                 const SizedBox(height: 20),
                 // Content
-                Text(
-                  content,
-                  style: TextStyle(
-                    fontSize: 14,
-                    color: darkGreen.withOpacity(0.8),
-                    height: 1.7,
-                  ),
-                ),
+                _buildLegalContent(title, content),
                 const SizedBox(height: 24),
                 // Footer
                 Center(
@@ -916,6 +927,94 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
   }
 
+  Widget _buildLegalContent(String title, String content) {
+    final TextStyle baseStyle = TextStyle(
+      fontSize: 14,
+      color: darkGreen.withOpacity(0.8),
+      height: 1.7,
+    );
+    final TextStyle linkStyle = baseStyle.copyWith(
+      color: lightGreen,
+      fontWeight: FontWeight.w600,
+      decoration: TextDecoration.underline,
+    );
+
+    if (title != 'İletişim') {
+      return Text(content, style: baseStyle);
+    }
+
+    return SelectableText.rich(
+      TextSpan(children: _linkifyText(content, baseStyle, linkStyle)),
+    );
+  }
+
+  List<InlineSpan> _linkifyText(
+    String text,
+    TextStyle baseStyle,
+    TextStyle linkStyle,
+  ) {
+    final RegExp pattern = RegExp(
+      r'([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|(?:https?:\/\/)?(?:www\.)?[A-Za-z0-9.-]+\.[A-Za-z]{2,})',
+    );
+    final List<InlineSpan> spans = [];
+    int lastIndex = 0;
+
+    for (final Match match in pattern.allMatches(text)) {
+      if (match.start > lastIndex) {
+        spans.add(
+          TextSpan(
+            text: text.substring(lastIndex, match.start),
+            style: baseStyle,
+          ),
+        );
+      }
+
+      final String matchText = match.group(0) ?? '';
+      if (matchText.isEmpty) continue;
+
+      if (matchText.contains('@')) {
+        final String email = matchText;
+        final String url = _gmailComposeUrl(email);
+        spans.add(
+          TextSpan(
+            text: matchText,
+            style: linkStyle,
+            recognizer: TapGestureRecognizer()..onTap = () => _openUrl(url),
+          ),
+        );
+      } else {
+        final String url = matchText.startsWith('http')
+            ? matchText
+            : 'https://$matchText';
+        spans.add(
+          TextSpan(
+            text: matchText,
+            style: linkStyle,
+            recognizer: TapGestureRecognizer()..onTap = () => _openUrl(url),
+          ),
+        );
+      }
+
+      lastIndex = match.end;
+    }
+
+    if (lastIndex < text.length) {
+      spans.add(TextSpan(text: text.substring(lastIndex), style: baseStyle));
+    }
+
+    return spans;
+  }
+
+  String _gmailComposeUrl(String email) {
+    final String encoded = Uri.encodeComponent(email);
+    return 'https://mail.google.com/mail/?view=cm&fs=1&to=$encoded';
+  }
+
+  Future<void> _openUrl(String url) async {
+    final Uri uri = Uri.parse(url);
+    await launchUrl(uri, mode: LaunchMode.externalApplication);
+  }
+
   // ── Legal Texts ────────────────────────────────────────────────────
 
   static const String _termsOfService = '''
@@ -923,21 +1022,23 @@ DUCK UYGULAMASI KULLANIM KOŞULLARI
 
 1. GENEL HÜKÜMLER
 
-1.1. Bu kullanım koşulları ("Koşullar"), Atak Studios ("Şirket") tarafından geliştirilen ve yayınlanan Duck İngilizce Öğrenme Uygulaması'nın ("Uygulama") kullanımını düzenlemektedir.
+1.1. Bu kullanım koşulları ("Koşullar"), Siyami Mert ATAK / Atak Studios ("Yazılım Geliştirici") tarafından Royal English Time için özel olarak geliştirilen ve yayınlanan Duck İngilizce Öğrenme Uygulaması'nın ("Uygulama") kullanımını düzenlemektedir.
 
 1.2. Uygulamayı indirerek, yükleyerek veya kullanarak bu Koşulları kabul etmiş sayılırsınız. Bu Koşulları kabul etmiyorsanız Uygulamayı kullanmayınız.
 
-1.3. Şirket, bu Koşulları önceden bildirimde bulunmaksızın değiştirme hakkını saklı tutar. Güncellenen koşullar Uygulama üzerinden yayınlandığı tarihte yürürlüğe girer.
+1.3. Yazılım Geliştirici, bu Koşulları önceden bildirimde bulunmaksızın değiştirme hakkını saklı tutar.
 
 2. HİZMET TANIMI
 
-2.1. Duck, kullanıcılara İngilizce dil eğitimi sunan mobil bir uygulamadır. Uygulama; interaktif dersler, alıştırmalar, kelime çalışmaları, quiz, çeviri, eşleştirme ve konuşma egzersizleri gibi öğrenme araçları içermektedir.
+2.1. Duck, Royal English Time'ın öğrencilerine İngilizce dil eğitimi sunan mobil bir uygulamadır. Uygulama; interaktif dersler, alıştırmalar, kelime çalışmaları, quiz, çeviri, eşleştirme ve konuşma egzersizleri gibi öğrenme araçları içermektedir.
 
 2.2. Uygulama içeriği tamamen eğitim amaçlıdır ve profesyonel dil eğitiminin yerini almayı amaçlamamaktadır.
 
+2.3. Uygulama internet bağlantısı gerektirmez. Tüm işlemler ve veriler cihazınızda yerel olarak işlenir ve saklanır.
+
 3. KULLANICI YÜKÜMLÜLÜKLERİ
 
-3.1. Kullanıcı, Uygulamayı yalnızca kişisel ve ticari olmayan amaçlarla kullanmayı kabul eder.
+3.1. Kullanıcı, Uygulamayı yalnızca kişisel ve eğitim amaçlarıyla kullanmayı kabul eder.
 
 3.2. Kullanıcı, Uygulama içeriğini kopyalamayacağını, çoğaltmayacağını, dağıtmayacağını, tersine mühendislik yapmayacağını veya herhangi bir şekilde değiştirmeyeceğini kabul eder.
 
@@ -945,21 +1046,25 @@ DUCK UYGULAMASI KULLANIM KOŞULLARI
 
 3.4. Kullanıcı, Uygulamada sağladığı bilgilerin doğruluğundan sorumludur.
 
-4. FİKRİ MÜLKİYET HAKLARI
+4. SAHİPLİLİK VE FİKRİ MÜLKİYET HAKLARI
 
-4.1. Uygulama ve içindeki tüm materyaller (tasarım, yazılım kodu, grafikler, metinler, ses dosyaları, logolar ve diğer tüm içerikler) Atak Studios'un münhasır mülkiyetindedir.
+4.1. Uygulamanın çekirdek yazılım altyapısı, kaynak kodları, tasarım şablonları ve algoritmaları üzerindeki tüm fikri ve sınai mülkiyet hakları münhasıran Siyami Mert ATAK (Atak Studios)'a aittir. Kaynak kodları ve yazılıma ilişkin tüm haklar Siyami Mert ATAK'e aittir.
 
-4.2. Uygulama Türkiye Cumhuriyeti ve uluslararası fikri mülkiyet yasaları ile korunmaktadır.
+4.2. Royal English Time'a, Uygulamanın sadece 'münhasır olmayan' bir kullanım lisansı verilmiştir; bu lisans Uygulamayı kendi eğitim faaliyetleri kapsamında kullanma hakkını verir, ancak kaynak kodlar ve yazılımın kendisi üzerinde mülkiyet hakkı vermez.
 
-4.3. "Duck", "Atak Studios" isimleri ve ilgili logolar Atak Studios'un tescilli markalarıdır.
+4.3. Uygulama içindeki Royal English Time logoları ve kuruma özel hazırlanan eğitim materyalleri (soru, video, metin) Royal English Time'ın mülkiyetindedir.
+
+4.4. Yazılımın 'motoru' ve işleyişi Siyami Mert ATAK (Atak Studios) mülkiyetinde kalmaya devam eder.
+
+4.5. Uygulama Türkiye Cumhuriyeti ve uluslararası fikri mülkiyet yasaları ile korunmaktadır.
+
+4.6. "Duck", "Atak Studios" ve "Royal English Time" isimleri ve ilgili logolar ilgili kurumlarının tescilli markalarıdır.
 
 5. SORUMLULUK SINIRLAMASI
 
 5.1. Uygulama "olduğu gibi" sunulmaktadır. Atak Studios, Uygulamanın kesintisiz veya hatasız çalışacağını garanti etmemektedir.
 
 5.2. Atak Studios, Uygulamanın kullanımından veya kullanılamamasından kaynaklanan doğrudan veya dolaylı zararlardan sorumlu tutulamaz.
-
-5.3. Atak Studios, önceden bildirimde bulunmaksızın Uygulamayı geçici veya kalıcı olarak askıya alma veya sonlandırma hakkını saklı tutar.
 
 6. UYGULANACAK HUKUK
 
@@ -969,13 +1074,19 @@ DUCK UYGULAMASI KULLANIM KOŞULLARI
 
 7. İLETİŞİM
 
-Koşullar hakkında sorularınız için Uygulama içi destek kanallarından veya info@atakstudios.com adresinden bizimle iletişime geçebilirsiniz.
+Yazılım Geliştiricisi: Siyami Mert ATAK (Atak Studios)
+E-mail: atakstudios2025@gmail.com
+
+Müşteri Kurum: Royal English Time
+E-mail: izmirgelisimakademi@gmail.com
+
+© 2025 Atak Studios. Tüm hakları saklıdır.
 ''';
 
   static const String _privacyPolicy = '''
 DUCK UYGULAMASI GİZLİLİK POLİTİKASI
 
-Atak Studios olarak kullanıcılarımızın gizliliğine büyük önem veriyoruz. Bu Gizlilik Politikası, Duck uygulamasını kullanırken kişisel verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.
+Siyami Mert ATAK (Atak Studios) olarak kullanıcılarımızın gizliliğine büyük önem veriyoruz. Duck uygulaması Royal English Time için özel olarak geliştirilmiş olup, bu Gizlilik Politikası, Duck uygulamasını kullanırken kişisel verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.
 
 1. TOPLANAN VERİLER
 
@@ -998,19 +1109,23 @@ Topladığımız verileri yalnızca aşağıdaki amaçlarla kullanmaktayız:
 • Size hatırlatma bildirimleri göndermek (izniniz dahilinde)
 • Teknik sorunları tespit etmek ve çözmek
 
-3. VERİLERİN SAKLANMASI
+3. VERİLERİN SAKLANMASI VE İNTERNET BAĞLANTISI
 
-3.1. Kişisel verileriniz cihazınızda yerel olarak (SharedPreferences) saklanmaktadır.
+3.1. Kişisel verileriniz cihazınızda yerel olarak (SharedPreferences) saklanmaktadır. Hiçbir veri uzak sunuculara gönderilmez.
 
-3.2. Duck uygulaması şu an için herhangi bir sunucuya veri göndermemektedir. Tüm verileriniz cihazınızda kalmaktadır.
+3.2. Duck uygulaması internet bağlantısı gerektirmez. Tüm veriler cihazınızda kalır ve yalnızca cihaz içinde işlenir.
 
-3.3. Uygulamayı sildiğinizde tüm yerel verileriniz kalıcı olarak silinir.
+3.3. Uygulamayı sildiğinizde tüm yerel verileriniz kalıcı olarak silinir ve hiçbir veri kalmaz.
+
+3.4. Uygulamanın tamamen çevrimdışı (offline) çalıştığını, hiçbir verinin merkezi bir sunucuya aktarılmadığını ve veri güvenliği sorumluluğunun yerel depolama dahilinde olduğunu vurgularız.
 
 4. VERİ GÜVENLİĞİ
 
 4.1. Verilerinizin güvenliğini sağlamak için endüstri standardı teknik ve organizasyonel önlemler uygulamaktayız.
 
-4.2. Kişisel verilerinizi üçüncü taraflarla paylaşmamakta, satmamakta veya kiralamaktayız.
+4.2. Kişisel verilerinizi üçüncü taraflarla hiçbir şekilde paylaşmamakta, satmamakta veya kiralamaktayız.
+
+4.3. Verileriniz sadece cihazınızda bulunur ve merkezi bir veritabanına kaydedilmez.
 
 5. BİLDİRİMLER
 
@@ -1022,13 +1137,21 @@ Topladığımız verileri yalnızca aşağıdaki amaçlarla kullanmaktayız:
 
 6.1. Uygulamamız her yaş grubuna uygundur. 13 yaş altı kullanıcılardan bilerek ek kişisel bilgi toplamıyoruz.
 
-7. DEĞİŞİKLİKLER
+7. SAHİPLİK VE FİKRİ MÜLKİYET
 
-7.1. Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler olması halinde Uygulama üzerinden bilgilendirileceksiniz.
+7.1. Uygulamanın çekirdek yazılım altyapısı, kaynak kodları, tasarım şablonları ve algoritmaları üzerindeki tüm fikri ve sınai mülkiyet hakları münhasıran Siyami Mert ATAK (Atak Studios)'a aittir. Kaynak kodları ve yazılımın tüm hakları Atak Studios tarafından saklı tutulur.
 
-8. İLETİŞİM
+7.2. Royal English Time'a Uygulamanın sadece 'münhasır olmayan' bir kullanım lisansı verilmiştir; bu lisans Uygulamayı eğitim faaliyetleri kapsamında kullanma hakkını verir ancak kaynak kodlar üzerinde mülkiyet hakkı vermez.
 
-Gizlilik ile ilgili sorularınız için info@atakstudios.com adresinden bizimle iletişime geçebilirsiniz.
+7.3. Uygulama içindeki Royal English Time logoları ve kuruma özel hazırlanan eğitim materyalleri (soru, video, metin) Royal English Time'ın mülkiyetindedir. Yazılımın 'motoru' ve işleyişi Atak Studios mülkiyetinde kalmaya devam eder.
+
+8. DEĞİŞİKLİKLER
+
+8.1. Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler olması halinde Uygulama üzerinden bilgilendirileceksiniz.
+
+9. İLETİŞİM
+
+Gizlilik ile ilgili sorularınız için atakstudios2025@gmail.com adresinden bizimle iletişime geçebilirsiniz.
 
 © 2025 Atak Studios. Tüm hakları saklıdır.
 ''';
@@ -1036,9 +1159,7 @@ Gizlilik ile ilgili sorularınız için info@atakstudios.com adresinden bizimle 
   static const String _kvkkText = '''
 KİŞİSEL VERİLERİN KORUNMASI KANUNU (KVKK) AYDINLATMA METNİ
 
-Veri Sorumlusu: Atak Studios
-
-Atak Studios olarak, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu sıfatıyla aşağıdaki hususları bilginize sunarız.
+Siyami Mert ATAK (Atak Studios), 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında aşağıdaki hususları bilginize sunarız. Duck uygulaması Royal English Time için özel olarak geliştirilmiştir.
 
 1. TOPLANAN KİŞİSEL VERİLER
 
@@ -1046,10 +1167,20 @@ Duck uygulaması kapsamında aşağıdaki kişisel veriler işlenmektedir:
 
 • Kullanıcı Adı: Uygulama içi tanımlama ve kişiselleştirme amacıyla
 • Öğrenme Verileri: Seviye, ilerleme durumu, tamamlanan dersler, başarı oranları
-• Cihaz Bilgileri: İşletim sistemi türü, cihaz modeli (hata ayıklama amaçlı)
+• Cihaz Bilgileri: İşletim sistemi türü, cihaz modeli
 • Tercih Bilgileri: Dil tercihi, bildirim ayarları, tema seçimi
 
-2. VERİ İŞLEMENİN HUKUKİ SEBEBİ
+2. VERİ SORUMLUSU VE VERİ İŞLEYEN
+
+Veri Sorumlusu: Royal English Time (izmirgelisimakademi@gmail.com)
+
+2.1. 6698 sayılı KVKK kapsamında, uygulamanın son kullanıcılarından (öğrencilerden) toplanan verilerin 'Veri Sorumlusu' Royal English Time kurumudur. Veri sorumlusu olarak Royal English Time, kişisel verilerin hukuka uygun olarak işlenmesinden, korunmasından ve gerektiğinde ilgili veri sahiplerine karşı gerekli bildirim ve işlemleri yürütmekten sorumludur.
+
+2.2. Siyami Mert ATAK (Atak Studios), uygulamanın teknik altyapısını sağlayan 'Veri İşleyen' konumundadır ve yalnızca Royal English Time'ın talimatları doğrultusunda, cihaz üzerinde yerel olarak gerçekleştirilen veri işleme faaliyetlerini yürütür.
+
+2.3. Veri işleme faaliyetleri, cihaz üzerinde yerel olarak (çevrimdışı) gerçekleşmekte olup, merkezi bir sunucuya veri aktarımı söz konusu değildir.
+
+3. VERİ İŞLEMENİN HUKUKİ SEBEBİ
 
 Kişisel verileriniz, KVKK'nın 5. maddesi kapsamında aşağıdaki hukuki sebepler doğrultusunda işlenmektedir:
 
@@ -1057,15 +1188,25 @@ Kişisel verileriniz, KVKK'nın 5. maddesi kapsamında aşağıdaki hukuki sebep
 • Sözleşmenin ifası (hizmetin sunulması için)
 • Meşru menfaat (uygulamanın iyileştirilmesi için)
 
-3. VERİLERİN AKTARILMASI
+4. VERİLERİN AKTARILMASI VE SAKLANMASI - ÇEVRİMDIŞI YAPILANMA
 
-Kişisel verileriniz üçüncü kişilere aktarılmamaktadır. Tüm veriler cihazınızda yerel olarak saklanmaktadır.
+4.1. Kişisel verileriniz üçüncü kişilere hiçbir şekilde aktarılmamaktadır.
 
-4. VERİ SAKLAMA SÜRESİ
+4.2. Tüm veriler cihazınızda yerel olarak saklanmaktadır.
 
-Kişisel verileriniz, uygulamayı kullandığınız süre boyunca cihazınızda saklanmaktadır. Uygulamayı sildiğinizde tüm verileriniz kalıcı olarak silinir.
+4.3. Uygulama, hiçbir kişisel veriyi internet üzerinden göndermez.
 
-5. VERİ SAHİBİ OLARAK HAKLARINIZ
+4.4. Uygulama tamamen çevrimdışı (offline) çalışır. Veri işleme tamamen cihaz içinde gerçekleşir.
+
+4.5. Hiçbir veri merkezi bir sunucuya aktarılmaz ve uzak sunuculara yedeklenmez.
+
+4.6. Veri güvenliği sorumluluğu yerel depolama dahilinde olup, cihazda şifreli olarak saklanır.
+
+5. VERİ SAKLAMA SÜRESİ
+
+Kişisel verileriniz, uygulamayı kullandığınız süre boyunca cihazınızda saklanmaktadır. Uygulamayı sildiğinizde tüm verileriniz kalıcı olarak silinir ve hiçbir veri kalmaz.
+
+6. VERİ SAHİBİ OLARAK HAKLARINIZ
 
 KVKK'nın 11. maddesi uyarınca aşağıdaki haklara sahipsiniz:
 
@@ -1079,17 +1220,47 @@ g) Düzeltme ve silme işlemlerinin aktarıldığı üçüncü kişilere bildiri
 h) İşlenen verilerin münhasıran otomatik sistemler aracılığıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme
 i) Kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız halinde zararın giderilmesini talep etme
 
-6. VERİ GÜVENLİĞİ
+7. SAHİPLİK VE FİKRİ MÜLKİYET
 
-Atak Studios, kişisel verilerin hukuka aykırı olarak işlenmesini önlemek, verilere hukuka aykırı olarak erişilmesini önlemek ve verilerin muhafazasını sağlamak amacıyla uygun güvenlik düzeyini temin etmeye yönelik gerekli her türlü teknik ve idari tedbirleri almaktadır.
+7.1. Uygulamanın çekirdek yazılım altyapısı, kaynak kodları, tasarım şablonları ve algoritmaları üzerindeki tüm fikri ve sınai mülkiyet hakları münhasıran Siyami Mert ATAK (Atak Studios)'a aittir.
 
-7. BAŞVURU
+7.2. Royal English Time'a, Uygulamanın sadece 'münhasır olmayan' bir kullanım lisansı verilmiştir.
 
-KVKK kapsamındaki haklarınızı kullanmak için info@atakstudios.com adresine yazılı olarak başvurabilirsiniz.
+7.3. Uygulama içindeki Royal English Time logoları ve kuruma özel hazırlanan eğitim materyalleri (soru, video, metin) Royal English Time'ın mülkiyetindedir.
+
+7.4. Ancak yazılımın 'motoru' ve işleyişi Atak Studios mülkiyetinde kalmaya devam eder.
+
+8. VERİ GÜVENLİĞİ VE ÇEVRİMDIŞI İŞLEYİŞ
+
+8.1. Royal English Time, veri sorumlusu olarak kişisel verilerin gizliliği, bütünlüğü ve güvenliğinden sorumludur. Uygulamanın gizliliği ve veri koruma tedbirleri, Siyami Mert ATAK (Atak Studios) ile Royal English Time arasında yapılan yazılı anlaşma ile korunmaktadır.
+
+8.2. Siyami Mert ATAK (Atak Studios), veri işleyen sıfatıyla teknik ve idari tedbirlerin uygulanmasına destek sağlar ve yalnızca Royal English Time'ın talimatları doğrultusunda hareket eder.
+
+8.3. Veriler cihaz içinde şifreli olarak saklanır ve uygulama tamamen offline (cihaz üzerinde yerel) çalışır; hiçbir veri merkezi bir sunucuya aktarılmaz.
+
+9. BAŞVURU
+
+KVKK kapsamındaki haklarınızı kullanmak için atakstudios2025@gmail.com adresine yazılı olarak başvurabilirsiniz.
 
 İşbu aydınlatma metni 1 Ocak 2025 tarihinde yürürlüğe girmiştir.
 
 © 2025 Atak Studios. Tüm hakları saklıdır.
+''';
+
+  static const String _contactInfo = '''
+İLETİŞİM BİLGİLERİ
+
+Yazılım Geliştiricisi
+Kurum Adı: Atak Studios
+Sorumlu Kişi: Siyami Mert ATAK
+E-posta: atakstudios2025@gmail.com
+Web: atak-studios.com
+
+Uygulayan Kurum
+Kurum Adı: Royal English Time
+Sorumlu Kişi: Zeki Ekinci
+E-posta: izmirgelisimakademi@gmail.com
+Web: royalenglishtime.com
 ''';
 
   Widget _buildLogoutButton() {
@@ -1181,10 +1352,16 @@ KVKK kapsamındaki haklarınızı kullanmak için info@atakstudios.com adresine 
           Switch(
             value: value,
             onChanged: onChanged,
-            activeThumbColor: darkGreen,
-            activeTrackColor: lightGreen.withOpacity(0.4),
-            inactiveThumbColor: _c.textSecondary,
-            inactiveTrackColor: _c.divider,
+            thumbColor: WidgetStateProperty.resolveWith((states) {
+              if (states.contains(WidgetState.selected)) return darkGreen;
+              return _c.textSecondary;
+            }),
+            trackColor: WidgetStateProperty.resolveWith((states) {
+              if (states.contains(WidgetState.selected)) {
+                return lightGreen.withOpacity(0.4);
+              }
+              return _c.divider;
+            }),
           ),
         ],
       ),

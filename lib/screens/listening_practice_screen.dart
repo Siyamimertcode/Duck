@@ -54,6 +54,7 @@ class _ListeningPracticeScreenState extends State<ListeningPracticeScreen>
 
   @override
   void dispose() {
+    _ttsService.stop();
     _animController.dispose();
     super.dispose();
   }
@@ -325,7 +326,7 @@ class _ListeningPracticeScreenState extends State<ListeningPracticeScreen>
               borderRadius: BorderRadius.circular(12),
             ),
             child: Text(
-              '${_currentIndex + 1}/${_sentences.length}',
+              '∞',
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.bold,
